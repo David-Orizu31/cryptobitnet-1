@@ -1,0 +1,586 @@
+/* body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+} */
+
+.loader {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .loader > .loader-gif {
+    width: 600px;
+} */
+
+.loader-gif {
+    border: 6px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 6px solid rgb(248, 174, 36);
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .wrapper {
+    width: 120px;
+    height: 120px;
+  }
+
+  .wrapper {
+    background: url('img/food-delivery.png') center no-repeat;
+    background-size: 70%;
+    background-position: center;
+  }
+
+
+
+
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.container-full {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    background-color: rgb(248, 174, 36);
+}
+
+.navbar-toggler {
+    border: 1px solid transparent !important;
+}
+
+.nav-link {
+    margin-right: 20px;
+}
+
+.nav-link.active {
+  background-color: white;
+   color: rgb(248, 174, 36) !important;
+}
+
+.nav-link:hover {
+   background-color: white;
+   color: rgb(248, 174, 36) !important;
+}
+
+.dropdown-item p{
+    color: rgb(248, 174, 36);
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.btn-viewmenu {
+    color: rgb(248, 174, 36) !important;
+    border: 1px solid white !important;
+    width: 200px !important;
+    border-radius: 0px !important;
+    margin-left: 15px;
+}
+
+.btn-viewmenu:hover {
+    color: white !important;
+    background-color: rgb(248, 174, 36) !important;
+}
+
+.btn-fullmenu {
+    color: white !important;
+    background-color: rgb(248, 174, 36) !important;
+    width: 240px !important;
+    border-radius: 0px !important;
+}
+
+.btn-fullmenu:hover {
+    background-color: white !important;
+    border: 1px solid black !important;
+    color: rgb(248, 174, 36) !important;
+}
+
+.shop-cart {
+    font-size: 24px !important;
+    color: white;
+    margin-right: 30px;
+    text-decoration: none !important;
+}
+
+.shop-cart :hover{
+    color: black;
+}
+
+.badge {
+    padding: 4px !important;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 50% !important;
+  }
+
+  .label-warning[href],
+  .badge-warning[href] {
+    background-color: #c67605;
+  }
+  #lblCartCount {
+      font-size: 12px;
+      background: white;
+      color: rgb(248, 174, 36);
+      padding: 0 5px;
+      vertical-align: top;
+      margin-left: -15px;
+  }
+
+  .content-area .header {
+     color: rgb(248, 174, 36);
+  }
+
+  .dropdown-item {
+      margin-bottom: 10px;
+  }
+
+  .restaurant-name {
+      color: black;
+      font-size: 17px;
+      text-decoration: none !important;
+  }
+
+  .restaurant-name:hover {
+      color: rgb(248, 174, 36) !important;
+  }
+
+  .banner-1 {
+    background-image: url(img/delivery-1.jpg), linear-gradient(rgba(0, 0, 0, 0.5) ,rgba(0, 0, 0, 0.5)) !important;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    top: 0;
+    left: 0;
+    position: relative;
+    min-height: 450px;
+    padding: 15px;
+  }
+
+  .banner-2 {
+    background-image: url(img/delivery-2.jpg), linear-gradient(rgba(0, 0, 0, 0.5) ,rgba(0, 0, 0, 0.5)) !important;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    top: 0;
+    left: 0;
+    position: relative;
+    min-height: 450px;
+    padding: 15px;
+  }
+
+  .banner-3 {
+    background-image: url(img/delivery-3.jpg), linear-gradient(rgba(0, 0, 0, 0.5) ,rgba(0, 0, 0, 0.5)) !important;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    top: 0;
+    left: 0;
+    position: relative;
+    min-height: 450px;
+    padding: 15px;
+  }
+
+  .banner-text {
+      background-color: rgba(0, 0, 0, 0.8);
+      margin-top: 80px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-right: 20px;
+      padding-left: 20px;
+  }
+
+  .btn-shop-now {
+      color: white !important;
+      background-color: rgb(248, 174, 36) !important;
+      width: 100% !important;
+      border-radius: 0px !important;
+  }
+
+  .featured-items {
+      color: rgb(248, 174, 36);
+  }
+
+  .item-featured {
+      font-size: 18px;
+      margin-top: 15px;
+      font-weight: 500;
+  }
+
+  .about-details {
+      font-size: 17px;
+  }
+
+  #button {
+    display: inline-block;
+    background-color: rgb(248, 174, 36);
+    /* width: 50px;
+    height: 50px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    border-radius: 0px;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    transition: background-color .3s,
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  /* #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  } */
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-body h4 {
+      color: rgb(248, 174, 36);
+  }
+
+  .modal-body p {
+      font-size: 17px;
+      font-weight: 500;
+  }
+
+  .modal-menu {
+      color: rgb(248, 174, 36);
+  }
+
+  .modal-menu:hover {
+      color: rgb(248, 174, 36) !important;
+  }
+
+  .modal-button {
+      float: right;
+  }
+
+  .btn-modal-close {
+      color: white !important;
+      background-color: rgb(248, 174, 36) !important;
+      text-decoration: none !important;
+  }
+
+  .btn-modal-close:hover {
+      color: white !important;
+  }
+
+  .banner-banner {
+    background-image: url(img/delivery-banner.jpg), linear-gradient(rgba(0, 0, 0, 0.8) ,rgba(0, 0, 0, 0.8)) !important;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    top: 0;
+    left: 0;
+    position: relative;
+    min-height: 380px;
+    padding: 15px;
+  }
+
+  .banner-link {
+      margin-top: 130px;
+  }
+
+  .banner-link h1 {
+      font-size: 38px;
+  }
+
+  .banner-link p {
+      font-size: 17px;
+  }
+
+  .selform_area h2 {
+      color: rgb(248, 174, 36);
+  }
+
+ .tab-link {
+      color: grey !important;
+      font-size: 18px;
+      border-radius: 0px !important;
+      margin-right: 0px !important;
+      font-weight: 500;
+ }
+
+
+  .active.tab-link {
+      color: rgb(248, 174, 36) !important;
+      border-top: 1px solid black !important;
+      border-left: 1px solid black !important;
+      border-right: 1px solid black !important;
+  }
+
+  .btn-submit {
+      color: white !important;
+      background-color: rgb(248, 174, 36) !important;
+      border-radius: 0px !important;
+  }
+
+  .btn-submit:hover {
+      opacity: 0.8 !important;
+  }
+
+  .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:40px;
+	background-color:#25d366;
+	color:#FFF !important;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.header {
+    color: rgb(248, 174, 36);
+}
+
+.contact-info {
+    color: rgb(248, 174, 36) !important;
+}
+
+.inputs {
+    margin-bottom: 20px;
+}
+
+.btn-send {
+    color: white !important;
+    background-color: rgb(248, 174, 36) !important;
+    border-radius: 0px !important;
+    float: right !important;
+}
+
+.cart-image {
+    max-width: 100px !important;
+}
+
+.cart-item {
+    font-size: 20px;
+    color: rgb(248, 174, 36);
+    font-weight: 500;
+}
+
+.cart-details {
+    font-size: 17px;
+}
+
+.cart-table {
+    border: 1px solid grey !important;
+    border-collapse: collapse;
+}
+
+.btn-pay {
+  color: white !important;
+  background-color: rgb(248, 174, 36) !important;
+  width: 180px;
+}
+
+.btn-pay:hover {
+  opacity: 0.8;
+}
+
+.full-menu {
+    border: 1px solid grey;
+    padding: 20px;
+}
+
+.other-menus {
+    border: 1px solid grey;
+    padding: 20px;
+}
+
+.menu-name {
+    margin-top: 10px;
+}
+
+.menu-item {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.menu-item:hover {
+    color: rgb(248, 174, 36) !important;
+ 
+}
+
+.menu-itemdown:hover {
+    color: rgb(248, 174, 36) !important;
+    border: 15px solid rgb(248, 174, 36);
+}
+
+.active-menu {
+    color: rgb(248, 174, 36);
+}
+
+.menu-product {
+    font-size: 18px;
+}
+
+.product-intro {
+    color: rgb(248, 174, 36);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+
+ td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  width: 310px;
+}
+
+.nutrition-benefits {
+    list-style-type: none;
+}
+
+.nutrition-benefits li {
+    margin-left: -35px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.btn-add-to-cart {
+    color: white !important;
+    background-color: rgb(248, 174, 36) !important;
+    width: 100%;
+}
+
+.btn-add-to-cart:hover {
+    background-color: orange !important;
+}
+
+.shopping {
+    float: left;
+}
+
+.message-header {
+    color: green;
+}
+
+.message-body {
+    font-size: 20px;
+    color: rgb(120, 120, 120);
+    max-width: 700px;
+}
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 15px;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 15px;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 15px;
+  }
+
+  .social-icons {
+      text-decoration: none !important;
+  }
+
+  .footer-area {
+      background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .footer-area ul {
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+.footer-area ul li {
+    margin-bottom: 10px;
+}
+
+.footer-area ul li .foot-link {
+    text-decoration: none !important;
+
+}
+
+.footer-area ul li .foot-link:hover {
+    color: rgb(248, 174, 36) !important;
+}
+
+.footer-area .foot-head {
+    color: rgb(248, 174, 36);
+    font-size: 17px;
+}
