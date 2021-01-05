@@ -5,13 +5,10 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
-use App\Company;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-use Ramsey\Uuid\Uuid;
-use Request;
-use Auth;
+
 class RegisterController extends Controller
 {
     /*
@@ -44,15 +41,6 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
 
-
-
-    public function showRegistrationForm()
-    {
-
-        $companies =  Company::all();
-        return view('auth.register', compact( 'companies' ) );
-    }
-
     /**
      * Get a validator for an incoming registration request.
      *
@@ -61,14 +49,10 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-    //    dd($data);
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'tel' => ['required'],
-            'subdomain' => ['required', 'unique:companies'],
-            // 'username' => ['required', 'string', 'max:255', 'unique:users'],
         ]);
     }
 
@@ -80,37 +64,10 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
- 
-                    if(Request::hasFile('image')) {
-
-                        $image = Request::file('image');
-                        // dd($image);
-                      $filenameWithExt    = $image->getClientOriginalName();
-                      $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-                         $extension = Request::file('image')->getClientOriginalExtension();
-                        $image_resize = \Image::make($image->getRealPath());
-                        $image_resize->resize(200, 200);
-                         $fileNameToStore= $filename.'_'.time().'.'.$extension;
-                 $image_resize->save(public_path('storage/'.  $fileNameToStore ));
-                //  dd($fileNameToStore);
-                    }
-                    $user =  User::create([
-                        'name' => $data['name'],
-                        'email' => $data['email'],
-                        'package' => $data['package'],
-                        'username' => $data['username'],
-
-                       
-
-                        'password' => $data['password'],
-                        'avatar' => $fileNameToStore ?? null,
-                      
-
-                    ]);
-
-
- 
-
-        return $user;
+        return User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password']),
+        ]);
     }
 }

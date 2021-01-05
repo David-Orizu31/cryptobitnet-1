@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Auth::routes();
-// Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
@@ -24,11 +24,7 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-Route::domain('{subdomain}.'.config('app.short_url'))->group(function () {
-
-    Route::get('/',  [App\Http\Controllers\ProductsController::class, 'index'])->name('products.index');
-
-});
+ 
 
 // Route::domain(config('app.short_url').'.{subdomain}')->group(function () {
 
@@ -50,3 +46,11 @@ Route::post('/pay', 'CheckoutController@initialize')->name('pay');
 Route::get('/rave/callback', 'CheckoutController@callback')->name('callback');
 
 Route::get('/transactions', 'CheckoutController@flutterwavelist')->name('t');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
