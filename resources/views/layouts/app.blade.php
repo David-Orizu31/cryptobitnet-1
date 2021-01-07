@@ -1033,7 +1033,7 @@
                                                   </svg>
                                               </a>
                                           </li> -->
-                                          <li class="facebook-fs"><a href="#" target="_blank"
+                                          <li class="facebook-fs"><a href="https://www.facebook.com/CryptoBitNet" target="_blank"
                                                                      title="Facebook" rel="noreferrer">
                                                   <svg class="gm-icon gm-icon-facebook">
                                                       <title>Facebook</title>
@@ -1058,7 +1058,7 @@
                                               </a>
                                           </li> -->
                                           <li class="instagram-fs">
-                                              <a href="#" target="_blank"
+                                              <a href="https://www.instagram.com/CryptoBitNet_official" target="_blank"
                                                  title="Instagram" rel="noreferrer">
                                                   <svg class="gm-icon gm-icon-instagram">
                                                       <title>Instagram</title>

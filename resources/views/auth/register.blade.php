@@ -558,41 +558,62 @@
                     <h2>Sign up</h2>
                     <span>Please enter your personal information</span>
             
-                    <form action="/signup" autocomplete="off" id="UserRegisterForm" method="post" accept-charset="utf-8">
-                        <div style="display:none;">
-                            <input type="hidden" name="_method" value="POST"/>
-                            <input type="hidden" name="_Token[key]" value="9e54606b8d5d552a07c0251b42353bdbe6388127" id="Token62768347"/>
-                        </div>
-                        <input type="hidden" name="_source" class="form-control" placeholder="" id="_source"/>
-                        <div class="form-group required">
-                            <input name="name" class="form-control" placeholder="Full Name" type="text" id="name" required="required"/>
-                        </div>
-                        <div class="form-group required">
-                            <input name="name" class="form-control" placeholder="Username" type="text" id="name" required="required"/>
+                    <form action="{{ route('register') }}" autocomplete="off" id="UserRegisterForm" method="post" accept-charset="utf-8">
+                    @csrf
+                         <div class="form-group required">
+                            <input name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Full Name" value="{{ old('name') }}" type="text" id="name" required="required"/>
+                            @error('name')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                         </div>
                         <div class="form-group required">
-                            <input name="email" class="form-control" placeholder="Email" type="text" id="email" required="required"/>
+                            <input name="username" class="form-control @error('username') is-invalid @enderror" placeholder="Username" value="{{ old('username') }}" type="text" id="username" required="required"/>
+                            @error('username')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                         </div>
                         <div class="form-group">
-                            <select class="form-control" name="package" id="package">
-                                <option value="0" selected disabled>Package</option>
-                                <option value="1">BEGINNERS PACKAGE: $400 -10% = 3days </option>
-                                <option value="2">PREMIUM PACKAGES: $400-$3000-50% = 7days.</option>
-                                <option value="3">INVESTOR PACKAGES: $3500-$7000-100% =14days</option>
-                                <option value="4">VIP PACKAGE: $7000-unlimited -150% = 30days.</option>
+                            <input name="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" value="{{ old('email') }}" type="text" id="email" required="required"/>
+                            @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" name="package" id="package" required>
+                                <option value="" selected disabled>Package</option>
+                                <option value="BEGINNERS PACKAGE">BEGINNERS PACKAGE: $400 -15% = 3days </option>
+                                <option value="PREMIUM PACKAGES">PREMIUM PACKAGES: $400-$3599-40% = 7days.</option>
+                                <option value="INVESTOR PACKAGES">INVESTOR PACKAGES: $3600-$7999-65% =14days</option>
+                                <option value="VIP PACKAGE">VIP PACKAGE: $8000-unlimited = 30days.</option>
                               </select>
                         </div>
                         <div class="form-group">
-                            <input name="password" class="form-control" placeholder="Password" type="password" id="password"/>
+                            <input name="password" class="form-control  @error('password') is-invalid @enderror" placeholder="Password" type="password" id="password"/>
                             <div class="form-hint">Password must be at least 8 characters long.</div>
+                            @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                         </div>
                         <div class="form-group required">
-                            <input name="password" class="form-control" placeholder="Confirm password" type="password" id="password" required="required"/>
+                            <input name="password_confirmation" class="form-control  @error('password_confirmation') is-invalid @enderror" placeholder="Confirm password" type="password" id="password" required="required"/>
+                            @error('password_confirmation')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                         </div>
                         <div class="form-group">
                             <label for="UserPrivacy" class="splash-check">
                                 <input type="hidden" name="data[User][privacy]" id="UserPrivacy_" value="0"/>
-                                <input type="checkbox" name="data[User][privacy]"  required="required" value="1" id="UserPrivacy"/>
+                                <input type="checkbox" name="data[User][privacy]"  required="required" value="1" id="UserPrivacy" onClick="EnableSubmit(this)" />
                                 <span class="checkb">&nbsp;</span>
                                 <strong>I’ve read and understood the <a href="index.html#privacy" target="_blank" title="Privacy Policy">Privacy Policy</a></strong>
                             </label>
@@ -606,10 +627,10 @@
                         </div>        
                         <div class="clearfix"></div>
                     
-                    <p class="text-center"><a href="/reset" class="text-warning">Lost your password?</a> | <a href="login.html" class="text-warning">Already have an account?</a></p>
+                    <p class="text-center"><a href="/reset" class="text-warning">Lost your password?</a> | <a href="/login" class="text-warning">Already have an account?</a></p>
             
-                                <div class="form-group captcha-box"><div class="g-recaptcha" data-sitekey="6Lc53isUAAAAAL6S16redOiLlPCccIRj8HO3zPfz" data-callback="enableBtn"></div></div>
-                            <div class="submit"><input  class="btn btn-primary" id="signUpButton" ="" type="submit" value="Sign up"/></div><div style="display:none;"><input type="hidden" name="data[_Token][fields]" value="0a7e10c2dbbe8f5800811cb1d9ee416cdd9fb013%3AUser._source" id="TokenFields902649977"/><input type="hidden" name="data[_Token][unlocked]" value="User.form_type%7Cg-recaptcha-response" id="TokenUnlocked546343913"/></div></form>    </div>
+                              
+                            <div class="submit"><input  class="btn btn-primary"  id="Accept" type="submit" disabled="disabled" value="Sign up"/></div></form>    </div>
             </div>
             </div>
             
@@ -643,10 +664,21 @@
 
             </div>
             <script type='text/javascript'>
-                document.getElementById("signUpButton").disabled = true;
-                function enableBtn(){
-                  document.getElementById("signUpButton").disabled = false;
-                }
+          
+              EnableSubmit = function(val)
+{
+    
+    var sbmt = document.getElementById("Accept");
+
+    if (val.checked == true)
+    {
+        sbmt.disabled = false;
+    }
+    else
+    {
+        sbmt.disabled = true;
+    }
+} 
             </script>
 
 
@@ -917,15 +949,7 @@
             </defs>
             </svg>
             
-            <!--[if lte IE 7]>
-            <div class="browsehappy-container">
-            <div><p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-                your browser</a> to improve your experience.</p></div>
-            </div>
-            <![endif]-->
-            
-            
-            
+      
             
             
             <script type="text/javascript">
@@ -998,61 +1022,7 @@
             
             <script src="js/twitter-fetcher.min.js"></script>
             
-            <script src="js/prechatfrom.js"></script>
-            <script>
-            var preChatTemplate = {
-              mainbgColor: '#183f59',
-              maintxColor: '#fff',
-              heading: 'CryptoBitNet',
-              textBanner: 'We can\'t wait to talk to you. But first, please take a couple of moments to tell us a bit about yourself.',
-              SubmitLabel: 'Start Chat',
-              fields : {
-                field1 : {
-                  type: "name",
-                  label: "Name",
-                  fieldId: "name",
-                  required: "yes",
-                  error: "Please Enter a valid name"
-                },
-                field2 : {
-                  type: "email",
-                  label: "Email",
-                  fieldId: "email",
-                  required: "yes",
-                  error: "Please Enter a valid Email"
-                },
-                field3 : {
-                  type: "dropdown",
-                  label: "Do you have an account?",
-                  fieldId: "has_account",
-                  required: "yes",
-                  error: "Please select an option",
-                  options: ['Yes','No']
-                },
-                field4 : {
-                  type: "dropdown",
-                  label: "Would you like to receive occasional marketing offers?",
-                  fieldId: "accept_gdpr",
-                  required: "yes",
-                  error: "Please select an option",
-                  options: ['Yes','No']
-                }
-              }
-            };
-            window.fcSettings = {
-              token: "cb49f35f-683b-4fe9-beab-bc18ce5e4fe7",
-              host: "https://wchat.freshchat.com",
-              config: {
-                cssNames: {
-                  widget: 'custom_fc_frame',
-                  expanded: 'custom_fc_expanded'
-                }
-              },
-              onInit: function() {
-                fcPreChatform.fcWidgetInit(preChatTemplate);
-              }
-            };
-            </script>
+  
             
             
             <script src="js/widget.js" async></script>
@@ -1067,25 +1037,15 @@
             
             <script src="js/inscapular-report.js"></script>
             
-            
-              
-            <!-- Optional JavaScript -->
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+       
             <script src="bootstrap/js/jquery-1.11.0.min.js"></script>
             <script src="bootstrap/js/bootstrap-3.1.1.min.js"></script>
             <script src="bootstrap/js/legacy.min.js"></script>
-            <!-- <script src="bootstrap/js/jquery.min.js"></script>
-            <script src="bootstrap/js/popper.min.js"></script>
-            <script src="bootstrap/js/bootstrap.min.js"></script> -->
+        
             <script src="js/svg4everybody.min.js"></script>
             <script type="text/javascript">svg4everybody();</script>
             
-            <!--[if lte IE 9]>
-            <script type="text/javascript" src="/js/modernizr.js"></script>
-            <script type="text/javascript" src="/js/respond.min.js"></script>
-            <script type="text/javascript" src="/js/placeholders.min.js"></script>
-            <![endif]-->
-            
+         
             
                 
                         

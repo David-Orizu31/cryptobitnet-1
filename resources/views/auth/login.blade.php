@@ -670,22 +670,7 @@
                                                 </svg>
                                             </a>
                                         </li>
-                                        <!-- <li class="youtube-fs"><a href="https://www.youtube.com/c/CryptoBitNet_official"
-                                                                  target="_blank" title="Youtube" rel="noreferrer">
-                                                <svg class="gm-icon gm-icon-youtube"><title>Youtube</title>
-                                                    <use xlink:href="img/sprite.svg#gm-icon-youtube"></use>
-                                                </svg>
-                                            </a>
-                                        </li> -->
-                                        <!-- <li class="vkontakte-fs">
-                                            <a href="https://vk.com/CryptoBitNetrus" target="_blank" title="VKontakte"
-                                               rel="noreferrer">
-                                                <svg class="gm-icon gm-icon-vkontakte">
-                                                    <title>VKontakte</title>
-                                                    <use xlink:href="img/sprite.svg#gm-icon-vkontakte"></use>
-                                                </svg>
-                                            </a>
-                                        </li> -->
+                                 
                                         <li class="instagram-fs">
                                             <a href="https://www.instagram.com/CryptoBitNet_official" target="_blank"
                                                title="Instagram" rel="noreferrer">
@@ -695,23 +680,7 @@
                                                 </svg>
                                             </a>
                                         </li>
-                                        <!-- <li class="linkedin-fs">
-                                            <a href="https://www.linkedin.com/company/genesis-mining" target="_blank"
-                                               title="Linkedin" rel="noreferrer">
-                                                <svg class="gm-icon gm-icon-linkedin">
-                                                    <title>Linkedin</title>
-                                                    <use xlink:href="img/sprite.svg#gm-icon-linkedin"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="medium-fs">
-                                            <a href="https://www.medium.com/@CryptoBitNet" target="_blank" title="Medium"
-                                               rel="noreferrer">
-                                                <svg class="gm-icon gm-icon-medium"><title>Medium</title>
-                                                    <use xlink:href="img/sprite.svg#gm-icon-medium"></use>
-                                                </svg>
-                                            </a>
-                                        </li> -->
+                                     
                                     </ul>
                                 </div>
                             </div>
