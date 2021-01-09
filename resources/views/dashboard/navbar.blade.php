@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap-1680.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/morris.css">
-    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap-select.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style_dash_1.min.css">
     <link rel="stylesheet" href="css/custom.css">
@@ -23,7 +23,7 @@
     <script src="js/rapheal.min.js"></script>
     <script src="js/morris.js"></script>
     <script src="js/dashboard.js"></script>
-    <script src="js/bootstrap-select.min.js"></script>
+    <!-- <script src="js/bootstrap-select.min.js"></script> -->
     <script type="text/javascript" src="../js/svg4everybody.min.js"></script>
     <script type="text/javascript">svg4everybody();</script>
     <!--[if lte IE 9]>
@@ -32,73 +32,16 @@
     <script type="text/javascript" src="/js/placeholders.min.js"></script>
     <![endif]-->
     <script src="../js/widget.js" as="script" importance="low"></script>
-
-    <script type="text/javascript">
-        (function(i, s, o, g, r, a, m) {
-          i['GoogleAnalyticsObject'] = r;
-          i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments);
-          }, i[r].l = 1 * new Date();
-          a = s.createElement(o),
-              m = s.getElementsByTagName(o)[0];
-          a.async = 1;
-          a.src = g;
-          m.parentNode.insertBefore(a, m);
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-30541749-13', 'auto');
-        ga('require', 'displayfeatures');
-                  ga('set', 'userId', '5fdc900bafa20ed04d8b4567');
-                  ga('send', 'pageview');
-
-                </script>
+ 
 
 <style type="text/css">
     text[y="319.5"] {
         background-color: #121c29;
     }
 </style>
-                    <script type="text/javascript">
-          adroll_adv_id = 'ZYGXJBUN7ZGOPACQVXFFBY';
-          adroll_pix_id = 'YANWPSUX7BC5JPSD5MEZPJ';
-          (function() {
-            var oldonload = window.onload;
-            window.onload = function() {
-              __adroll_loaded = true;
-              var scr = document.createElement('script');
-              var host = (('https:' == document.location.protocol) ? 'https://s.adroll.com'
-                  : 'http://a.adroll.com');
-              scr.setAttribute('async', 'true');
-              scr.type = 'text/javascript';
-              scr.src = host + '/j/roundtrip.js';
-              ((document.getElementsByTagName('head') || [null])[0] ||
-                  document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
-              if (oldonload) {
-                oldonload();
-              }
-            };
-          }());
-        </script>
-        <script type="text/javascript">var _kmq = _kmq || [];
-          var _kmk = _kmk || '2700f421a76d827cbf11f5f8099b08e11837c20b';
-
-          function _kms(u) {
-            setTimeout(function() {
-              var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script');
-              s.type = 'text/javascript';
-              s.async = true;
-              s.src = u;
-              f.parentNode.insertBefore(s, f);
-            }, 1);
-          }
-
-          _kms('//i.kissmetrics.com/i.js');
-          _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
-        </script>
-              
+        
    </head>
    <body>
-    <div class="container-fluid">
     <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1"
          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
@@ -284,8 +227,8 @@
                 <div class="mma">
                     <div class="row">
                         <div class="col-lg-9 col-md-8 col-sm-8 col-xs-8">
-                                                        <h1>DEPOSIT</h1>
-                                                                                <p>Deposit into your account.</p>
+                                                        <h1>ACCOUNT</h1>
+                                                                                <p>Manage your credentials</p>
                                                 </div>
                         <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
                             <div class="limiter">
@@ -299,11 +242,13 @@
                                         <span class='badge badge-warning' id='lblCartCount'> 0 </span>
                                         <!-- <span v-show="showNewMessagesDot" class="messages-new"></span> -->
                                     </a>
-                                    <a class="nav-logout" href="/logout" title="Logout">
-                                         <!-- <svg class="gm-icon gm-icon-logout"><title>Logout</title>
+                                    <a class="nav-logout" href="{{ route('logout') }}" title="Logout"  onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"                        > <i class="fa fa-power-off"  style="font-size: 20px !important; padding-top: 10px;"></i></a>
+                                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" >
+                                        <!-- <svg class="gm-icon gm-icon-logout"><title>Logout</title>
                                             <use xlink:href="/img/Version3/sprite_dash.svg#gm-icon-logout"></use>
                                         </svg> -->
-                                        <i class="fa fa-power-off" aria-hidden="true" style="font-size: 20px !important; padding-top: 10px;"></i>
+                                       
                                     </a>
                                 </p>
                             </div>
@@ -350,8 +295,8 @@
                     <template v-if="messages.total > 0">
                         <li v-for="item in messages.data" :class="{['message-' + (item.type || 'default')]: true, 'message-new' : isMessageNew(item), 'message-dialog' : showDialog === item._id}">
     
-                            <h4>{{ showTitle(item) }}</h4>
-                            <span>{{ item.releaseAt | dateformat('Do MMMM YYYY HH:mm') }}</span>
+                            <h4></h4>
+                            <span></span>
                             <span class="clearfix"></span>
                             <div class="message-text" v-html="generatedMarkdown(showText(item))"></div>
                             <button v-if="showDialog !== item._id" v-on:click="attemptHide(item._id)" class="icon-box ics"><i class="gm-icon-close"></i></button>
@@ -392,622 +337,126 @@
             </div>
             
         </div>
-    
-    
-        <div class="collapse navbar-collapse" id="main-menu">
-    
-            <div class="nav-user-info">
-                <h2>Welcome back            </h2>
-                <span class="fa fa-user"></span>
-            </div>
-    
-    
-            <ul class="nav navbar-nav ">
-    
-                                                    <li class="start-mining">
-                            <div class="profile">                           
-                            <img src="profile/user-profile.png" alt="profile-picture" class="img-responsive" style="width: 60px; border-radius: 50%; margin-left: 95px; margin-bottom: 10px;">
-                            <p style="color: white; margin-right: 30px;">Username</p>
-                            <button class="btn btn-primary" style="font-size: 12px !important; border-radius: 0px !important; margin-left: -20px;"> <i class="fa fa-star" aria-hidden="true" style="color: black !important; background-color: white !important;"></i> Premium</button>
-                            </div>
-                            <br>
-                        </li>
-                        <br><br><br><br><br>
 
-                                                    <li>
-                        <a class="navbar-link" href="dashboard.html"><span class="fa">
-                             <!-- <svg class="gm-icon gm-icon-dashboard"><use
-                                            xlink:href="/img/Version3/sprite_dash.svg#gm-icon-dashboard"></use></svg> -->
-                                            <i class="fa fa-dashboard gm-icon" aria-hidden="true" style="font-size: 18px;"></i>
-                                        </span>
-                            <b class="nav-text">Dashboard</b></a>
-                    </li>
-                    <!-- <li>
-                        <a class="navbar-link" href="/mining-allocation"><span class="fa"><svg
-                                        class="gm-icon gm-icon-mining-allocation"><use
-                                            xlink:href="/img/Version3/sprite_dash.svg#gm-icon-mining-allocation"></use></svg></span>
-                            <b class="nav-text">Mining Allocation</b></a>
-                    </li> -->
+
+       
+<div class="collapse navbar-collapse" id="main-menu">
+    
+    <div class="nav-user-info">
+        <h2>Welcome             </h2>
+        <span class="fa fa-user"></span>
+    </div>
+
+
+    <ul class="nav navbar-nav ">
+
+                                            <li class="start-mining">
+                    <div class="profile">                           
+                    <img src="profile/user-profile.png" alt="profile-picture" class="img-responsive" style="width: 60px; border-radius: 50%; margin-left: 95px; margin-bottom: 10px;">
+                    <p style="color: white; margin-right: 30px;">{{Auth::user()->username}}</p>
+                    <button class="btn btn-primary" style="font-size: 12px !important; border-radius: 0px !important; margin-left: -20px;"> <i class="fa fa-star" aria-hidden="true" style="color: black !important; background-color: white !important;"></i> {{Auth::user()->package}}</button>
+                    </div>
+                    <br>
+                </li>
+                <br><br><br><br><br>
+                
+
+                                            <li>
+                <a class="navbar-link" href="dashboard.html"><span class="fa">
+                     <!-- <svg class="gm-icon gm-icon-dashboard"><use
+                                    xlink:href="/img/Version3/sprite_dash.svg#gm-icon-dashboard"></use></svg> -->
+                                    <i class="fa fa-dashboard gm-icon" aria-hidden="true" style="font-size: 18px;"></i>
+                                </span>
+                    <b class="nav-text">Dashboard</b></a>
+            </li>
+            <!-- <li>
+                <a class="navbar-link" href="/mining-allocation"><span class="fa"><svg
+                                class="gm-icon gm-icon-mining-allocation"><use
+                                    xlink:href="/img/Version3/sprite_dash.svg#gm-icon-mining-allocation"></use></svg></span>
+                    <b class="nav-text">Mining Allocation</b></a>
+            </li> -->
+            <li>
+                <a class="navbar-link" href="deposit.html"><span class="fa">
+<!-- <svg class="gm-icon gm-icon-my-output"><use
+                                    xlink:href="/img/Version3/sprite_dash.svg#gm-icon-my-output"></use></svg> -->
+                                    <i class="fa fa-money gm-icon" aria-hidden="true" style="font-size: 18px;"></i>
+                                </span>
+                    <b class="nav-text">Deposit</b></a>
+            </li>
+            <li>
+                <a class="navbar-link" href="withdrawal.html"><span class="fa">
+<!-- <svg class="gm-icon gm-icon-my-output"><use
+                                    xlink:href="/img/Version3/sprite_dash.svg#gm-icon-my-output"></use></svg> -->
+                                    <i class="fa fa-skyatlas gm-icon" aria-hidden="true" style="font-size: 18px;"></i>
+                                </span>
+                    <b class="nav-text">Withdrawal</b></a>
+            </li>
+            <li>
+                <a class="navbar-link" href="activity.html"><span class="fa">
+                     <!-- <svg class="gm-icon gm-icon-my-output"><use
+                                    xlink:href="/img/Version3/sprite_dash.svg#gm-icon-my-output"></use></svg> -->
+                                    <i class="fa fa-download gm-icon" aria-hidden="true" style="font-size: 18px;"></i>
+                                </span>
+                    <b class="nav-text">Activity</b></a>
+            </li>
+             <!-- <li>
+                <a class="navbar-link" href="/referral"><span class="fa fa-th-list"></span> <b
+                            class="nav-text">Referral rewards</b></a>
+            </li> -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa">
+                     <!-- <svg
+                                class="gm-icon gm-icon-my-account"><use
+                                    xlink:href="/img/Version3/sprite_dash.svg#gm-icon-my-account"></use></svg> -->
+                                    <i class="fa fa-user gm-icon" aria-hidden="true" style="font-size: 18px;"></i>
+                                </span>
+                    <b class="nav-text">My Account</b> <b class="caret"></b></a>
+                <ul class="dropdown-menu" style="background-color: transparent !important; position: relative !important;">
                     <li class="active">
-                        <a class="navbar-link" href="deposit.html"><span class="fa">
-                            <!-- <svg class="gm-icon gm-icon-my-output"><use
-                                            xlink:href="/img/Version3/sprite_dash.svg#gm-icon-my-output"></use></svg> -->
-                                            <i class="fa fa-money gm-icon" aria-hidden="true" style="font-size: 18px;"></i>
-                                        </span>
-                            <b class="nav-text">Deposit</b></a>
-                    </li>
-                    <li>
-                        <a class="navbar-link" href="withdrawal.html"><span class="fa">
-                            <!-- <svg class="gm-icon gm-icon-my-output"><use
-                                            xlink:href="/img/Version3/sprite_dash.svg#gm-icon-my-output"></use></svg> -->
-                                            <i class="fa fa-skyatlas gm-icon" aria-hidden="true" style="font-size: 18px;"></i>
-                                        </span>
-                            <b class="nav-text">Withdrawal</b></a>
-                    </li>
-                    <li>
-                        <a class="navbar-link" href="activity.html"><span class="fa">
-                            <!-- <svg class="gm-icon gm-icon-my-output"><use
-                                            xlink:href="/img/Version3/sprite_dash.svg#gm-icon-my-output"></use></svg> -->
-                                            <i class="fa fa-download gm-icon" aria-hidden="true" style="font-size: 18px;"></i>
-                                        </span>
-                            <b class="nav-text">Activity</b></a>
-                    </li>
-                     <!-- <li>
-                        <a class="navbar-link" href="/referral"><span class="fa fa-th-list"></span> <b
-                                    class="nav-text">Referral rewards</b></a>
-                    </li> -->
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa">
-                            <!-- <svg
-                                        class="gm-icon gm-icon-my-account"><use
-                                            xlink:href="/img/Version3/sprite_dash.svg#gm-icon-my-account"></use></svg> -->
-                                            <i class="fa fa-user gm-icon" aria-hidden="true" style="font-size: 18px;"></i>
-                                        </span>
-                            <b class="nav-text">My Account</b> <b class="caret"></b></a>
-                        <ul class="dropdown-menu" style="background-color: transparent !important; position: relative !important;">
-                            <li>
-                                <a href="account-settings.html"><span class="fa fa-cogs"></span> <b
-                                            class="nav-text">Settings</b></a>
-                            </li>
-                            <!-- <li>
-                                <a href="affiliate.html"><span class="fa fa-star"></span> <b
-                                            class="nav-text">Affiliate</b></a>
-                            </li> -->
-                            <li>
-                                <a href="contact-support.html"><span class="fa fa-comments"></span> <b
-                                            class="nav-text">Contact Customer Service</b></a>
-                            </li>
-                        </ul>
+                        <a href="account-settings.html"><span class="fa fa-cogs"></span> <b
+                                    class="nav-text">Settings</b></a>
                     </li>
                     <!-- <li>
-                        <a class="navbar-link" href="/my-orders"><span class="fa"><svg class="gm-icon gm-icon-my-orders"><use
-                                            xlink:href="/img/Version3/sprite_dash.svg#gm-icon-my-orders"></use></svg></span>
-                            <b class="nav-text">My orders</b></a>
-                    </li>
-                    <li>
-                        <a class="navbar-link" href="/upgrade-hashpower/universal"><span class="fa"><svg
-                                        class="gm-icon gm-icon-hashpower"><use
-                                            xlink:href="/img/Version3/sprite_dash.svg#gm-icon-hashpower"></use></svg></span>
-                            <b class="nav-text">Buy Hashpower</b></a>
+                        <a href="affiliate.html"><span class="fa fa-star"></span> <b
+                                    class="nav-text">Affiliate</b></a>
                     </li> -->
-            </ul>
-                                                                                                                                                                                                    <li class="emptys">&nbsp;</li>                                    </ul>
-        </div>
-    </nav>
-
-    <style>
-        @media (max-width: 800px) {
-             .profile {
-               margin-bottom: -50px !important;
-            }
-
-            .profile img {
-                margin-left: 50px !important;
-            }
-
-           .profile p {
-               margin-left: 40px !important;
-           }
-
-           .profile .btn-primary {
-               margin-left: 30px !important;
-           }
-           .start-mining {
-               margin-bottom: -50px !important;
-           }
-           .navbar-nav {
-               max-height: 400px !important;
-               overflow: auto !important;
-           }
-        }
-    </style>
-    
-    <script src="js/vue-2.5.16.min.js"></script>
-    <script src="js/axios-0.18.0.min.js"></script>
-    <script src="js/moment.min.js"></script>
-    <script src="js/marked.js"></script>
-    <script src="js/js.cookie.min.js"></script>
-    <script src="js/notifications.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function () {
-      $('.message-toggle').on('click', function (e) {
-        $('.side-notification-overlay').toggleClass('opened');
-        $('.side-notification').toggleClass('opened');
-        $('body').toggleClass('overflow-hidden');
-        e.preventDefault();
-      });
-    });
-    </script></header> 
-
-
-
-<div id="main-container">
-    <div class="container">
-        <div class="deposit" style="padding: 20px;">
-        <h4>DEPOSIT</h4>
-        <p>In order to make a Deposit into your mining account we advise you read through the following steps:</p>
-        </div>
-
-        <div class="steps text-center" data-aos="flip-up" data-aos-duration="2000">
-           <h3><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> STEP 1 </h3>
-           <p>Tap to request and copy the address of whatever coin you want to mine.</p>
-        </div>
-
-        <div id="current-mining" class="mma mma-bc1">
-           <div class="row">
-               <div class="col-sm-3">
-                   <div class="logo-background text-center" data-aos="fade-up" data-aos-duration="1400">
-                        <img src="img/bitcoin-logo (1).png" alt="bitcoin-logo" class="img-responsive image" style="width: 70px;">
-                        <p style="color: white;">BITCOIN</p>
-                        <div class="middle">
-                            <button type="button" class="btn btn-request" data-toggle="modal" data-target="#exampleModal">Request</button>
-                        </div>
-                   </div>
-               </div>
-               <div class="col-sm-3">
-                <div class="logo-background text-center" data-aos="fade-up-left" data-aos-duration="1600">
-                    <img src="img/ethereum-trans.jpg" alt="bitcoin-logo" class="img-responsive" style="width: 70px;">
-                    <p style="color: white;">ETHEREUM</p>
-                    <div class="middle">
-                        <button type="button" class="btn btn-request" data-toggle="modal" data-target="#exampleModal">Request</button>
-                    </div>
-               </div>
-               </div>
-               <div class="col-sm-3">
-                <div class="logo-background text-center closed-coins" data-aos="fade-down-right" data-aos-duration="1800">
-                    <label class="btn btn-closed">Closed !</label>
-                    <img src="img/stellar-logo.png" alt="bitcoin-logo" class="img-responsive" style="width: 70px;">
-                    <p style="color: white;">STELLAR</p>
-                    <!-- <div class="middle">
-                        <button type="button" class="btn btn-request" data-toggle="modal" data-target="#exampleModal-2">Request</button>
-                    </div> -->
-               </div>
-               </div>
-               <div class="col-sm-3">
-                <div class="logo-background text-center closed-coins" data-aos="zoom-out-down" data-aos-duration="2000">
-                    <label class="btn btn-closed">Closed !</label>
-                    <img src="img/dogecoin-2.png" alt="bitcoin-logo" class="img-responsive" style="width: 70px;">
-                    <p style="color: white;">DOGECOIN</p>
-                    <!-- <div class="middle">
-                        <button type="button" class="btn btn-request" data-toggle="modal" data-target="#exampleModal-2">Request</button>
-                    </div> -->
-               </div>
-               </div>
-               <div class="col-sm-3">
-                <div class="logo-background text-center closed-coins" data-aos="zoom-in-right" data-aos-duration="2200">
-                    <label class="btn btn-closed">Closed !</label>
-                    <img src="img/litecoin.png" alt="bitcoin-logo" class="img-responsive" style="width: 70px;">
-                    <p style="color: white;">LITECOIN</p>
-                    <!-- <div class="middle">
-                        <button type="button" class="btn btn-request" data-toggle="modal" data-target="#exampleModal-2">Request</button>
-                    </div> -->
-               </div>
-               </div>
-           </div>
-        </div>
-
-        <div class="row">
-        <div class="col-sm-5">
-        <div class="steps text-center"  data-aos="flip-left" data-aos-duration="2000">
-            <h3><i class="fa fa-link" aria-hidden="true"></i> STEP 2 </h3>
-            <p>follow the link below in- order to purchase the available coin into your mining account: <a href="https://buy.coingate.com">BUY.COINGATE.COM</a> <a href="https://bitcoin.com">BITCOIN.COM</a></p>
-         </div>
-         </div>
-
-         <div class="col-sm-5">
-            <div class="steps text-center"  data-aos="flip-right" data-aos-duration="2000">
-                <h3><i class="fa fa-arrow-up" aria-hidden="true"></i> STEP 3 </h3>
-                <p>Input your Copied wallet address copied (STEP 1) In either of the platform above in (STEP 2) and also the amount according to the selected package.</p>
-             </div>
-         </div>
-
-         <div class="col-sm-5 offset-sm-2">
-             <div class="steps text-center"  data-aos="flip-down" data-aos-duration="2000">
-                <h3><i class="fa fa-money" aria-hidden="true"></i> STEP 4 </h3>
-                <p>Make payment through your Card/ Bank Transfer to complete your purchase. </p> 
-             </div>
-         </div>
-
-         </div>
-
-         <br>
-         <div class="container">
-             <h4><b>Note</b>: Purchase usually takes 10-60mins to reflect into your mining account.</h4>
-             <br><br>
-             <div class="alternative">
-                 <h4>ALTERNATIVE PAYMENT INCLUDES:</h4>
-                 <!-- <br>
-                 <ul>
-                     <li><b>CASHAPP(USA ONLY & BTC )</b>: Purchase your investment  from your CashApp according to the selected package. Then send directly into your mining account using the BTC ADDRESS above.
+                    <li>
+                        <a href="contact-support.html"><span class="fa fa-comments"></span> <b
+                                    class="nav-text">Contact Customer Service</b></a>
                     </li>
-                     <li><b>PAYPAL: Tap to request payment details. Payment details would be sent via Email.</b></li>
-                 </ul> -->
-             </div>
-         </div>
-
-         <div id="current-mining" class="mma mma-bc1">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="logo-background text-center" data-aos="fade-down" data-aos-duration="1800">
-                         <img src="img/paypal-logo.png" alt="bitcoin-logo" class="img-responsive image" id="paypal" style="width: 150px;">
-                         <p style="color: white; margin-top: -20px !important; font-size: 17px; padding: 20px;" class="pay-cashapp">Tap to request payment details. Payment details would be sent via Email.</p>
-                         <div class="middle">
-                             <button type="button" class="btn btn-request" onclick="alert()">Request</button>
-                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                 <div class="logo-background text-center closed-coins" id="back-pay"data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                     <!-- <img src="img/dollar.png" alt="bitcoin-logo" class="img-responsive" style="width: 70px;"> -->
-                     <p style="color: white; font-size: 25px; padding-top: 40px;"><b><i class="fa fa-usd" aria-hidden="true"></i> Cash App</b></p>
-                     <p style="color: white; font-size: 16px; padding: 15px;" class="pay-cashapp"><b>CASHAPP(USA ONLY & BTC )</b>: Purchase your investment  from your CashApp according to the selected package. Then send directly into your mining account using the BTC ADDRESS above.</p>
-                     
-                </div>
-                </div>
-            </div>
-        </div>
-
-        <script src="js/sweet-alert.js"></script>
-        <script>
-            function alert() {
-                Swal.fire({
-                icon: 'info',
-                title: 'Please wait',
-                text: 'Payment details will be sent via email shortly.',
-  
-            });
-            }
-        </script>
-
-        <style>
-            @media (max-width: 480px) {
-                .pay-cashapp {
-                    font-size: 14px !important;
-                    padding-bottom: 30px !important;
-                }
-
-                #back-pay {
-                    height: 300px !important;
-                }
-
-                #paypal {
-                    margin-left: 0px !important;
-                }
-            }
-        </style>
-
-    </div>
-</div>
-
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="exampleModalLabel">Wallet Address</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form action="">
-                 <div class="form-group">
-                    <label for="myInput">Your Wallet Address (Please Copy)</label>
-                    <div class="row">
-                     <div class="col-md-8" style="padding-left: 30px !important;">
-                    <input type="text" class="form-control" id="myInput" name="id" value="39">
-                </div>
-                <div class="col-md-3 text-center copy-id">
-                    <button type="button" class="btn btn-success butid" onclick="copied()">
-                         Copy Address</button>
-                </div>
-
-                <style>
-                    .butid {
-                        border: 1px solid black !important;
-                    }
-
-                    @media (max-width: 800px) {
-                        .copy-id {
-                            padding-top: 20px;
-                        }
-                    }
-                </style>
-                </div>
-                 </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-
-
- 
-
-  <script>
-    function copied() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-//   alert("Copied id: " + copyText.value);
-Swal.fire({
-                icon: 'success',
-                title: 'Success',
-                text: "Copied address: " + copyText.value,
-  
-            });
-}
-    </script>
-
-
-
-  <!-- <script>
-      $('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
-  </script> -->
-
-  <script src="../bootstrap/js/jquery.min.js"></script>
-
-<script src="../bootstrap/js/bootstrap-3.3.7.min.js"></script>
-
-
- <div id="footer-container">
-    <footer class="container">
-      <div class="mma">
-        <p class="fpf">
-          <img src="../img/logo-black.png" alt="Cryptobitnet-logo" class="img-responsive" style="width: 60px;">
-  
-                          <p>Cryptobitnet Ltd., N/A 210 Midhraun 80 Garðabær Iceland</p>
-      </div>
-    </footer>
-  </div>
-
-  <div class="modal fade" id="ModalOutputTreshold" tabindex="-1" role="dialog" aria-labelledby="ModalOutputTresholdLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Default transaction threshold</h4>
-            </div>
-            <div class="modal-body">
-                <ul>
-                    <li><b>Cryptocurrency</b>
-                        <span>Minimum transaction threshold</span></li>
-                    <li><b>BTC</b> <span>0.0025 (250 000 satoshi)</span></li>
-                    <li><b>BCH</b> <span>0.0015</span></li>
-                    <li><b>BTG</b> <span>0.01</span></li>
-                                                            <li><b>DOGE</b> <span>50</span></li>
-                    <li><b>DASH</b> <span>0.001</span></li>
-                    <li><b>ETH</b> <span>0.04</span></li>
-                    <li><b>ETC</b> <span>0.15</span></li>
-                    <li><b>REP</b> <span>0.1</span></li>
-                    <li><b>LTC</b> <span>0.002</span></li>
-                                        <li><b>XMR</b> <span>0.4</span></li>
-                    <li><b>XMC</b> <span>4</span></li>
-                    <li><b>ZEC</b> <span>0.001</span></li>
-                                        <li><b>ETN</b> <span>100</span></li>
                 </ul>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
+            </li>
+
+            
+            <!-- <li>
+                <a class="navbar-link" href="/my-orders"><span class="fa"><svg class="gm-icon gm-icon-my-orders"><use
+                                    xlink:href="/img/Version3/sprite_dash.svg#gm-icon-my-orders"></use></svg></span>
+                    <b class="nav-text">My orders</b></a>
+            </li>
+            <li>
+                <a class="navbar-link" href="/upgrade-hashpower/universal"><span class="fa"><svg
+                                class="gm-icon gm-icon-hashpower"><use
+                                    xlink:href="/img/Version3/sprite_dash.svg#gm-icon-hashpower"></use></svg></span>
+                    <b class="nav-text">Buy Hashpower</b></a>
+            </li> -->
+    </ul>
+                                                                                                                                                                                            <li class="emptys">&nbsp;</li>                                    </ul>
 </div>
+</nav>
+
+        @yield('content')
 
 
 
 
-
-
-
-<div id="mpo"></div>
-<div id="the-loader">
-    <div class="loader-content">
-        <p>Your request is being processed. Please wait.</p>
-                <div class="progress-line"></div>
-    </div>
-</div>
-
-
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.hp ul a').click(function() {
-      var sel = $(this).attr('data-option');
-      if (sel == '-') {
-        $('.hp-val').val('');
-        $('.hp-holder').show();
-
-      } else {
-        $('.hp-val').val(sel);
-        $('.hp-holder').hide();
-      }
-    });
-
-    $('h5').popover();
-
-  });
-</script>
-
-<script type="text/javascript">
+        <script type="text/javascript">
 $(document).ready(function() {
   localStorage.removeItem('__GenesisJWT');
   localStorage.setItem('__GenesisJWT', "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjVmZGM5MDBiYWZhMjBlZDA0ZDhiNDU2NyIsImVtYWlsIjoib3JpenVkYXZpZGNoaWJ1ZXplQGdtYWlsLmNvbSIsImRvbWFpbiI6ImdlbmVzaXMtbWluaW5nLmNvbSJ9.-0-a4Xor_1fz3rzmBXNqrdlPQYzQ17-1FjIkBToPesE");
 });
 </script>
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 862121629;
-var google_custom_params = window.google_tag_params;
-var google_remarketing_only = true;
-var google_conversion_format = 3;
-/* ]]> */
-</script>
+ 
 
-
-<!-- <link rel="stylesheet" href="../aos/css/aos.css">
-  <script src="../aos/js/aos.js"></script>
-  <script>
-    AOS.init();
-  </script> -->
-
- <style>
-
-     .steps {
-         background-color: #e69500;
-         color: white !important;
-         width: 400px;
-         float: center;
-         margin-left: 60px;
-         padding: 15px;
-         margin-bottom: 20px;
-     }
-
-     .steps h3 {
-         color: white !important;
-     }
-
-     .steps p {
-         color: white !important;
-         font-size: 17px;
-         margin-top: 10px;
-     }
-
-     .steps a {
-         color: white !important;
-     }
-
-     .steps a:hover {
-         color: black !important;
-     }
-
-     .logo-background {
-        background-color: #274c65;
-        height: 200px;
-        margin-bottom: 30px;
-        position: relative;
-     }
-     .logo-background img {
-         margin-left: 110px;
-         padding-top: 40px;
-     }
-
-
-     @media (max-width: 480px) {
-        .logo-background img {
-            margin-left: 90px !important;
-        } 
-     }
-
-     .logo-background p {
-         font-size: 18px;
-         padding-top: 10px;
-     }
-
-     
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.logo-background:hover {
-  background-color: rgba(0, 0, 0, 0.9) !important;
-}
-
-.closed-coins:hover {
-    background-color: #113a56 !important;
-}
-
-.logo-background:hover .middle {
-  opacity: 1;
-}
-
-.btn-closed {
-    color: white !important;
-    background-color: rgb(231, 24, 24) !important;
-    border-radius: 0px !important;
-    height: 30px !important;
-    font-size: 14px !important;
-    float: left !important;
-    width: 80px !important;
-}
-
-.btn-request {
-    color: white !important;
-    border-radius: 0px !important;
-    background-color: #ffab32 !important;
-    font-size: 17px !important;
-}
-
-@media (max-width: 750px) {
-    .btn-request {
-        margin-top: -10px !important;
-    }
-    .btn-closed {
-        margin-top: -0px !important;
-    }
-}
-
-@media (max-width: 479px) {
-    .steps {
-        width: 300px !important;
-        margin-left : 0px !important;
-    }
-}
-
-.alternative ul {
-    list-style-type: square !important;
-}
-
-.alternative ul li {
-    margin-bottom: 10px;
-}
- </style>
-
-</div>
 </body>
 </html>
+        

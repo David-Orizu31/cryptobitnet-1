@@ -509,7 +509,7 @@
                                     @else
                                   
                                     <li  class="nll"><a class="navbar-link nav-login"
-                                                                       href="/dashhboard"
+                                                                       href="/dashboard/overview"
                                                                         >Dashboard</a>
                                     </li>
                                     <li   class="nls"><a class="navbar-link nav-signup"  
