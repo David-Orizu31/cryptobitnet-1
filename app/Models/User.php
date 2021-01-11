@@ -22,6 +22,8 @@ class User extends \TCG\Voyager\Models\User
         'password',
         'package',
         'username',
+        'dob',
+        'wallet_address',
 
     ];
 

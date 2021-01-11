@@ -21,7 +21,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/dashboard/overview', [App\Http\Controllers\DashboardController::class, 'overview'])->name('overview');
 
 Route::get('/dashboard/setting', [App\Http\Controllers\DashboardController::class, 'settings'])->name('settings');
-
+Route::post('/othersettings', [App\Http\Controllers\DashboardController::class, 'othersettings'])->name('othersettings');
+Route::post('/passwordchange', [App\Http\Controllers\DashboardController::class, 'passwordchange'])->name('passwordchange');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

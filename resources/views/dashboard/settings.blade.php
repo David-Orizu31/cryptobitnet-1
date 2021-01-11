@@ -1,8 +1,7 @@
 @extends('dashboard.navbar')
  
 @section('content')
-    
-    
+
 
 
     <style>
@@ -54,6 +53,18 @@
 <div class="container-fluid">
 <div id="main-container">
     <div class="container">
+    @include('flash::message')
+    @error('password')
+                                    <span class="invalid-feedback text-danger" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+
+                                @error('password_confirmation')
+                                    <span class="invalid-feedback text-danger" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                     <div id="mma-flash" class="mma">
                 <div class="row">
                     
@@ -94,14 +105,16 @@
 
         <div class="tab-content" id="settings-tab-content">
             <div class="tab-pane fade in active" id="general">
-                <form action="/my-account" id="generalForm" method="post" accept-charset="utf-8">             <div class="col-sm-6"><div class="form-group required"><label for="UserEmail">Email</label><input name="data[User][email]" class="form-control" placeholder="Email" disabled="disabled" type="text" value="{{Auth::user()->email}} " id="UserEmail"/></div></div>
-                <div class="col-sm-6"><div class="form-group"><label for="UserBackupEmail">DoB</label><input name="day_of_birth" class="selectpicker form-control" data-size="13" id="UserDateOfBirthDay"  type="date" value="" id="UserBackupEmail"/></div></div>
-                <div class="col-sm-6"><div class="form-group"><label for="UserFirstName">Full Name</label><input name="name" class="form-control" placeholder="First Name" type="text" id="UserFirstName"/></div></div>
+                <form action="/othersettings" id="generalForm" method="post" accept-charset="utf-8">   
+                @csrf
+                <div class="col-sm-6"><div class="form-group required"><label for="UserEmail">Email</label><input name="email" class="form-control" placeholder="Email" disabled="disabled" type="text" value="{{Auth::user()->email}}" id="UserEmail"/></div></div>
+                <div class="col-sm-6"><div class="form-group"><label for="UserBackupEmail">DoB</label><input name="day_of_birth" class="selectpicker form-control" data-size="13" id="UserDateOfBirthDay"  type="date" value="{{Auth::user()->dob,  date('Y-m-d')}}" id="UserBackupEmail"/></div></div>
+                <div class="col-sm-6"><div class="form-group"><label for="UserFirstName">Full Name</label><input name="name" class="form-control" value="{{Auth::user()->name ?? 'Enter Full Name'}}" type="text" id="UserFirstName"/></div></div>
                 <div class="col-sm-6"></div>
                
-                <div class="col-sm-6"><div class="form-group"><label for="UserMobile">Mobile Phone</label><input name="mobile" class="form-control" placeholder="Mobile Phone" type="text" id="UserMobile"/></div></div>
+                <div class="col-sm-6"><div class="form-group"><label for="UserMobile">Mobile Phone</label><input name="mobile" class="form-control" value="{{Auth::user()->mobilenumber ?? 'Enter Phone Number'}}" type="text" id="UserMobile"/></div></div>
 
-                <div class="col-sm-6"><div class="form-group"><label for="wallet_address">Wallet Address</label><input name="wallet_address" class="form-control" placeholder="Wallet Address" type="text" id="wallet_address"/></div></div>
+                <div class="col-sm-6"><div class="form-group"><label for="wallet_address">Wallet Address</label><input name="wallet_address" class="form-control" value="{{Auth::user()->wallet_address ?? 'Enter Wallet Address'}}" type="text" id="wallet_address"/></div></div>
 
                 <div class="col-sm-6">
                     <div class="checkbox">
@@ -113,8 +126,24 @@
            
 
             <div class="tab-pane fade in" id="password">
-                <form action="/my-account" id="passwordForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/><input type="hidden" name="data[_Token][key]" value="0b343555e102e47e4bdc128f103d65964dc69a74" id="Token1993446366"/></div>                <div class="col-lg-5">
-                    <div class="form-group"><label for="UserChangePassword">Change Password</label><input name="data[User][change_password]" class="form-control" placeholder="Please enter your new password" type="password" id="UserChangePassword"/></div>                    <div class="form-group required"><label for="UserRepeatPassword">Repeat Password</label><input name="data[User][repeat_password]" class="form-control" placeholder="Confirm your new password" type="password" id="UserRepeatPassword" required="required"/></div>                </div>
+                <form action="/passwordchange" id="passwordForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/>
+                @csrf
+                </div>                <div class="col-lg-5">
+                    <div class="form-group"><label for="UserChangePassword">Change Password</label><input name="password" class="form-control  @error('password') is-invalid @enderror" placeholder="Please enter your new password" type="password" id="UserChangePassword"/>
+                    @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                
+                </div>                    <div class="form-group required"><label for="UserRepeatPassword">Repeat Password</label><input name="password_confirmation" class="form-control @error('password_confirmation') is-invalid @enderror" placeholder="Confirm your new password" type="password" id="UserRepeatPassword" required="required"/>
+            
+                @error('password_confirmation')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+            </div>                </div>
                 <div class="col-lg-7">
                     <p>Password must be at least 8 characters long.</p>
                 </div>
