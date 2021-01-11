@@ -412,7 +412,7 @@
                     <b class="nav-text">My Account</b> <b class="caret"></b></a>
                 <ul class="dropdown-menu" style="background-color: transparent !important; position: relative !important;">
                     <li class="active">
-                        <a href="account-settings.html"><span class="fa fa-cogs"></span> <b
+                        <a href="/dashboard/setting"><span class="fa fa-cogs"></span> <b
                                     class="nav-text">Settings</b></a>
                     </li>
                     <!-- <li>

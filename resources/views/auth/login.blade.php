@@ -478,11 +478,11 @@
                                 <ul itemscope itemtype="http://www.schema.org/SiteNavigationElement"
                                     class="nav navbar-nav navbar-right nav-log">
                                     <li itemprop="name" class="nll"><a class="navbar-link nav-login" itemprop="url"
-                                                                       href="login.html"
+                                                                       href="/login"
                                                                        title="Login">Login</a>
                                     </li>
                                     <li itemprop="name" class="nls"><a class="navbar-link nav-signup" itemprop="url"
-                                                                       href="sign-up.html"
+                                                                       href="/register"
                                                                        title="Sign Up">Sign Up</a>
                                     </li>
                                 </ul>
@@ -542,7 +542,7 @@
                     <form action="{{ route('login') }}" controller="users"  method="post"  >
 
                     @csrf
-                     
+
                         <div class="form-group required">
                             <input name="email" class="form-control @error('email') is-invalid @enderror" placeholder="E-mail" type="text" id="email"  value="{{ old('email') }}" required autocomplete="email" autofocus/>
                             @error('email')
@@ -670,7 +670,7 @@
                                                 </svg>
                                             </a>
                                         </li>
-                                 
+
                                         <li class="instagram-fs">
                                             <a href="https://www.instagram.com/CryptoBitNet_official" target="_blank"
                                                title="Instagram" rel="noreferrer">
@@ -680,7 +680,7 @@
                                                 </svg>
                                             </a>
                                         </li>
-                                     
+
                                     </ul>
                                 </div>
                             </div>
@@ -1061,4 +1061,4 @@
                       (new Image()) :
                       document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-168309-fgMmn';</script>
             </body>
-            </html>                                
+            </html>
