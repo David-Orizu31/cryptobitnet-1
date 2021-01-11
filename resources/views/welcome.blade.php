@@ -13,8 +13,8 @@
             </div>
             <div class="container">
                 <p class="first-p">
-                  <span>Join over 2.000.000 people with the world’s leading hashpower provider</span>
-                </p>
+                <span>Join over 10,000+ people with the world’s leading hashpower provider</span>
+                       </p>
                   <div itemscope itemtype="http://schema.org/Service">
                   <meta itemprop="provider" content="CryptoBitNet"/>
                         <meta itemprop="url" content='https://www.cryptobitnet.com/'/>
@@ -94,6 +94,7 @@
               </div>
 
 
+
               <div id="gm-home-9">
                 <div class="container">
                     <div class="row">
@@ -136,7 +137,7 @@
                                         <div class="tsti"><img src="img/testimonial-innosilicon.png" loading="lazy"
                                                                alt="bitcoin mining testimonial" title="bitcoin mining testimonial"/>
                                         </div>
-                                        <p>As the world first 28nm BTC and LTC chip maker, Innosilicon selects Genesis Ming as partner in cloud mining industry business for its integrity, excellent customer oriented service and great user interface design. CryptoBitNet is the best in class mining service that is supported by our technologically superior mining hardware. This unique synergy produces the best experience for those interested in mining and we look forward to having a long and prosperous relationship.</p>
+                                        <p>As the world first 28nm BTC and LTC chip maker, Innosilicon selects Cryptobitnet as partner in cloud mining industry business for its integrity, excellent customer oriented service and great user interface design. CryptoBitNet is the best in class mining service that is supported by our technologically superior mining hardware. This unique synergy produces the best experience for those interested in mining and we look forward to having a long and prosperous relationship.</p>
                                         <div class="tstm">
                                             <ul class="about-social"></ul>
                                             <strong>Alex</strong>, VP of business development<br/>
@@ -146,7 +147,7 @@
 
                                     <div class="item">
                                         <div class="tsti"><img src="img/testimonial-logo-2.png" loading="lazy" alt="jing wei minereu testimonial" title="jing wei minereu testimonial"/></div>
-                                        <p>MinerEU is very happy to have CryptoBitNet as our trustworthy partner.  We have already recommended Genesis-Mining to thousands of our existing customers who are happy and satisfied with their excellent services and products.</p>
+                                        <p>MinerEU is very happy to have CryptoBitNet as our trustworthy partner.  We have already recommended CryptoBitNet to thousands of our existing customers who are happy and satisfied with their excellent services and products.</p>
                                         <div class="tstm">
                                             <ul class="about-social"></ul>
                                             <strong>Jing Wei</strong>, CEO of MinerEU<br/>
@@ -164,66 +165,10 @@
                             </div>
 
 
-                            <a href="sign-up.html" class="btn btn-enigma-a" title="Cryptocurrency Mining - Pricing Plans & Offers | CryptoBitNet">See our packages</a>
+                            <a href="/register" class="btn btn-enigma-a" title="Cryptocurrency Mining - Pricing Plans & Offers | CryptoBitNet">See our packages</a>
                         </div>
 
-                        <!-- <div class="col-sm-6 col-md-6 col-lg-6 gm-home-testimonial-video">
-                            <h3>
-                                <svg class="gm-icon gm-icon-movie">
-                                    <use xlink:href="/img/Version3/sprite.svg#gm-icon-movie"></use>
-                                </svg>Our videos</h3>
 
-                            <div id="carousel-testimonials-videos" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                                                    <div class="video-container-wrapper" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
-                                            <meta itemprop="name" content="Building Enigma / The largest Ethereum Mining Facility" />
-                                            <meta itemprop="description" content="Ethereum is the first ‘world computer’. It is a decentralized network that can be used by anyone and is capable of running applications with no possibility of downtime, censorship or fraud. It’s native currency, Ether is one of the fastest growing cryptocurrencies next to Bitcoin." />
-                                            <meta itemprop="uploadDate" content="2016-05-09T04:11:00-05:00" />
-                                            <meta itemprop="duration" content="T01M45S" />
-                                            <meta itemprop="thumbnailURL" content="http://i.vimeocdn.com/video/569794358_640.jpg" />
-                                            <meta itemprop="embedURL" content="https://vimeo.com/165840295" />
-                                            <div class="video-container">
-                                                <iframe src="https://player.vimeo.com/video/165840295" width="500" height="375" frameborder="0" importance="low" loading="lazy" title="Building Enigma / The largest Ethereum Mining Facility" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-                                                                </div>
-
-                                    <div class="item">
-                                                                    <div class="video-container-wrapper" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
-                                            <meta itemprop="name" content="Inside CryptoBitNet Interview Sneak Peak" />
-                                            <meta itemprop="description" content="This is the Trailer for our Inside CryptoBitNet Interview with our CTO Stefan Schindler about building a Mining Farm in Iceland." />
-                                            <meta itemprop="uploadDate" content="2015-08-21T09:35:00-05:00" />
-                                            <meta itemprop="duration" content="T01M10S" />
-                                            <meta itemprop="thumbnailURL" content="http://i.vimeocdn.com/video/532098358_640.jpg" />
-                                            <meta itemprop="embedURL" content="https://vimeo.com/136927293" />
-                                            <div class="video-container">
-                                                <iframe src="https://player.vimeo.com/video/136927293" width="500" height="375" frameborder="0" importance="low" loading="lazy" title="Inside CryptoBitNet Interview Sneak Peak" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-                                                                </div>
-
-
-                                    <div class="item">
-                                                                    <div class="video-container-wrapper" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
-                                            <meta itemprop="name" content="CryptoBitNet X11 Cryptocurrency Farm Build Out" />
-                                            <meta itemprop="description" content="Here’s a short clip from one of our most recent X11 build outs. Major cryptocurrencies like Dash, Ethereum and many more are mined through the X11 algorithm. Our interface also is able to use BTC (AUTO) which will mine the most profitable X11 coins at the time and convert them to Bitcoin automatically." />
-                                            <meta itemprop="uploadDate" content="2015-11-10T10:55:00-05:00" />
-                                            <meta itemprop="duration" content="T01M38S" />
-                                            <meta itemprop="thumbnailURL" content="http://i.vimeocdn.com/video/543355533_640.jpg" />
-                                            <meta itemprop="embedURL" content="https://vimeo.com/145282999" />
-                                            <div class="video-container">
-                                                <iframe src="https://player.vimeo.com/video/145282999" width="500" height="375" frameborder="0" importance="low" loading="lazy" title="CryptoBitNet X11 Cryptocurrency Farm Build Out" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-                                                                </div>
-                                </div>
-                                <a class="left carousel-control" href="#carousel-testimonials-videos" role="button"
-                                   data-slide="prev" aria-label="Previous video"><svg class="gm-chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 28"><path d="M18.297 4.703L10 13l8.297 8.297a.99.99 0 0 1 0 1.406l-2.594 2.594a.99.99 0 0 1-1.406 0L2.703 13.703a.99.99 0 0 1 0-1.406L14.297.703a.99.99 0 0 1 1.406 0l2.594 2.594a.99.99 0 0 1 0 1.406z"/></svg></a>
-                                <a class="right carousel-control" href="#carousel-testimonials-videos" role="button"
-                                   data-slide="next" aria-label="Next video"><svg class="gm-chevron-right" viewBox="0 0 19 28"><path d="M17.297 13.703L5.703 25.297a.99.99 0 0 1-1.406 0l-2.594-2.594a.99.99 0 0 1 0-1.406L10 13 1.703 4.703a.99.99 0 0 1 0-1.406L4.297.703a.99.99 0 0 1 1.406 0l11.594 11.594a.99.99 0 0 1 0 1.406z"/></svg></a>
-                            </div>
-                        </div> -->
                         <div class="col-sm-6 col-md-6 col-lg-6 gm-home-twitter">
                             <h3><a href="#" target="_blank"
                                    title="Twitter feed" rel="noreferrer" style="color:#e69500;">
@@ -245,6 +190,9 @@
 
 
 
+
+
+
             <div id="gm-home-5">
 
                     <div class="row">
@@ -259,19 +207,7 @@
 
                                     <div class="col-md-8 col-md-push-3">
                                       <div class="identity-box">
-                                                      <!-- <div class="video-outer">
-                                            <div class="video-container-wrapper">
-                                                <div class="video-container" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
-                                                  <meta itemprop="name" content="Genesis Mining - Service Explainer" />
-                                                  <meta itemprop="description" content="Bitcoin, Ethereum and other cryptocurrencies are all over the place right now. But what a lot of people don’t know is that the actual backbone of the crypto industry is mining." />
-                                                  <meta itemprop="uploadDate" content="2018-12-19 08:52:25" />
-                                                  <meta itemprop="duration" content="PT01M48S" />
-                                                  <meta itemprop="thumbnailURL" content="http://i.vimeocdn.com/video/778144500_295x166.jpg" />
-                                                  <meta itemprop="embedURL" content="https://vimeo.com/332437497" />
-                                                  <iframe src="https://player.vimeo.com/video/332437497" width="640" height="360" frameborder="0" title="Genesis Mining - Service Explainer" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                                                </div>
-                                            </div>
-                                        </div> -->
+
 
                                         <div class="row">
                                           <div class="col-sm-12">
@@ -300,147 +236,7 @@
 
                                         <h2>History</h2>
 
-                                          <!-- <div class="item">
-                                            <div id="timeline">
 
-
-
-                                                 <div id="year-2013" class="year">
-                                                  <h3>2013</h3>
-                                                  <section>
-                                                    <ul>
-                                                      <li>Genesis Mining is founded!</li>
-                                                    </ul>
-                                                    <span class="timestamp">December</span>
-                                                  </section>
-                                                </div>
-
-                                                <div id="year-2014" class="year">
-                                                  <h3>2014</h3>
-                                                  <section>
-                                                    <ul>
-                                                      <li>Opening of our first facility in Iceland</li>
-                                                    </ul>
-                                                    <span class="timestamp">October</span>
-                                                  </section>
-                                                </div>
-
-                                                <div id="year-2015" class="year">
-                                                  <h3>2015</h3>
-                                                  <section>
-                                                    <ul>
-                                                      <li>We launch our first Bitcoin awareness campaign</li>
-                                                    </ul>
-                                                    <span class="timestamp">October</span>
-                                                  </section>
-                                                  <section>
-                                                    <ul>
-                                                      <li>Our customer base reaches 100.000</li>
-                                                    </ul>
-                                                    <span class="timestamp">December</span>
-                                                  </section>
-                                                </div>
-
-                                                <div id="year-2016" class="year">
-                                                  <h3>2016</h3>
-                                                  <section>
-                                                    <ul>
-                                                      <li>Our Jamie Dimon billboard goes famous</li>
-                                                    </ul>
-                                                    <span class="timestamp">January</span>
-                                                  </section>
-                                                  <section>
-                                                    <ul>
-                                                      <li>We sent a Bitcoin to space</li>
-                                                    </ul>
-                                                    <span class="timestamp">August</span>
-                                                  </section>
-                                                </div>
-
-                                                <div id="year-2017" class="year">
-                                                  <h3>2017</h3>
-                                                  <section>
-                                                    <ul>
-                                                      <li>CNN’s “Quest Means Business” visits us in Iceland</li>
-                                                    </ul>
-                                                    <span class="timestamp">October</span>
-                                                  </section>
-                                                  <section>
-                                                    <ul>
-                                                      <li>We reach the milestone of 2.000.000 customers!</li>
-                                                    </ul>
-                                                    <span class="timestamp">December</span>
-                                                  </section>
-                                                </div>
-
-                                                <div id="year-2018" class="year">
-                                                  <h3>2018</h3>
-                                                  <section>
-                                                    <ul>
-                                                      <li>Our first facility in Sweden starts running</li>
-                                                    </ul>
-                                                    <span class="timestamp">January</span>
-                                                  </section>
-                                                  <section>
-                                                    <ul>
-                                                      <li>Our staged protest “Bankers Against Bitcoin” goes viral</li>
-                                                    </ul>
-                                                    <span class="timestamp">May</span>
-                                                  </section>
-                                                   <section>
-                                                     <ul>
-                                                       <li>We win “Mining Initiative of the Year Award 2018” with our Radiant Technology</li>
-                                                     </ul>
-                                                     <span class="timestamp">November</span>
-                                                   </section>
-                                                </div>
-                                                <div id="year-2019" class="year">
-                                                  <h3>2019</h3>
-                                                  <section>
-                                                    <ul>
-                                                      <li>Cryptobitnet is founded</li>
-                                                    </ul>
-                                                    <span class="timestamp">December</span>
-                                                  </section>
-                                                </div>
-                                                <div id="year-2020" class="year">
-                                                  <h3>2020</h3>
-                                                  <section>
-                                                    <ul>
-                                                      <li>Our website was created</li>
-                                                    </ul>
-                                                    <span class="timestamp">January</span>
-                                                  </section>
-                                                  <section>
-                                                    <ul>
-                                                      <li>Our customer base reached 100,000</li>
-                                                    </ul>
-                                                    <span class="timestamp">January</span>
-                                                  </section>
-                                                  <section>
-                                                    <ul>
-                                                      <li>Our first facility In Iceland</li>
-                                                    </ul>
-                                                    <span class="timestamp">February</span>
-                                                  </section>
-                                                </div>
-                                            </div>
-                                          </div>
-
-
-                                          <ul class="timeline-years">
-                                             <li class="btn-year"><button>2013</button></li>
-                                            <li class="btn-year"><button>2014</button></li>
-                                            <li class="btn-year"><button>2015</button></li>
-                                            <li class="btn-year"><button>2016</button></li>
-                                            <li class="btn-year"><button>2017</button></li>
-                                            <li class="btn-year"><button>2018</button></li>
-                                            <li class="btn-year"><button>2019</button></li>
-                                            <li class="btn-year"><button>2020</button></li>
-                                          </ul>
-
-                                          <span class="history-prev gm-icon-chevron-up"></span>
-                                          <span class="history-next gm-icon-chevron-down"></span> -->
 
                                           <div class="panel-group" id="accordion" style="margin-top: 100px !important;">
                                             <div class="panel panel-default">
@@ -457,7 +253,7 @@
 
                                                   </section>
                                                   <section>
-                                                      <p style="font-size: 12px !important;">We reach the milestone of 2.000.000 customers!<br><span class="timestamp"><b>December</b></span></p>
+                                                      <p style="font-size: 12px !important;">We reach the milestone of 10,000 customers!<br><span class="timestamp"><b>December</b></span></p>
 
                                                   </section>
                                                 </div>
@@ -547,7 +343,7 @@
                                       <div class="col-xs-6 col-xs-offset-3 col-sm-12 col-sm-offset-0">
                                         <div>
                                           <span class="reveal"><svg id="gm-icon-servicing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 253.3 163.1"><style>.gm-icon-servicing-st0{fill:#fff;stroke:#fcba63;stroke-width:2}.gm-icon-servicing-st1{fill:#e8eef1}.gm-icon-servicing-st2{fill:#fff}.gm-icon-servicing-st3{fill:#9fd3f2;stroke:#faa934;stroke-width:2;stroke-miterlimit:10}.gm-icon-servicing-st4{fill:#8bc9ed}.gm-icon-servicing-st5{fill:#fbb147}.gm-icon-servicing-st6{fill:#faa934}.gm-icon-servicing-st7{fill:#104470}.gm-icon-servicing-st8{fill:none;stroke:#8bc9ed;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10}.gm-icon-servicing-st9{fill:#094b7c}.gm-icon-servicing-st10{fill:none;stroke:#8bc9ed;stroke-width:2;stroke-miterlimit:10}.gm-icon-servicing-st11{opacity:.6;fill:#9bbfd0;enable-background:new}</style><symbol id="World" viewBox="-37.6 -37.7 75.3 75.5"><path class="gm-icon-servicing-st0" d="M-28.4 0h-8.2c0 5.3 1.2 10.6 3.4 15.4 2.3-.2 4.6-.4 7-.6C-27.7 10-28.4 5-28.4 0zM-26.2 14.9c-2.4.2-4.7.4-7 .6 2.5 5.5 6.4 10.2 11.2 13.8 1.1-.2 2.1-.3 3.2-.4-3.4-4.2-5.9-8.9-7.4-14zM-12.8-34.4c-3.3 1.2-6.4 2.9-9.2 5.1 1.1.1 2.1.3 3.2.4 1.8-2.1 3.8-3.9 6-5.5z"/><path class="gm-icon-servicing-st0" d="M-18.8 28.8c-1.1.1-2.2.3-3.2.4 2.8 2.1 5.9 3.8 9.2 5.1-2.2-1.5-4.2-3.4-6-5.5zM-26.2-14.9c-2.4-.2-4.7-.4-7-.6-2.3 4.8-3.4 10.1-3.4 15.4h8.2c0-5 .7-10 2.2-14.8z"/><path class="gm-icon-servicing-st0" d="M-18.8-28.9c-1.1-.1-2.2-.3-3.2-.4-4.8 3.6-8.7 8.4-11.2 13.8 2.3.2 4.6.4 7 .6 1.5-5.1 4-9.9 7.4-14zM26.2-14.9c2.4-.2 4.7-.4 7-.6C30.7-21 26.8-25.7 22-29.3c-1.1.1-2.1.3-3.2.4 3.4 4.1 5.9 8.9 7.4 14zM12.8 34.3c3.3-1.2 6.4-2.9 9.2-5.1-1.1-.2-2.1-.3-3.2-.4-1.8 2.1-3.8 4-6 5.5z"/><path class="gm-icon-servicing-st0" d="M18.8 28.8c1.1.1 2.2.3 3.2.4 4.8-3.6 8.7-8.4 11.2-13.8-2.3-.2-4.6-.4-7-.6-1.5 5.2-4 9.9-7.4 14z"/><path class="gm-icon-servicing-st0" d="M28.4 0c0 5-.7 10.1-2.2 14.9 2.4.2 4.7.4 7 .6 2.3-4.8 3.4-10.1 3.4-15.5h-8.2zM28.4 0h8.2c0-5.3-1.2-10.6-3.4-15.4-2.3.2-4.6.4-7 .6 1.5 4.7 2.2 9.7 2.2 14.8zM18.8-28.9c1.1-.1 2.2-.3 3.2-.4-2.8-2.1-5.9-3.8-9.2-5.1 2.2 1.6 4.2 3.4 6 5.5zM4.9-36.3c2.7.4 5.3 1 7.8 2M-12.8-34.4c2.5-.9 5.2-1.6 7.8-2M12.8 34.3c-2.5 1-5.2 1.6-7.8 2M-4.9 36.3c-2.7-.4-5.3-1-7.8-2M-15 0h-13.4c0 5 .7 10.1 2.2 14.9 4-.3 8.1-.5 12.3-.7C-14.7 9.5-15 4.7-15 0z"/><path class="gm-icon-servicing-st0" d="M-26.2 14.9c1.5 5.1 4.1 9.9 7.5 14 2.8-.3 5.6-.6 8.5-.8-1.8-4.4-3-9.1-3.7-13.8-4.3.1-8.3.3-12.3.6zM14 14.3c4.2.2 8.3.4 12.3.7 1.5-4.8 2.2-9.8 2.2-14.9H15c0 4.7-.3 9.4-1 14.2zM-18.8-28.9c2.8.3 5.6.6 8.5.8 1.2-3.1 3-5.9 5.3-8.2-2.7.4-5.3 1-7.8 2-2.2 1.5-4.2 3.3-6 5.4zM26.2-14.9c-1.5-5.1-4.1-9.9-7.4-14-2.8.3-5.6.6-8.5.8 1.8 4.5 3 9.1 3.7 13.9 4.1-.2 8.2-.4 12.2-.7zM-14-14.2c-4.2-.1-8.3-.4-12.3-.6C-27.8-10-28.5-5-28.5.1H-15c0-4.9.3-9.6 1-14.3z"/><path class="gm-icon-servicing-st0" d="M-10.3-28.1c-2.9-.2-5.8-.4-8.5-.8-3.4 4.1-5.9 8.9-7.4 14 4 .3 8.1.5 12.3.6.6-4.7 1.9-9.3 3.6-13.8zM10.3 28c2.9.2 5.8.4 8.5.8 3.4-4.1 5.9-8.9 7.4-14-4-.3-8.1-.5-12.3-.7-.6 4.8-1.9 9.5-3.6 13.9zM10.3-28.1c2.9-.2 5.8-.4 8.5-.8-1.7-2.1-3.8-3.9-6-5.5-2.5-.9-5.2-1.6-7.8-2 2.3 2.4 4.1 5.2 5.3 8.3zM-10.3 28c-2.9.2-5.8.4-8.5.8 1.7 2.1 3.8 3.9 6 5.5 2.5 1 5.2 1.6 7.8 2-2.3-2.3-4.1-5.1-5.3-8.3zM14-14.2c.7 4.7 1 9.4 1 14.2h13.4c0-5-.7-10.1-2.2-14.9-4 .3-8.1.5-12.2.7z"/><path class="gm-icon-servicing-st0" d="M18.8 28.8c-2.8-.3-5.6-.6-8.5-.8-1.2 3.1-3 5.9-5.3 8.2 2.7-.4 5.3-1 7.8-2 2.2-1.5 4.2-3.3 6-5.4zM-4.9-36.3c1.6-.2 3.3-.3 4.9-.3M0-36.7c1.7 0 3.3.1 4.9.3M0 36.6c-1.7 0-3.3-.1-4.9-.3M4.9 36.3c-1.6.2-3.3.3-4.9.3M-15 0c0 4.8.3 9.6 1.1 14.3 4.5-.2 9.1-.3 13.9-.3V0h-15zM0 13.9c4.8 0 9.4.1 14 .3.7-4.7 1-9.5 1-14.2H0v13.9zM0 0h15c0-4.8-.3-9.5-1-14.2-4.6.1-9.2.2-14 .2V0z"/><path class="gm-icon-servicing-st0" d="M0 13.9v13.8c3.5 0 6.9.1 10.3.3 1.8-4.4 3-9.1 3.7-13.8-4.6-.2-9.2-.3-14-.3zM0-14c-4.8 0-9.4-.1-14-.3-.7 4.7-1.1 9.5-1.1 14.2h15L0-14zM0-14c4.8 0 9.4-.1 14-.3-.7-4.7-1.9-9.4-3.7-13.9-3.4.3-6.8.4-10.3.4V-14z"/><path class="gm-icon-servicing-st0" d="M0 27.7v8.9c1.7 0 3.3-.1 4.9-.3 2.3-2.3 4.2-5.1 5.3-8.2-3.3-.3-6.7-.4-10.2-.4zM0 13.9c-4.8 0-9.4.1-14 .3.7 4.7 1.9 9.4 3.7 13.8 3.3-.2 6.8-.3 10.3-.3V13.9z"/><path class="gm-icon-servicing-st0" d="M-10.3 28c1.2 3.1 3 5.9 5.3 8.2 1.6.2 3.3.3 4.9.3v-8.9c-3.4.1-6.8.2-10.2.4zM0-14v-13.8c-3.5 0-6.9-.1-10.2-.3-1.8 4.5-3 9.1-3.7 13.9 4.5.1 9.1.2 13.9.2z"/><path class="gm-icon-servicing-st0" d="M0-27.7v-8.9c-1.7 0-3.3.1-4.9.3-2.3 2.3-4.2 5.1-5.3 8.2 3.3.2 6.7.3 10.2.4zM10.3-28.1c-1.2-3.1-3-5.9-5.3-8.2-1.6-.2-3.3-.3-4.9-.3v8.9c3.4 0 6.8-.2 10.2-.4z"/></symbol><g id="Layer_22"><ellipse class="gm-icon-servicing-st1" cx="128.2" cy="93.9" rx="70.1" ry="67.4"/><path class="gm-icon-servicing-st1" d="M78.1 120.1H35c-4.7 0-8.5-3.8-8.5-8.5v-6.1c0-4.7 3.8-8.5 8.5-8.5h43.1c4.7 0 8.5 3.8 8.5 8.5v6.1c0 4.7-3.8 8.5-8.5 8.5zM85.6 93.9H44.1c-4.7 0-8.5-3.8-8.5-8.5v-6.1c0-4.7 3.8-8.5 8.5-8.5h41.6c4.7 0 8.5 3.8 8.5 8.5v6.1c-.1 4.7-3.9 8.5-8.6 8.5z"/><path class="gm-icon-servicing-st2" d="M93.1 137.7H45c-4.7 0-8.5-3.8-8.5-8.5v-6.1c0-4.7 3.8-8.5 8.5-8.5h48.1c4.7 0 8.5 3.8 8.5 8.5v6.1c0 4.7-3.8 8.5-8.5 8.5zM69.1 70.8H21c-4.7 0-8.5-3.8-8.5-8.5v-6.1c0-4.7 3.8-8.5 8.5-8.5h48.1c4.7 0 8.5 3.8 8.5 8.5v6.1c0 4.7-3.8 8.5-8.5 8.5z"/><path class="gm-icon-servicing-st1" d="M168.7 47.7h47.1c4.7 0 8.5 3.8 8.5 8.5v6.1c0 4.7-3.8 8.5-8.5 8.5h-47.1c-4.7 0-8.5-3.8-8.5-8.5v-6.1c0-4.7 3.8-8.5 8.5-8.5zM159.7 93.9h43.1c4.7 0 8.5 3.8 8.5 8.5v6.1c0 4.7-3.8 8.5-8.5 8.5h-43.1c-4.7 0-8.5-3.8-8.5-8.5v-6.1c0-4.7 3.8-8.5 8.5-8.5z"/><path class="gm-icon-servicing-st2" d="M184.7 70.8h39.6c4.7 0 8.5 3.8 8.5 8.5v6.1c0 4.7-3.8 8.5-8.5 8.5h-39.6c-4.7 0-8.5-3.8-8.5-8.5v-6.1c0-4.7 3.8-8.5 8.5-8.5z"/><path class="gm-icon-servicing-st1" d="M244.8 117h-15c-4.7 0-8.5-3.8-8.5-8.5v-6.1c0-4.7 3.8-8.5 8.5-8.5h15c4.7 0 8.5 3.8 8.5 8.5v6.1c0 4.7-3.8 8.5-8.5 8.5zM16 70.8h-4C5.5 70.7.2 75.9 0 82.4.2 88.9 5.5 94 12 93.9h4c6.5.1 11.9-5.1 12-11.6-.1-6.4-5.5-11.6-12-11.5z"/><path class="gm-icon-servicing-st2" d="M150.2 44.7h19c4.7 0 8.5 3.8 8.5 8.5v6.1c0 4.7-3.8 8.5-8.5 8.5h-19c-4.7 0-8.5-3.8-8.5-8.5v-6.1c0-4.7 3.8-8.5 8.5-8.5zM126.6 68.8h19c4.7 0 8.5 3.8 8.5 8.5v6.1c0 4.7-3.8 8.5-8.5 8.5h-19c-4.7 0-8.5-3.8-8.5-8.5v-6.1c0-4.7 3.8-8.5 8.5-8.5zM158.7 117h40.6c4.7 0 8.5 3.8 8.5 8.5v6.1c0 4.7-3.8 8.5-8.5 8.5h-40.6c-4.7 0-8.5-3.8-8.5-8.5v-6.1c0-4.7 3.8-8.5 8.5-8.5z"/><ellipse class="gm-icon-servicing-st3" cx="237.9" cy="117.5" rx="2.5" ry="2.4"/><path class="gm-icon-servicing-st4" d="M178.3 31l1.2 3.8 3.9 1.2-3.9 1.1-1.2 3.8-1.2-3.8-4-1.1 4-1.2z"/><path class="gm-icon-servicing-st5" d="M122.2 153.2l1.2 3.8 4 1.1-4 1.2-1.2 3.8-1.2-3.8-3.9-1.2 3.9-1.1z"/><path class="gm-icon-servicing-st6" d="M197.3 82l1.2 3.8 4 1.1-4 1.2-1.2 3.8-1.2-3.8-3.9-1.2 3.9-1.1z"/><path class="gm-icon-servicing-st7" d="M189.1 120c-.6 0-1-.4-1-1v-3.8c0-.6.4-1 1-1s1 .4 1 1v3.8c0 .6-.5 1-1 1zM189.1 131.5c-.6 0-1-.4-1-1v-3.8c0-.6.4-1 1-1s1 .4 1 1v3.8c0 .5-.5 1-1 1zM197.1 123.8h-4c-.5.1-1.1-.2-1.2-.7-.1-.5.2-1.1.7-1.2h4.5c.5-.1 1.1.2 1.2.7.1.5-.2 1.1-.7 1.2h-.5zM185.1 123.8h-4c-.5.1-1.1-.2-1.2-.7-.1-.5.2-1.1.7-1.2h4.5c.5-.1 1.1.2 1.2.7.1.5-.2 1.1-.7 1.2h-.5z"/><ellipse class="gm-icon-servicing-st7" cx="189.1" cy="122.8" rx="1" ry="1"/><path class="gm-icon-servicing-st8" d="M86.9 24.7v3.8M86.9 36.2v3.9M94.9 32.4h-4M82.9 32.4h-4"/><ellipse class="gm-icon-servicing-st4" cx="86.9" cy="32.4" rx="1" ry="1"/><path class="gm-icon-servicing-st9" d="M164.5 148.1c.7 0 1.2-.5 1.2-1.2s-.5-1.2-1.2-1.2-1.2.5-1.2 1.2.6 1.2 1.2 1.2zM203.1 99.5v-.2c0-.3-.3-.6-.6-.6s-.6.3-.6.6v.2c0 .3.3.6.6.6.4 0 .6-.3.6-.6zM207.5 103.3c-.2-.1-.5 0-.6.2-.1.2-.1.4.1.5.4.5 1.1-.4.5-.7z"/><path class="gm-icon-servicing-st6" d="M36.4 112c.9-.1 1.5-.8 1.5-1.7-.1-.8-.7-1.4-1.5-1.5-.9.1-1.5.8-1.5 1.7.1.8.7 1.4 1.5 1.5z"/><path class="gm-icon-servicing-st9" d="M63.2 83.2c-.9-.4-1.8-.1-2.2.7-.2.4-.2.9 0 1.4v.1c.4.8 1.4 1 2.2.6.8-.4 1-1.4.6-2.2-.2-.2-.3-.4-.6-.6z"/><path class="gm-icon-servicing-st4" d="M65.8 62.5c-.2.7-.6 1.4-1.3 1.8-.7.5-1.7.8-2.6.6-.9-.1-1.7-.6-2.3-1.3-.6-.7-.8-1.6-.7-2.5.1-.9.6-1.7 1.3-2.2.7-.6 1.7-.8 2.6-.7 1.9.2 3.2 1.9 3 3.7.1.4.1.5 0 .6zM61 61.3v.2c0 .4.1.8.3 1.1.2.3.6.5 1 .5.4.1.8-.1 1.1-.3.3-.2.5-.6.6-1 .1-.8-.5-1.5-1.3-1.6-.8-.1-1.5.4-1.7 1.1z"/><ellipse class="gm-icon-servicing-st10" cx="201.2" cy="60.7" rx="2.5" ry="2.4"/><path class="gm-icon-servicing-st8" d="M53.9 115.1v3.9M53.9 126.7v3.8M61.9 122.8h-4M49.9 122.8h-4"/><ellipse class="gm-icon-servicing-st5" cx="53.9" cy="122.8" rx="1" ry="1"/><path class="gm-icon-servicing-st7" d="M53.9 114.2c-.6 0-1 .4-1 1v1.8h2v-1.9c0-.5-.5-.9-1-.9z"/><circle class="gm-icon-servicing-st3" cx="6" cy="50.2" r="2.6"/><path class="gm-icon-servicing-st4" d="M68.9 145l-1.2-4.1-4.2-1.3 4.2-1.3 1.2-4.1 1.3 4.1 4.2 1.3-4.2 1.3z"/><path class="gm-icon-servicing-st5" d="M128 10.9l-1.3-4.2-4.2-1.3 4.2-1.2 1.2-4.2 1.3 4.2 4.2 1.2-4.2 1.3z"/><path class="gm-icon-servicing-st6" d="M48.8 89.1l-1.3-4.2-4.1-1.2 4.1-1.3 1.3-4.2 1.3 4.2 4.2 1.3-4.2 1.2z"/><path class="gm-icon-servicing-st7" d="M57.5 47.4c.6 0 1 .4 1.1 1v4.3c.1.6-.4 1.1-1 1.2-.6.1-1.1-.4-1.2-1v-4.4c0-.6.4-1 .9-1 .1-.1.2-.1.2-.1zM57.5 34.8c.6 0 1.1.5 1.1 1.1V40c-.1.6-.6 1-1.2 1-.5 0-.9-.4-1-1v-4.2c0-.6.5-1 1.1-1zM49 43.2h4.2c.6.1 1 .6 1 1.2 0 .5-.4.9-1 1H49c-.6.1-1.1-.4-1.2-1-.1-.6.4-1.1 1-1.2h.2zM61.7 43.2h4.2c.6-.1 1.1.4 1.2 1s-.4 1.1-1 1.2h-4.4c-.6-.1-1-.6-1-1.2.1-.6.5-1 1-1z"/><circle class="gm-icon-servicing-st7" cx="57.5" cy="44.3" r="1.1"/><path class="gm-icon-servicing-st8" d="M169.5 136.6v-4.2M169.5 123.9v-4.2M161.1 128.2h4.2M173.7 128.2h4.2"/><circle class="gm-icon-servicing-st4" cx="169.5" cy="128.2" r="1.1"/><path class="gm-icon-servicing-st9" d="M83.3 19.1c.7 0 1.2-.5 1.2-1.2s-.5-1.2-1.2-1.2-1.2.5-1.2 1.2.6 1.2 1.2 1.2zM42.7 69.9v.1c0 .3.3.5.6.5s.5-.2.5-.5v-.2c0-.3-.3-.5-.6-.5-.3.1-.5.3-.5.6zM38.1 65.7c.2.1.3.1.4 0h.1c.2-.1.3-.4.2-.6-.1-.2-.4-.3-.6-.2-.2.1-.3.4-.2.6 0 .1 0 .1.1.2z"/><path class="gm-icon-servicing-st6" d="M218.5 59.3c.9-.1 1.5-.8 1.5-1.7-.1-.8-.7-1.4-1.5-1.5-.9.1-1.5.8-1.5 1.7.1.8.8 1.5 1.5 1.5z"/><path class="gm-icon-servicing-st9" d="M190.3 87.5l.1.1c.8.4 1.7.1 2.1-.6.3-.5.3-1 0-1.5v-.1c-.4-.8-1.4-1-2.2-.6s-1 1.4-.6 2.2c.2.1.4.3.6.5z"/><path class="gm-icon-servicing-st4" d="M187.5 110.3c.2-.8.7-1.5 1.3-2 1.6-1.2 3.9-.9 5.2.7.6.8.9 1.8.7 2.7-.3 2-2.1 3.4-4.2 3.2s-3.4-2.1-3.2-4.2c.2-.1.2-.2.2-.4zm5.1 1.3v-.2c.1-.4-.1-.8-.3-1.2-.3-.3-.6-.6-1.1-.6-.4-.1-.8.1-1.2.3-.7.5-.8 1.5-.3 2.2.5.7 1.5.8 2.2.3.4-.1.6-.4.7-.8z"/><circle class="gm-icon-servicing-st10" cx="44.7" cy="112.4" r="2.6"/><path class="gm-icon-servicing-st8" d="M200.1 52.6v-4.3M200 39.9v-4.2M191.6 44.1h4.2M204.3 44.1h4.2"/><circle class="gm-icon-servicing-st5" cx="200.1" cy="44.1" r="1.1"/><path class="gm-icon-servicing-st7" d="M200.1 53.6c.6 0 1-.4 1.1-.9v-2.1H199v2c0 .6.5 1 1.1 1z"/><circle class="gm-icon-servicing-st11" cx="146.8" cy="79.5" r="34.5"/><path class="gm-icon-servicing-st11" d="M96 137.1c-3-2.3-3-11 0-15.1 3.2-4.3 20.4-12 20.4-12h13.2s17.6 7.3 20.9 11.7c3.1 4.2 3.1 13.1 0 15.4-10.8 8.3-43.7 8.3-54.5 0z"/><use xlink:href="#World" width="75.3" height="75.5" x="-37.6" y="-37.7" transform="matrix(.93 0 0 .92 140.686 79.087)" overflow="visible"/><linearGradient id="gm-icon-servicing-SVGID_1_" gradientUnits="userSpaceOnUse" x1="86.75" y1="39.843" x2="145.836" y2="39.843" gradientTransform="matrix(1 0 0 -1 0 166)"><stop offset=".67" stop-color="#fff"/><stop offset=".68" stop-color="#f2f2f3"/></linearGradient><path d="M89 136.6c-3-2.3-3-11 0-15.1 3.2-4.3 20.4-12 20.4-12h13.2s17.6 7.3 20.9 11.7c3.1 4.2 3.1 13.1 0 15.4-10.8 8.3-43.7 8.3-54.5 0z" fill="url(#gm-icon-servicing-SVGID_1_)" stroke="#0f4470" stroke-width="3"/><linearGradient id="gm-icon-servicing-SVGID_2_" gradientUnits="userSpaceOnUse" x1="106.94" y1="62.02" x2="125.52" y2="62.02" gradientTransform="matrix(1 0 0 -1 0 166)"><stop offset=".67" stop-color="#fff"/><stop offset=".68" stop-color="#f2f2f3"/></linearGradient><path d="M114.5 90.2h3.5c4.2 0 7.5 3.4 7.5 7.5v12.4c0 4.2-3.4 7.5-7.5 7.5h-3.5c-4.2 0-7.5-3.4-7.5-7.5V97.8c-.1-4.2 3.3-7.6 7.5-7.6z" fill="url(#gm-icon-servicing-SVGID_2_)" stroke="#0f4470" stroke-width="3"/><linearGradient id="gm-icon-servicing-SVGID_3_" gradientUnits="userSpaceOnUse" x1="94.65" y1="76.39" x2="138.62" y2="76.39" gradientTransform="matrix(1 0 0 -1 0 166)"><stop offset=".67" stop-color="#fff"/><stop offset=".68" stop-color="#f2f2f3"/></linearGradient><path d="M126.3 107h-20c-4.1 0-7.3-3.3-7.3-7.4l-4.3-20c0-4.1 7.6-7.4 11.7-7.4h20c4 0 12.3 3.3 12.3 7.4l-4.9 20c0 4.1-3.4 7.4-7.5 7.4z" fill="url(#gm-icon-servicing-SVGID_3_)" stroke="#0f4470" stroke-width="3"/><path d="M101.9 84l.1 2.2c-4.7 0-7.8-4.5-7.9-9.2v-3.3c0-4.7 3.8-8.5 8.5-8.6l23.7-.7c5.6.8 12.2 2.8 13.2 10.7l-.9 6.8c-.8 4.7-39-15.2-36.7 2.1z" fill="#e6e6e5" stroke="#0f4470" stroke-width="3"/><path d="M101.8 83.9v2.2c-4.7 0-7.8-4.6-7.8-9.2v-3.3c0-4.7 3.8-8.6 8.5-8.6l14.1-.3 5.3-.1 4.2-.1c5.6.9-10.2 10.5-19.9 12.5-3 .7-4.9 2.7-4.4 6.9z" fill="#f2f2f2" stroke="#0f4470" stroke-width="3"/></g></svg></span>
-                                          <strong class="reveal">Servicing over 2.000.000 customers from 100+ countries</strong>
+                                          <strong class="reveal">Servicing over 10,000 customers from 100+ countries</strong>
                                         </div>
                                       </div>
 
@@ -583,7 +379,7 @@
                                         <p>Cryptobitnet is one of the leading hashpower providers in the world, offering cryptocurrency mining capacities in every range - for newcomers, interested home miners, as well as large scale investors. Our mission is to make acquiring cryptocurrencies easy and fast for everyone.</p>
                                       </div>
                                       <div class="col-sm-5 col-md-4">
-                                        <p>We provide a multi-algorithm, multi-coin cloud mining service using the latest technology - without any pool fees. The ultimate goal of our existence is to make cryptocurrency mining an easy, smart and rewarding experience for all. Our services already attracted more than 2.000.000 people - We’d be happy to serve you as well!</p>
+                                        <p>We provide a multi-algorithm, multi-coin cloud mining service using the latest technology - without any pool fees. The ultimate goal of our existence is to make cryptocurrency mining an easy, smart and rewarding experience for all. Our services already attracted more than 10,000 people - We’d be happy to serve you as well!</p>
                                       </div>
                                     </div>
                                   </div>
@@ -662,53 +458,6 @@
                               </div>
                             </div>
 
-
-                                    <!-- <div class="col-sm-6 col-md-6 col-lg-6 gm-home-blog">
-                                        <h3><a href="http://cryptobitnet.com/mining/" title="CryptoBitNet Blog">
-                                    <svg class="gm-icon gm-icon-globe">
-                                        <use xlink:href="/img/Version3/sprite.svg#gm-icon-globe"></use>
-                                    </svg>Blog news</a>
-                            </h3>
-
-                            <div id="carousel-blog" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-
-                                    <div class="item active">
-                                        <h4><a href="https://blog.genesis-mining.com/how-well-do-americans-understand-money" title="How Well Do Americans Understand Money?">How Well Do Americans Understand Money?</a>
-                                            <time datetime="2019-10-29">29.10.2019.</time>
-                                        </h4>
-                                        <p>I first heard about this new underground internet money called “Bitcoin” while I was in university in 2012. I read about it for just a few hours, but was hooked and couldn’t imagine turning back. Because of my mathematics background, I was fascinated by the algorithms that made Bitcoin possible. From there it’s not so difficult to be fascinated by the idea of money that’s not controlled by any government or central entity.</p>
-                                    </div>
-
-                                    <div class="item">
-                                        <h4><a href="https://blog.genesis-mining.com/how-well-do-americans-understand-money" title="Everything You Need to Know About the Federal Reserve">Everything You Need to Know About the Federal Reserve</a>
-                                            <time datetime="2019-11-05">05.11.2019.</time>
-                                        </h4>
-                                        <p>Most everybody has heard of the Federal Reserve, but you’re not alone if that’s about as far as your knowledge of the Fed extends. We recently conducted a study of 1,000 US consumers and when asked the question, do you know what the Federal Reserve does? Nearly 50% of respondents answered either no (34%) and I don’t know (15%).</p>
-                                    </div>
-
-                                    <div class="item">
-                                        <h4><a href="https://blog.genesis-mining.com/everything-you-need-to-know-about-fractional-reserve-banking" title="Everything You Need to Know About Fractional-Reserve Banking">Everything You Need to Know About Fractional-Reserve Banking</a>
-                                            <time datetime="2019-11-12">12.11.2019.</time>
-                                        </h4>
-                                        <p>What’s that you say? You don’t know the first thing about what fractional-reserve banking is or how it works? You’re not alone. We recently conducted a study of 1,000 US consumers and nearly 26% of respondents believed that banks were required to hold 100% of customer deposits in reserves.</p>
-                                    </div>
-
-                                    <div class="item">
-                                        <h4><a href="https://blog.genesis-mining.com/everything-you-need-to-know-about-central-banks" title="Everything You Need to Know About Central Banks">Everything You Need to Know About Central Banks</a>
-                                            <time datetime="2019-11-19">19.11.2019.</time>
-                                        </h4>
-                                        <p>When was the last time you heard mention of any central bank? During the lesson on Alexander Hamilton in your eighth grade American History class? You’re probably not alone.</p>
-                                    </div>
-
-
-                                </div>
-                                <a class="left carousel-control" href="#carousel-blog" aria-label="Previous blog item" role="button" data-slide="prev"><svg class="gm-chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 28"><path d="M18.297 4.703L10 13l8.297 8.297a.99.99 0 0 1 0 1.406l-2.594 2.594a.99.99 0 0 1-1.406 0L2.703 13.703a.99.99 0 0 1 0-1.406L14.297.703a.99.99 0 0 1 1.406 0l2.594 2.594a.99.99 0 0 1 0 1.406z"/></svg></a>
-                                <a class="right carousel-control" href="#carousel-blog" aria-label="Next blog item" role="button" data-slide="next"><svg class="gm-chevron-right" viewBox="0 0 19 28"><path d="M17.297 13.703L5.703 25.297a.99.99 0 0 1-1.406 0l-2.594-2.594a.99.99 0 0 1 0-1.406L10 13 1.703 4.703a.99.99 0 0 1 0-1.406L4.297.703a.99.99 0 0 1 1.406 0l11.594 11.594a.99.99 0 0 1 0 1.406z"/></svg></a>
-                            </div>
-
-                            <a href="http://cryptobitnet.com/mining/" class="btn btn-enigma-a" title="Bitcoin Blog - Breaking Stories &amp; Analysis | CryptoBitNet">Read our blog</a>
-                        </div> -->
 
 
 
@@ -2159,6 +1908,6 @@ Cryptocurrencies don’t have a central government or other so called 'middlemen
 
         </div>
 
- 
+
 
     @endsection

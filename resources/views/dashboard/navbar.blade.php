@@ -32,14 +32,14 @@
     <script type="text/javascript" src="/js/placeholders.min.js"></script>
     <![endif]-->
     <script src="../js/widget.js" as="script" importance="low"></script>
- 
+
 
 <style type="text/css">
     text[y="319.5"] {
         background-color: #121c29;
     }
 </style>
-        
+
    </head>
    <body>
     <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1"
@@ -245,11 +245,10 @@
                                     <a class="nav-logout" href="{{ route('logout') }}" title="Logout"  onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();"                        > <i class="fa fa-power-off"  style="font-size: 20px !important; padding-top: 10px;"></i></a>
                                                          <form id="logout-form" action="{{ route('logout') }}" method="POST" >
-                                        <!-- <svg class="gm-icon gm-icon-logout"><title>Logout</title>
-                                            <use xlink:href="/img/Version3/sprite_dash.svg#gm-icon-logout"></use>
-                                        </svg> -->
-                                       
-                                    </a>
+
+
+                                         @csrf
+                                    </form>
                                 </p>
                             </div>
                         </div>
@@ -264,7 +263,7 @@
     -moz-border-radius: 9px;
     border-radius: 50% !important;
   }
-  
+
   .label-warning[href],
   .badge-warning[href] {
     background-color: #c67605 !important;
@@ -275,14 +274,14 @@
       color: white;
       padding: 2 5px !important;
       vertical-align: top !important;
-      margin-left: -15px !important; 
-    
+      margin-left: -15px !important;
+
   }
             </style>
-    
+
                     <div class="side-notification-overlay">
               <div class="side-notification">
-    
+
                 <div class="notification-top">
                   <h5>Messages</h5>
                   <p>Dashboard message center</p>
@@ -290,19 +289,19 @@
                     <li class="close-notification message-toggle"><span class="icon-box" title="Close"><i class="gm-icon">&times;</i></span></li>
                   </ul>
                 </div>
-    
+
                 <ul class="notification-list">
                     <template v-if="messages.total > 0">
                         <li v-for="item in messages.data" :class="{['message-' + (item.type || 'default')]: true, 'message-new' : isMessageNew(item), 'message-dialog' : showDialog === item._id}">
-    
+
                             <h4></h4>
                             <span></span>
                             <span class="clearfix"></span>
                             <div class="message-text" v-html="generatedMarkdown(showText(item))"></div>
                             <button v-if="showDialog !== item._id" v-on:click="attemptHide(item._id)" class="icon-box ics"><i class="gm-icon-close"></i></button>
                             <button v-else v-on:click="showDialog = false" class="icon-box ics"><i class="gm-icon-close"></i></button>
-    
-    
+
+
                           <transition name="slide-from-right">
                               <div class="message-deletion" v-if="showDialog === item._id">
                                   <h4>Are you sure you want to delete this message?</h4>
@@ -319,29 +318,29 @@
                                   </label>
                               </div>
                           </transition>
-    
+
                         </li>
                     </template>
                     <li v-else class="none">
                         <p>No new messages</p>
                     </li>
                 </ul>
-    
+
                 <div v-bind:class="notificationBottom">
                     <button v-on:click="previousPage(messages.current_page)" class="icon-box ics" title="Previous messages"><i class="gm-icon-arrow-left"></i></button>
                     <button v-on:click="nextPage(messages.current_page)" class="icon-box ics" title="Next messages"><i class="gm-icon-arrow-right"></i></button>
                 </div>
-    
+
               </div>
               <div class="side-notification-close message-toggle"></div>
             </div>
-            
+
         </div>
 
 
-       
+
 <div class="collapse navbar-collapse" id="main-menu">
-    
+
     <div class="nav-user-info">
         <h2>Welcome             </h2>
         <span class="fa fa-user"></span>
@@ -351,7 +350,7 @@
     <ul class="nav navbar-nav ">
 
                                             <li class="start-mining">
-                    <div class="profile">                           
+                    <div class="profile">
                     <img src="profile/user-profile.png" alt="profile-picture" class="img-responsive" style="width: 60px; border-radius: 50%; margin-left: 95px; margin-bottom: 10px;">
                     <p style="color: white; margin-right: 30px;">{{Auth::user()->username}}</p>
                     <button class="btn btn-primary" style="font-size: 12px !important; border-radius: 0px !important; margin-left: -20px;"> <i class="fa fa-star" aria-hidden="true" style="color: black !important; background-color: white !important;"></i> {{Auth::user()->package}}</button>
@@ -359,7 +358,7 @@
                     <br>
                 </li>
                 <br><br><br><br><br>
-                
+
 
                                             <li>
                 <a class="navbar-link" href="dashboard.html"><span class="fa">
@@ -427,7 +426,7 @@
                 </ul>
             </li>
 
-            
+
             <!-- <li>
                 <a class="navbar-link" href="/my-orders"><span class="fa"><svg class="gm-icon gm-icon-my-orders"><use
                                     xlink:href="/img/Version3/sprite_dash.svg#gm-icon-my-orders"></use></svg></span>
@@ -455,8 +454,7 @@ $(document).ready(function() {
   localStorage.setItem('__GenesisJWT', "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjVmZGM5MDBiYWZhMjBlZDA0ZDhiNDU2NyIsImVtYWlsIjoib3JpenVkYXZpZGNoaWJ1ZXplQGdtYWlsLmNvbSIsImRvbWFpbiI6ImdlbmVzaXMtbWluaW5nLmNvbSJ9.-0-a4Xor_1fz3rzmBXNqrdlPQYzQ17-1FjIkBToPesE");
 });
 </script>
- 
+
 
 </body>
 </html>
-        
