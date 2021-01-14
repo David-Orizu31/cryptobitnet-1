@@ -945,66 +945,9 @@
             </script>
 
 
-            <script src="js/twitter-fetcher.min.js"></script>
-
-            <script src="js/prechatfrom.js"></script>
-            <script>
-            var preChatTemplate = {
-              mainbgColor: '#183f59',
-              maintxColor: '#fff',
-              heading: 'CryptoBitNet',
-              textBanner: 'We can\'t wait to talk to you. But first, please take a couple of moments to tell us a bit about yourself.',
-              SubmitLabel: 'Start Chat',
-              fields : {
-                field1 : {
-                  type: "name",
-                  label: "Name",
-                  fieldId: "name",
-                  required: "yes",
-                  error: "Please Enter a valid name"
-                },
-                field2 : {
-                  type: "email",
-                  label: "Email",
-                  fieldId: "email",
-                  required: "yes",
-                  error: "Please Enter a valid Email"
-                },
-                field3 : {
-                  type: "dropdown",
-                  label: "Do you have an account?",
-                  fieldId: "has_account",
-                  required: "yes",
-                  error: "Please select an option",
-                  options: ['Yes','No']
-                },
-                field4 : {
-                  type: "dropdown",
-                  label: "Would you like to receive occasional marketing offers?",
-                  fieldId: "accept_gdpr",
-                  required: "yes",
-                  error: "Please select an option",
-                  options: ['Yes','No']
-                }
-              }
-            };
-            window.fcSettings = {
-              token: "cb49f35f-683b-4fe9-beab-bc18ce5e4fe7",
-              host: "https://wchat.freshchat.com",
-              config: {
-                cssNames: {
-                  widget: 'custom_fc_frame',
-                  expanded: 'custom_fc_expanded'
-                }
-              },
-              onInit: function() {
-                fcPreChatform.fcWidgetInit(preChatTemplate);
-              }
-            };
-            </script>
+            
 
 
-            <script src="js/widget.js" async></script>
             <style type="text/css">
             .chat-fc-form-outer div.fc-form ul li label {
                 position: initial;

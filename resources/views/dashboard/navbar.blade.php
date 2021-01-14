@@ -6,32 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap-1680.min.css')}}">
+    <link rel="stylesheet" href="{{asset('Dashboard/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('Dashboard/css/morris.css')}}">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{asset('Dashboard/css/style_dash_1.min.css')}}">
+    <link rel="stylesheet" href="{{asset('Dashboard/css/custom.css')}}">
 
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap-1680.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/morris.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap-select.min.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style_dash_1.min.css">
-    <link rel="stylesheet" href="css/custom.css">
-
-    <script src="js/jquery-2.1.2.min.js"></script>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/rapheal.min.js"></script>
-    <script src="js/morris.js"></script>
-    <script src="js/dashboard.js"></script>
-    <!-- <script src="js/bootstrap-select.min.js"></script> -->
-    <script type="text/javascript" src="../js/svg4everybody.min.js"></script>
+    <script src="{{asset('Dashboard/js/jquery-2.1.2.min.js')}}"></script>
+    <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('Dashboard/js/menu.js')}}"></script>
+    <script src="{{asset('Dashboard/js/rapheal.min.js')}}"></script>
+    <script src="{{asset('Dashboard/js/morris.js')}}"></script>
+    <script src="{{asset('Dashboard/js/dashboard.js')}}"></script>
+     <script type="text/javascript" src="{{asset('Dashboard/js/svg4everybody.min.js')}}"></script>
     <script type="text/javascript">svg4everybody();</script>
-    <!--[if lte IE 9]>
-    <script type="text/javascript" src="/js/modernizr.js"></script>
-    <script type="text/javascript" src="/js/respond.min.js"></script>
-    <script type="text/javascript" src="/js/placeholders.min.js"></script>
-    <![endif]-->
-    <script src="../js/widget.js" as="script" importance="low"></script>
+    
+    <script src="{{asset('Dashboard/js/widget.js')}}" as="script" importance="low"></script>
+ 
 
 
 <style type="text/css">
@@ -217,8 +210,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-                        <a class="navbar-brand" href="/dashboard" title="Genesis Mining">
-                    <img src="../img/logo-black.png" alt="Cryptobitnet-logo" class="img-responsive" width="80px" style="margin-top: -15px;">
+                        <a class="navbar-brand" href="/" title="Genesis Mining">
+                    <img src="{{asset('img/logo-black')}}.png" alt="Cryptobitnet-logo" class="img-responsive" width="80px" style="margin-top: -15px;">
                     </svg>
                 </a>
                 </div>
@@ -234,12 +227,9 @@
                             <div class="limiter">
                                 <p>
                                                                     <a class="nav-notification message-toggle" href="#" v-on:click="messageToggle">
-                                       <!--  <svg class="gm-icon gm-icon-notification">
-                                            <title>Messages</title>
-                                            <use xlink:href="/img/Version3/sprite_dash.svg#gm-icon-notification"></use>
-                                        </svg> -->
+                                      
                                         <i class="fa fa-bell gm-icon" aria-hidden="true" title="Messages" style="font-size: 20px; padding-top: 10px;"></i>
-                                        <span class='badge badge-warning' id='lblCartCount'> 0 </span>
+                                        <span class='badge badge-warning' id='lblCartCount'> {{$unread}} </span>
                                         <!-- <span v-show="showNewMessagesDot" class="messages-new"></span> -->
                                     </a>
                                     <a class="nav-logout" href="{{ route('logout') }}" title="Logout"  onclick="event.preventDefault();
@@ -290,46 +280,35 @@
                   </ul>
                 </div>
 
-                <ul class="notification-list">
-                    <template v-if="messages.total > 0">
-                        <li v-for="item in messages.data" :class="{['message-' + (item.type || 'default')]: true, 'message-new' : isMessageNew(item), 'message-dialog' : showDialog === item._id}">
+                <div class="notification-list message-list" style="padding: 15px !important;">
+                    
+               
+              
+              
+                  <table class="table-reponsive message-table table-hover">
+                    @forelse($nots as $not)
+                   
+                    <tr class="table-row">
+                   
+                        <td style="padding: 15px !important;"> <a href='/message/{{$not->id}}' class="message-direct" style="color: #1e2b35 !important; text-decoration: none !important;">{{$not->title}} </a></td>
+                        <td style="padding: 15px !important;"><a href='/message/{{$not->id}}'  class="message-direct" style="color: #1e2b35 !important; text-decoration: none !important;">{{$not->created_at->format('d-m-Y g-i-s')}} <br> <small>@if($not->seen == 1) Seen @elseif($not->seen == 2) Unread @endif</small>  </a> </td>
+                       
+                    </tr>
+                  
+      @empty
+      <tr class="table-row">
+                        <td style="padding: 15px !important;"><a href="#" class="message-direct" style="color: #1e2b35 !important; text-decoration: none !important;">No Message(s)</a></td>
+                        
+                    </tr>
 
-                            <h4></h4>
-                            <span></span>
-                            <span class="clearfix"></span>
-                            <div class="message-text" v-html="generatedMarkdown(showText(item))"></div>
-                            <button v-if="showDialog !== item._id" v-on:click="attemptHide(item._id)" class="icon-box ics"><i class="gm-icon-close"></i></button>
-                            <button v-else v-on:click="showDialog = false" class="icon-box ics"><i class="gm-icon-close"></i></button>
+      @endforelse
+                 
 
+                </table>
+            
+            </div>
 
-                          <transition name="slide-from-right">
-                              <div class="message-deletion" v-if="showDialog === item._id">
-                                  <h4>Are you sure you want to delete this message?</h4>
-                                  <button v-on:click="hideMessage(item._id)" class="btn btn-default">Yes</button>
-                                  <label class="label-config">
-                                      <input type="checkbox" name="checkbox" v-model="remember" id="lorem-ipsum-1">
-                                      <div class="">
-                                        <span class="icon-box ics">
-                                          <i class="gm-icon-checkbox-empty"></i>
-                                          <i class="gm-icon-checkbox-checked"></i>
-                                        </span>
-                                        <strong>Don’t ask me again.</strong>
-                                      </div>
-                                  </label>
-                              </div>
-                          </transition>
-
-                        </li>
-                    </template>
-                    <li v-else class="none">
-                        <p>No new messages</p>
-                    </li>
-                </ul>
-
-                <div v-bind:class="notificationBottom">
-                    <button v-on:click="previousPage(messages.current_page)" class="icon-box ics" title="Previous messages"><i class="gm-icon-arrow-left"></i></button>
-                    <button v-on:click="nextPage(messages.current_page)" class="icon-box ics" title="Next messages"><i class="gm-icon-arrow-right"></i></button>
-                </div>
+              
 
               </div>
               <div class="side-notification-close message-toggle"></div>
@@ -351,7 +330,7 @@
 
                                             <li class="start-mining">
                     <div class="profile">
-                    <img src="profile/user-profile.png" alt="profile-picture" class="img-responsive" style="width: 60px; border-radius: 50%; margin-left: 95px; margin-bottom: 10px;">
+                    <img src="{{asset('Dashboard/profile/user-profile.png')}}" alt="profile-picture" class="img-responsive" style="width: 60px; border-radius: 50%; margin-left: 95px; margin-bottom: 10px;">
                     <p style="color: white; margin-right: 30px;">{{Auth::user()->username}}</p>
                     <button class="btn btn-primary" style="font-size: 12px !important; border-radius: 0px !important; margin-left: -20px;"> <i class="fa fa-star" aria-hidden="true" style="color: black !important; background-color: white !important;"></i> {{Auth::user()->package}}</button>
                     </div>
@@ -361,7 +340,7 @@
 
 
                                             <li>
-                <a class="navbar-link" href="dashboard.html"><span class="fa">
+                <a class="navbar-link" href="/dashboard/overview"><span class="fa">
                      <!-- <svg class="gm-icon gm-icon-dashboard"><use
                                     xlink:href="/img/Version3/sprite_dash.svg#gm-icon-dashboard"></use></svg> -->
                                     <i class="fa fa-dashboard gm-icon" aria-hidden="true" style="font-size: 18px;"></i>
@@ -375,7 +354,7 @@
                     <b class="nav-text">Mining Allocation</b></a>
             </li> -->
             <li>
-                <a class="navbar-link" href="deposit.html"><span class="fa">
+                <a class="navbar-link" href="/dashboard/deposit"><span class="fa">
 <!-- <svg class="gm-icon gm-icon-my-output"><use
                                     xlink:href="/img/Version3/sprite_dash.svg#gm-icon-my-output"></use></svg> -->
                                     <i class="fa fa-money gm-icon" aria-hidden="true" style="font-size: 18px;"></i>
@@ -383,7 +362,7 @@
                     <b class="nav-text">Deposit</b></a>
             </li>
             <li>
-                <a class="navbar-link" href="withdrawal.html"><span class="fa">
+                <a class="navbar-link" href="/dashboard/withdraw"><span class="fa">
 <!-- <svg class="gm-icon gm-icon-my-output"><use
                                     xlink:href="/img/Version3/sprite_dash.svg#gm-icon-my-output"></use></svg> -->
                                     <i class="fa fa-skyatlas gm-icon" aria-hidden="true" style="font-size: 18px;"></i>
@@ -391,7 +370,7 @@
                     <b class="nav-text">Withdrawal</b></a>
             </li>
             <li>
-                <a class="navbar-link" href="activity.html"><span class="fa">
+                <a class="navbar-link" href="/dashboard/activity"><span class="fa">
                      <!-- <svg class="gm-icon gm-icon-my-output"><use
                                     xlink:href="/img/Version3/sprite_dash.svg#gm-icon-my-output"></use></svg> -->
                                     <i class="fa fa-download gm-icon" aria-hidden="true" style="font-size: 18px;"></i>
@@ -420,7 +399,7 @@
                                     class="nav-text">Affiliate</b></a>
                     </li> -->
                     <li>
-                        <a href="contact-support.html"><span class="fa fa-comments"></span> <b
+                        <a href="/support"><span class="fa fa-comments"></span> <b
                                     class="nav-text">Contact Customer Service</b></a>
                     </li>
                 </ul>
@@ -448,12 +427,7 @@
 
 
 
-        <script type="text/javascript">
-$(document).ready(function() {
-  localStorage.removeItem('__GenesisJWT');
-  localStorage.setItem('__GenesisJWT', "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjVmZGM5MDBiYWZhMjBlZDA0ZDhiNDU2NyIsImVtYWlsIjoib3JpenVkYXZpZGNoaWJ1ZXplQGdtYWlsLmNvbSIsImRvbWFpbiI6ImdlbmVzaXMtbWluaW5nLmNvbSJ9.-0-a4Xor_1fz3rzmBXNqrdlPQYzQ17-1FjIkBToPesE");
-});
-</script>
+         
 
 
 </body>

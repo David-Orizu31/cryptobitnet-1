@@ -24,6 +24,19 @@ Route::get('/dashboard/setting', [App\Http\Controllers\DashboardController::clas
 Route::post('/othersettings', [App\Http\Controllers\DashboardController::class, 'othersettings'])->name('othersettings');
 Route::post('/passwordchange', [App\Http\Controllers\DashboardController::class, 'passwordchange'])->name('passwordchange');
 
+Route::get('/dashboard/activity', [App\Http\Controllers\DashboardController::class, 'activity'])->name('activity');
+Route::get('/dashboard/deposit', [App\Http\Controllers\DashboardController::class, 'deposit'])->name('deposit');
+Route::get('/dashboard/withdraw', [App\Http\Controllers\DashboardController::class, 'withdraw'])->name('withdraw');
+Route::post('/dashboard/withdrawdone', [App\Http\Controllers\DashboardController::class, 'withdrawdone'])->name('withdrawdone');
+
+Route::get('/message/{id}', [App\Http\Controllers\DashboardController::class, 'usernotification'])->name('usernotification');
+
+Route::get('/support', [App\Http\Controllers\DashboardController::class, 'support'])->name('support');
+Route::post('/supportsent', [App\Http\Controllers\DashboardController::class, 'supportsent'])->name('support');
+
+
+
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });

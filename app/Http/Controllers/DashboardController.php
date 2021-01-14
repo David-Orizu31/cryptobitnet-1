@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Dashboard;
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\History;
+use App\UserNotification;
 use Carbon\Carbon;
+use Mail;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Hash;
  class DashboardController extends Controller
@@ -22,13 +25,19 @@ use Illuminate\Support\Facades\Hash;
      */
     public function overview()
     {
-        
-        return view('dashboard.overview'); 
+        $user = \Auth::user()->id;
+        $nots =  UserNotification::where('user_id', $user)->orderBy('id','desc')->get();
+        $unread =  UserNotification::where('user_id', $user)->where('seen','2')->count();
+        // dd($unread);
+        return view('dashboard.overview',compact('nots','unread')); 
     }
 
     public function settings()
     {
-        return view('dashboard.settings'); 
+        $user = \Auth::user()->id;
+        $nots =  UserNotification::where('user_id', $user)->orderBy('id','desc')->get();
+        $unread =  UserNotification::where('user_id', $user)->where('seen','2')->count();
+        return view('dashboard.settings',compact('nots','unread')); 
     }
 
 
@@ -72,9 +81,88 @@ use Illuminate\Support\Facades\Hash;
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function activity()
     {
-        //
+        $user = \Auth::user()->id;
+       
+        $nots =  UserNotification::where('user_id', $user)->orderBy('id','desc')->get();
+        $unread =  UserNotification::where('user_id', $user)->where('seen','2')->count();
+       $histories = History::where('user_id', $user)->orderBy('id','desc')->get();
+    //    dd($histories);
+
+        return view('dashboard.activity',compact('histories','nots','unread')); 
+    }
+
+
+    public function deposit(Request $request)
+    {
+        $user = \Auth::user()->id;
+        $nots =  UserNotification::where('user_id', $user)->orderBy('id','desc')->get();
+        $unread =  UserNotification::where('user_id', $user)->where('seen','2')->count();
+        return view('dashboard.deposit',compact('nots','unread')); 
+    }
+
+
+    public function withdraw()
+    {
+        $user = \Auth::user()->id;
+        $eth = \Auth::user()->eth;
+        $bitcoin = \Auth::user()->bitcoin;
+        $nots =  UserNotification::where('user_id', $user)->orderBy('id','desc')->get();
+        $unread =  UserNotification::where('user_id', $user)->where('seen','2')->count();
+         $hists =  History::where('user_id' , $user)->orderBy('id','desc')->get()->take(5);
+    // dd($hists);
+    return view('dashboard.withraw',compact('eth','bitcoin','hists','nots','unread')); 
+}
+
+
+
+    public function withdrawdone(Request $request)
+    {
+
+       
+        $user = \Auth::user()->id;
+    
+        $package = \Auth::user()->package;
+        if($request->choice == 'btc'){
+            $balance = \Auth::user()->bitcoin;
+
+            $total =  $balance - $request->withdrawn;
+             $history =  new History;
+       
+             $history->currency_name = 'Bitcoin';
+             $history->transaction_balance = $request->withdrawn;
+             $history->trans_status = 'Pending';
+             $history->trans_package = $request->package;
+             $history->trans_action = 'Credit';
+             $history->trans_wallet_address = $request->walletaddress;
+             $history->user_id = $user;
+             $history->save();
+ 
+             User::where('id', $user)->update(['bitcoin' => $total]);
+        }elseif($request->choice == 'eth'){
+            $balance = \Auth::user()->eth;
+
+           $total =  $balance - $request->withdrawn;
+            $history =  new History;
+      
+            $history->currency_name = 'Ethereum';
+            $history->transaction_balance = $request->withdrawn;
+            $history->trans_status = 'Pending';
+            $history->trans_package = $package;
+            $history->trans_action = 'Credit';
+            $history->trans_wallet_address = $request->walletaddress;
+            $history->user_id = $user;
+            $history->save();
+
+            User::where('id', $user)->update(['eth' => $total]);
+        }
+       
+     
+    //    dd($histories);
+
+    flash('Widthrawal Pending. Please check your status to verify successful payment')->success();
+    return redirect()->back();
     }
 
     /**
@@ -83,9 +171,20 @@ use Illuminate\Support\Facades\Hash;
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function usernotification($id)
     {
-        //
+        $user = \Auth::user()->id;
+        $nots =  UserNotification::where('user_id', $user)->orderBy('id','desc')->get();
+      
+        $show =  UserNotification::where('user_id', $user)->where('id', $id)->first();
+        // dd($show);
+        if($show->seen == '2'){
+           UserNotification::where('id', $id)->update(['seen'=> 1]);
+           
+        }
+        $unread =  UserNotification::where('user_id', $user)->where('seen','2')->count();
+         // dd($show);
+        return view('dashboard.message',compact('show','nots','unread')); 
     }
 
     /**
@@ -94,9 +193,16 @@ use Illuminate\Support\Facades\Hash;
      * @param  \App\Models\Dashboard  $dashboard
      * @return \Illuminate\Http\Response
      */
-    public function show(Dashboard $dashboard)
+    public function support()
     {
-        //
+
+        
+        $user = \Auth::user()->id;
+        $nots =  UserNotification::where('user_id', $user)->orderBy('id','desc')->get();
+        $unread =  UserNotification::where('user_id', $user)->where('seen','2')->count();
+
+
+        return view('dashboard.support',compact('nots','unread')); 
     }
 
     /**
@@ -105,31 +211,28 @@ use Illuminate\Support\Facades\Hash;
      * @param  \App\Models\Dashboard  $dashboard
      * @return \Illuminate\Http\Response
      */
-    public function edit(Dashboard $dashboard)
+    public function supportsent(Request $request)
     {
-        //
+        // dd($request);//
+           $dataemail = array(
+            'email' => $request->email,
+            'name' =>  $request->name,
+            'supportoption' =>  $request->supportoption,
+            'phone' =>  $request->phone,
+            'usermessage' =>  $request->usermessage,
+            
+        );
+
+        Mail::send('email.support', $dataemail, function($message) use ($dataemail){
+
+        $message->to('support@cryptobitnet.com');
+        $message->subject('You Have Been Contacted');
+
+
+    });
+    flash('Message Sent Successfully')->success();
+    return redirect()->back();
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Dashboard  $dashboard
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Dashboard $dashboard)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Dashboard  $dashboard
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Dashboard $dashboard)
-    {
-        //
-    }
+   
 }
