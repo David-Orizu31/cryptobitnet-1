@@ -346,46 +346,70 @@
                   </ul>
                 </div>
     
-                <ul class="notification-list">
-                    <template v-if="messages.total > 0">
-                        <li v-for="item in messages.data" :class="{['message-' + (item.type || 'default')]: true, 'message-new' : isMessageNew(item), 'message-dialog' : showDialog === item._id}">
-    
-                            <h4>{{ showTitle(item) }}</h4>
-                            <span>{{ item.releaseAt | dateformat('Do MMMM YYYY HH:mm') }}</span>
-                            <span class="clearfix"></span>
-                            <div class="message-text" v-html="generatedMarkdown(showText(item))"></div>
-                            <button v-if="showDialog !== item._id" v-on:click="attemptHide(item._id)" class="icon-box ics"><i class="gm-icon-close"></i></button>
-                            <button v-else v-on:click="showDialog = false" class="icon-box ics"><i class="gm-icon-close"></i></button>
-    
-    
-                          <transition name="slide-from-right">
-                              <div class="message-deletion" v-if="showDialog === item._id">
-                                  <h4>Are you sure you want to delete this message?</h4>
-                                  <button v-on:click="hideMessage(item._id)" class="btn btn-default">Yes</button>
-                                  <label class="label-config">
-                                      <input type="checkbox" name="checkbox" v-model="remember" id="lorem-ipsum-1">
-                                      <div class="">
-                                        <span class="icon-box ics">
-                                          <i class="gm-icon-checkbox-empty"></i>
-                                          <i class="gm-icon-checkbox-checked"></i>
-                                        </span>
-                                        <strong>Don’t ask me again.</strong>
-                                      </div>
-                                  </label>
-                              </div>
-                          </transition>
-    
-                        </li>
-                    </template>
-                    <li v-else class="none">
-                        <p>No new messages</p>
-                    </li>
-                </ul>
-    
-                <div v-bind:class="notificationBottom">
-                    <button v-on:click="previousPage(messages.current_page)" class="icon-box ics" title="Previous messages"><i class="gm-icon-arrow-left"></i></button>
-                    <button v-on:click="nextPage(messages.current_page)" class="icon-box ics" title="Next messages"><i class="gm-icon-arrow-right"></i></button>
+                <div class="notification-list message-list" style="padding: 15px !important;">
+                    
+                    <!-- <li v-for="item in messages.data" :class="{['message-' + (item.type || 'default')]: true, 'message-new' : isMessageNew(item), 'message-dialog' : showDialog === item._id}">
+
+                        <h4>{{ showTitle(item) }}</h4>
+                        <span>{{ item.releaseAt | dateformat('Do MMMM YYYY HH:mm') }}</span>
+                        <span class="clearfix"></span>
+                        <div class="message-text" v-html="generatedMarkdown(showText(item))"></div>
+                        <button v-if="showDialog !== item._id" v-on:click="attemptHide(item._id)" class="icon-box ics"><i class="gm-icon-close"></i></button>
+                        <button v-else v-on:click="showDialog = false" class="icon-box ics"><i class="gm-icon-close"></i></button>
+
+
+                      <transition name="slide-from-right">
+                          <div class="message-deletion" v-if="showDialog === item._id">
+                              <h4>Are you sure you want to delete this message?</h4>
+                              <button v-on:click="hideMessage(item._id)" class="btn btn-default">Yes</button>
+                              <label class="label-config">
+                                  <input type="checkbox" name="checkbox" v-model="remember" id="lorem-ipsum-1">
+                                  <div class="">
+                                    <span class="icon-box ics">
+                                      <i class="gm-icon-checkbox-empty"></i>
+                                      <i class="gm-icon-checkbox-checked"></i>
+                                    </span>
+                                    <strong>Don’t ask me again.</strong>
+                                  </div>
+                              </label>
+                          </div>
+                      </transition>
+
+                    </li> -->
+                
+                
+                    <table class="table-reponsive message-table">
+                    
+                        <tr class="table-row">
+                            <td style="padding: 15px !important;"><a href="messages.html" class="message-direct" style="color: #1e2b35 !important; text-decoration: none !important;">Congratulations you can start mining with Cryptobitnet.</a></td>
+                            <td style="padding: 15px !important;"><a href="messages.html" class="message-direct" style="color: #1e2b35 !important; text-decoration: none !important;">1/11/2021 <br> 5:00pm</a></td>
+                        </tr>
+
+                        <tr class="table-row">
+                            <td style="padding: 15px !important;"><a href="messages.html" class="message-direct" style="color: #1e2b35 !important; text-decoration: none !important;">Congratulations you can start mining with Cryptobitnet.</a></td>
+                            <td style="padding: 15px !important;"><a href="messages.html" class="message-direct" style="color: #1e2b35 !important; text-decoration: none !important;">1/11/2021 <br> 5:00pm</a></td>
+                        </tr>
+
+                        <tr class="table-row">
+                            <td style="padding: 15px !important;"><a href="messages.html" class="message-direct" style="color: #1e2b35 !important; text-decoration: none !important;">Congratulations you can start mining with Cryptobitnet.</a></td>
+                            <td style="padding: 15px !important;"><a href="messages.html" class="message-direct" style="color: #1e2b35 !important; text-decoration: none !important;">1/11/2021 <br> 5:00pm</a></td>
+                        </tr>
+
+                    </table>
+                
                 </div>
+
+                <style>
+
+                     .table-row:hover {
+                        background-color: wheat !important;
+                    }
+                </style>
+
+            <!-- <div v-bind:class="notificationBottom">
+                <button v-on:click="previousPage(messages.current_page)" class="icon-box ics" title="Previous messages"><i class="gm-icon-arrow-left"></i></button>
+                <button v-on:click="nextPage(messages.current_page)" class="icon-box ics" title="Next messages"><i class="gm-icon-arrow-right"></i></button>
+            </div> -->
     
               </div>
               <div class="side-notification-close message-toggle"></div>
@@ -627,6 +651,13 @@
                 <p>Make payment through your Card/ Bank Transfer to complete your purchase. </p> 
              </div>
          </div>
+
+         <div class="col-sm-5">
+            <div class="steps text-center"  data-aos="flip-down" data-aos-duration="2000">
+               <h3><i class="fa fa-phone" aria-hidden="true"></i> STEP 5 </h3>
+               <p>If your money doesn't reflect in your dashboard within 24 - 28 hours get back to us at <a href="contact-support.html">CONTACT CUSTOMER</a></p> 
+            </div>
+        </div>
 
          </div>
 

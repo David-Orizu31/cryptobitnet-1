@@ -356,8 +356,8 @@
                   </ul>
                 </div>
     
-                <ul class="notification-list">
-                    <template v-if="messages.total > 0">
+                <div class="notification-list" style="padding: 15px !important;">
+                    <!-- <template v-if="messages.total > 0">
                         <li v-for="item in messages.data" :class="{['message-' + (item.type || 'default')]: true, 'message-new' : isMessageNew(item), 'message-dialog' : showDialog === item._id}">
     
                             <h4>{{ showTitle(item) }}</h4>
@@ -389,13 +389,42 @@
                     </template>
                     <li v-else class="none">
                         <p>No new messages</p>
-                    </li>
-                </ul>
+                    </li> -->
+
+                    <table class="table-reponsive message-table">
+                    
+                        <tr class="table-row">
+                            <td style="padding: 15px !important;"><a href="messages.html" class="message-direct" style="color: #1e2b35 !important; text-decoration: none !important;">Congratulations you can start mining with Cryptobitnet.</a></td>
+                            <td style="padding: 15px !important;"><a href="messages.html" class="message-direct" style="color: #1e2b35 !important; text-decoration: none !important;">1/11/2021 <br> 5:00pm</a></td>
+                        </tr>
+
+                        <tr class="table-row">
+                            <td style="padding: 15px !important;"><a href="messages.html" class="message-direct" style="color: #1e2b35 !important; text-decoration: none !important;">Congratulations you can start mining with Cryptobitnet.</a></td>
+                            <td style="padding: 15px !important;"><a href="messages.html" class="message-direct" style="color: #1e2b35 !important; text-decoration: none !important;">1/11/2021 <br> 5:00pm</a></td>
+                        </tr>
+
+                        <tr class="table-row">
+                            <td style="padding: 15px !important;"><a href="messages.html" class="message-direct" style="color: #1e2b35 !important; text-decoration: none !important;">Congratulations you can start mining with Cryptobitnet.</a></td>
+                            <td style="padding: 15px !important;"><a href="messages.html" class="message-direct" style="color: #1e2b35 !important; text-decoration: none !important;">1/11/2021 <br> 5:00pm</a></td>
+                        </tr>
+
+                    </table>
+                
+                </div>
+
+                <style>
+
+                     .table-row:hover {
+                        background-color: wheat !important;
+                    }
+                </style>
+
+            </div>
     
-                <div v-bind:class="notificationBottom">
+                <!-- <div v-bind:class="notificationBottom">
                     <button v-on:click="previousPage(messages.current_page)" class="icon-box ics" title="Previous messages"><i class="gm-icon-arrow-left"></i></button>
                     <button v-on:click="nextPage(messages.current_page)" class="icon-box ics" title="Next messages"><i class="gm-icon-arrow-right"></i></button>
-                </div>
+                </div> -->
     
               </div>
               <div class="side-notification-close message-toggle"></div>

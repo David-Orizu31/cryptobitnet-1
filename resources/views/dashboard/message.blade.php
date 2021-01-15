@@ -10,7 +10,30 @@
              
              <div class="container">
                  <br>
-             <table class="table-responsive table-bordered">
+                 <div class="message-info">
+                 <div class="message-head">
+                     <p style="color: #1e2b35 !important; font-size: 18px !important;"><b><small>From: Admin</small></b></p>
+                     <p><b>Title: {{$show->title}}</b> <br> <span class="date-time"><b>{{$show->created_at->format('d/m/Y')}} </b> <b style="margin-left: 10px;">{{$show->created_at->format('g-i-s')}}</b></span></p>
+                 </div>
+
+                 <div class="message-body">
+                     <p>{!!$show->body!!}</p>
+                  </div>
+             </div>
+
+             <style>
+
+.date-time {
+   float: right;
+}
+
+.message-head p {
+    font-size: 16px;
+}
+
+ 
+</style>
+             <!-- <table class="table-responsive table-bordered">
                  <tr>
                      <th><b>{{$show->title}}</b></th>
                      <th><b>Date</b></th>
@@ -21,7 +44,7 @@
                      <td>{{$show->created_at->format('d-m-Y')}} </td>
                      <td>{{$show->created_at->format('g-i-s')}} </td>
                  </tr>
-             </table>
+             </table> -->
              </div>
 
              <style>

@@ -15,7 +15,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth')->except(['index']);
+        // $this->middleware('auth')->except(['index','customerservice']);
     }
 
     /**
@@ -30,4 +30,38 @@ class HomeController extends Controller
         return view('welcome');
 
     }
+
+    public function customerservice()
+    {
+
+     
+        return view('customerservice');
+
+    }
+
+    public function contact()
+    {
+
+     
+        return view('contact');
+
+    }
+
+
+    public function policy()
+    {
+
+     
+        return view('policy');
+
+    }
+
+    public function datacenter()
+    {
+
+     
+        return view('datacenter');
+
+    }
+    
 }

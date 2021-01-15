@@ -24,7 +24,7 @@
                   <h1 itemprop="produces">Start Bitcoin mining today!</h1>
                   </div>
                   <p><span>It’s super simple - Your mining rigs are already set up and running.<br /> As soon as you’ve set up your account, you can start to mine your first coins using our Bitcoin cloud mining service!</span></p>
-                  <a href="sign-up.html" title="Start Mining Now!"
+                  <a href="/register" title="Start Mining Now!"
                      class="btn btn-warning">Start Mining Now!</a>
                   <!-- <a href="#gm-home-3" title="Learn more"
                      class="btn btn-success btn-learn-more">Learn more</a> -->
@@ -77,7 +77,7 @@
                             Mine alternative<br /> cryptocurrencies            </h3>
                           <p>You can mine any cryptocurrency available in our catalogue! Switch your mining power on the fly for all the coins using our bitcoin mining website.</p>
                           <div class="clearfix"></div>
-                          <a href="customer-service.html" class="btn btn-enigma-a" title="Customer Service Center">Customer Service</a>
+                          <a href="/customer-service" class="btn btn-enigma-a" title="Customer Service Center">Customer Service</a>
                         </div>
                         <div class="col-sm-4">
                           <h3>
@@ -85,7 +85,7 @@
                             Get your first<br /> mining output today            </h3>
                           <p>You will get periodic mining outputs to your designated wallet. Try our Bitcoin mining platform now!</p>
                           <div class="clearfix"></div>
-                          <a href="sign-up.html" class="btn btn-enigma-a" title="Our packages">Our packages</a>
+                          <a href="/register" class="btn btn-enigma-a" title="Our packages">Our packages</a>
                         </div>
                       </div>
                     </div>
@@ -657,7 +657,7 @@ Cryptocurrencies don’t have a central government or other so called 'middlemen
                             <h3>Multi-algorithm support.</h3>
                             <p>
                               We are building mining data center around the world that are able to support mining algorithms for different cryptocurrencies.</p>
-                            <a href="sign-up.html" title="See our Packages"
+                            <a href="/register" title="See our Packages"
                               class="btn btn-why-a">See our Packages</a>
                           </div>
                         </div>
@@ -1855,21 +1855,21 @@ Cryptocurrencies don’t have a central government or other so called 'middlemen
                                   <div class="col-sm-7 col-md-5 col-lg-4">
                                     <div class="link-block">
                                       <div>
-                                        <a href="sign-up.html" title="Create an account.">
+                                        <a href="/register" title="Create an account.">
                                           <strong>Create an account.</strong>
                                           <span>Join our growing mining family!</span>
                                         </a>
                                       </div>
 
                                       <div>
-                                        <a href="index.html#about" title="Get to know us better.">
+                                        <a href="/#about" title="Get to know us better.">
                                           <strong>Get to know us better.</strong>
                                           <span>Read about our vision!</span>
                                         </a>
                                       </div>
 
                                       <div>
-                                        <a href="sign-up.html" title="See our packages.">
+                                        <a href="/register" title="See our packages.">
                                           <strong>See our packages.</strong>
                                           <span>Each algorithm and coin has its own beauty!</span>
                                         </a>
@@ -1901,7 +1901,7 @@ Cryptocurrencies don’t have a central government or other so called 'middlemen
                       <div id="gm-home-4" class="gh4">
                           <div class="container">
                             <h2>Try CryptoBitNet today!</h2>
-                            <a href="sign-up.html" title="Sign up now" class="btn btn-default">Sign up now</a>
+                            <a href="/register" title="Sign up now" class="btn btn-default">Sign up now</a>
                           </div>
                           <img loading="lazy" src="img/cry.jpg" style="max-height: 250px;" data-speed="0.8" class="img-parallax" alt="Try CryptoBitNet today image" title="Try CryptoBitNet today image" />
                         </div>

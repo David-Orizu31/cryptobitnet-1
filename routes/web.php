@@ -35,6 +35,10 @@ Route::get('/support', [App\Http\Controllers\DashboardController::class, 'suppor
 Route::post('/supportsent', [App\Http\Controllers\DashboardController::class, 'supportsent'])->name('support');
 
 
+Route::get('/customer-service', [App\Http\Controllers\HomeController::class, 'customerservice'])->name('customerservice');
+Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
+Route::get('/datacenters', [App\Http\Controllers\HomeController::class, 'datacenter'])->name('datacenter');
+Route::get('/privacy', [App\Http\Controllers\HomeController::class, 'policy'])->name('policy');
 
 
 Route::group(['prefix' => 'admin'], function () {

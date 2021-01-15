@@ -161,7 +161,7 @@
             <div style="display:none;"><input type="hidden" name="data[_Token][fields]" value="ae5ae1c251c79baeaa2c9b7f53307674a883220c%3A" id="TokenFields333551528"/><input type="hidden" name="data[_Token][unlocked]" value="Page.check" id="TokenUnlocked1316102044"/></div></form>
             <!-- <div class="row">
                 <div class="col-sm-12">
-                    <small class="" style="font-size: 14px;">If you are looking to contact our sales department click <a href="../customer-service.html" title="Contact sales department">here</a>.</small>
+                    <small class="" style="font-size: 14px;">If you are looking to contact our sales department click <a href="..//customer-service" title="Contact sales department">here</a>.</small>
                 </div>
             </div> -->
 
@@ -187,7 +187,7 @@
             <address>Email: support@cryptobitnet.com<br/>
                                 Average response time: within 1 business day.<br />
                 However, depending on the volume of requests, the response time may occasionally be longer.<br />
-                Check out our <a href="../customer-service.html" title="Customer service center | Genesis Mining">Customer Service</a> section<br /><br />
+                Check out our <a href="..//customer-service" title="Customer service center | Genesis Mining">Customer Service</a> section<br /><br />
                   <!--                --><!--                --><!--                  --><!--                -->                                            </address>
         </div>
 

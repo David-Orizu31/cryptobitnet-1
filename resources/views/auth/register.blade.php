@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="css/front-1680.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="alternate" href="index.html" hreflang="en"/>
-    <link rel="alternate" href="index.html" hreflang="ru"/>
-    <link rel="alternate" href="index.html" hreflang="zh"/>
-    <link rel="alternate" href="index.html" hreflang="ko-kr"/>
-    <link rel="alternate" href="index.html" hreflang="x-default"/>
+    <link rel="alternate" href="/" hreflang="en"/>
+    <link rel="alternate" href="/" hreflang="ru"/>
+    <link rel="alternate" href="/" hreflang="zh"/>
+    <link rel="alternate" href="/" hreflang="ko-kr"/>
+    <link rel="alternate" href="/" hreflang="x-default"/>
     <link rel="stylesheet" href="css/flipclock.min.css">
     <script src="js/flipclock.min.js"></script>
     <style type="text/css">
@@ -405,7 +405,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html" title="CryptoBitNet">
+                        <a class="navbar-brand" href="/" title="CryptoBitNet">
                             <img src="img/logo-black.png" alt="" class="logo img-responsive" style="margin-top: -30px; width: 100px;">
                         </a>
                     </div>
@@ -425,7 +425,7 @@
                                 class="nav navbar-nav navbar-right nav-main">
                                 <li itemprop="name"><a itemprop="url"
                                                        class="navbar-link"
-                                                       href="index.html" title="Home">Home</a>
+                                                       href="/" title="Home">Home</a>
                                 </li>
                                                             <!-- <li itemprop="name"><a itemprop="url" class="navbar-link" href="https://blog.genesis-mining.com/"
                                                            title="Blog">Blog</a></li>
@@ -436,12 +436,12 @@
                                 </li> -->
                                 <li itemprop="name"><a itemprop="url"
                                     class="navbar-link"
-                                    href="index.html#about"
+                                    href="/#about"
                                     title="About us">About us</a>
                                   </li>
                                   <li itemprop="name"><a itemprop="url"
                                                          class="navbar-link"
-                                                         href="index.html#mining"
+                                                         href="/#mining"
                                                          title="Why mining">Why mining</a>
                                   </li>
                                 <!-- <li itemprop="name"><a itemprop="url"
@@ -450,12 +450,12 @@
                                                        title="Press">Press</a></li> -->
                                 <li itemprop="name"><a itemprop="url"
                                                        class="navbar-link"
-                                                       href="customer-service.html"
+                                                       href="/customer-service"
                                                        title="Customer Service">Customer Service</a>
                                 </li>
                                 <li itemprop="name"><a itemprop="url"
                                     class="navbar-link"
-                                    href="contact.html"
+                                    href="/contact"
                                     title="Contact us">Contact</a>
                                 </li>
                                 <li itemprop="name"><a itemprop="url"
@@ -523,7 +523,7 @@
 
                                 <p><svg class="gm-icon gm-icon-bullhorn"><use xlink:href="#gm-icon-bullhorn"></use></svg>
                                                                                                                       Chat working hours: 4:00 a.m. to 8:00 p.m. UTC, Monday to Friday                                                      <br />
-                                Contact us anytime via <a href="customer-service.html" title="Customer Service Center">web form</a> or your <a href="contact.html" title="Customer support">account</a>.                        </p>
+                                Contact us anytime via <a href="/customer-service" title="Customer Service Center">web form</a> or your <a href="/contact" title="Customer support">account</a>.                        </p>
                             </div>
                         </div>
                     </div>
@@ -605,7 +605,7 @@
                                 <input type="hidden" name="data[User][privacy]" id="UserPrivacy_" value="0"/>
                                 <input type="checkbox" name="data[User][privacy]"  required="required" value="1" id="UserPrivacy" onClick="EnableSubmit(this)" />
                                 <span class="checkb">&nbsp;</span>
-                                <strong>I’ve read and understood the <a href="index.html#privacy" target="_blank" title="Privacy Policy">Privacy Policy</a></strong>
+                                <strong>I’ve read and understood the <a href="/#privacy" target="_blank" title="Privacy Policy">Privacy Policy</a></strong>
                             </label>
                         </div>
                         <div class="form-group">
@@ -762,26 +762,26 @@
                                         <div class="col-xs-5 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-6 col-md-offset-0 gm-footer-menu">
                             <h3>&nbsp;</h3>
                             <ul class="footer-nav-b1">
-                                <li><a class="" href="index.html"
+                                <li><a class="" href="/"
                                        title="Home">Home</a></li>
 
-                                <li><a class="" href="index.html#mining"
+                                <li><a class="" href="/#mining"
                                        title="Why mining">Why mining</a></li>
                                        <li><a class="" href="privacy.html"
                                           title="Privacy">Privacy</a></li>
-                                 <li><a class="" href="contact.html"
+                                 <li><a class="" href="/contact"
                                         title="Contact">Contact</a></li>
                             </ul>
                             <ul class="footer-nav-b3">
 
                                                                                 <li><a class=""
-                                       href="customer-service.html"
+                                       href="/customer-service"
                                        title="Customer Service">Customer Service</a>
                                 </li>
 
                             </ul>
                             <ul class="footer-nav-b2">
-                                <li><a class="" href="index.html#about"
+                                <li><a class="" href="/#about"
                                        title="About us">About us</a></li>
                                 <li><a class="" href="datacenters.html"
                                        title="Datacenters">Datacenters</a></li>
@@ -845,7 +845,7 @@
 
 
                                 <div class="col-xs-6 col-md-3 col-md-pull-3 gm-footer-copyright">
-                                    <a href="index.html" title="Home" class="footer-home">
+                                    <a href="/" title="Home" class="footer-home">
                                         <img src="img/logo-black.png" alt="" class="img-responsive" style="width: 70px;">
                                     </a>
                                 </div>

@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="{{ asset('css/front-1680.min.css') }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-    <link rel="alternate" href="index.html" hreflang="en"/>
-    <link rel="alternate" href="index.html" hreflang="ru"/>
-    <link rel="alternate" href="index.html" hreflang="zh"/>
-    <link rel="alternate" href="index.html" hreflang="ko-kr"/>
-    <link rel="alternate" href="index.html" hreflang="x-default"/>
+    <link rel="alternate" href="/" hreflang="en"/>
+    <link rel="alternate" href="/" hreflang="ru"/>
+    <link rel="alternate" href="/" hreflang="zh"/>
+    <link rel="alternate" href="/" hreflang="ko-kr"/>
+    <link rel="alternate" href="/" hreflang="x-default"/>
  
     <style type="text/css">
         .gm-black-friday {
@@ -368,7 +368,7 @@
             <div class="row">
                 <div class="col-xs-6 col-sm-3 bfl">Black Week Discount</div>
 
-                <div class="col-xs-6 col-sm-3 col-sm-push-6 bfr"><a href="sign-up.html"
+                <div class="col-xs-6 col-sm-3 col-sm-push-6 bfr"><a href="/register"
                                                                     title="Start Mining now!">Start Mining now!</a>
                 </div>
 
@@ -408,7 +408,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html" title="CryptoBitNet">
+                        <a class="navbar-brand" href="/" title="CryptoBitNet">
                             <img src="img/logo-black.png" alt="" class="logo img-responsive" style="margin-top: -30px; width: 100px;">
                         </a>
                     </div>
@@ -428,7 +428,7 @@
                                 class="nav navbar-nav navbar-right nav-main">
                                 <li itemprop="name"><a itemprop="url"
                                                        class="navbar-link active"
-                                                       href="index.html" title="Home">Home</a>
+                                                       href="/" title="Home">Home</a>
                                 </li>
                                                             <!-- <li itemprop="name"><a itemprop="url" class="navbar-link" href="https://blog.genesis-mining.com/"
                                                            title="Blog">Blog</a></li>
@@ -439,12 +439,12 @@
                                 </li> -->
                                 <li itemprop="name"><a itemprop="url"
                                   class="navbar-link"
-                                  href="#about"
+                                  href="/#about"
                                   title="About us">About us</a>
                                 </li>
                                 <li itemprop="name"><a itemprop="url"
                                                        class="navbar-link"
-                                                       href="#mining"
+                                                       href="/#mining"
                                                        title="Why mining">Why mining</a>
                                 </li>
 
@@ -454,19 +454,19 @@
                                                        title="Press">Press</a></li> -->
                                 <li itemprop="name"><a itemprop="url"
                                                        class="navbar-link"
-                                                       href="customer-service.html"
+                                                       href="/customer-service"
                                                        title="Customer Service">Customer Service</a>
                                 </li>
                                 <li itemprop="name"><a itemprop="url"
                                     class="navbar-link"
-                                    href="contact.html"
+                                    href="/contact"
                                     title="Contact us">Contact</a>
                                 </li>
                                 <li itemprop="name"><a itemprop="url"
                                   class="navbar-link"
-                                  href="privacy.html"
+                                  href="/privacy"
                                   title="Privacy Policy">
-                                    <!-- <i class="fa fa-key" aria-hidden="true" style="padding: 12px; border-radius: 50%; color: white !important; background-color: #113a56 !important; font-size: 18px !important; margin-top: -10px; margin-left: 50px;"></i> -->Privacy
+                                Privacy
                                   </a>
                               </li>
 
@@ -559,7 +559,7 @@
 
                                 <p><svg class="gm-icon gm-icon-bullhorn"><use xlink:href="#gm-icon-bullhorn"></use></svg>
                                                                                                                       Chat working hours: 4:00 a.m. to 8:00 p.m. UTC, Monday to Friday                                                      <br />
-                                Contact us anytime via <a href="customer-service.html" title="Customer Service Center">web form</a> or your <a href="contact.html" title="Customer support">account</a>.                        </p>
+                                Contact us anytime via <a href="/customer-service" title="Customer Service Center">web form</a> or your <a href="/contact" title="Customer support">account</a>.                        </p>
                             </div>
                         </div>
                     </div>
@@ -1002,26 +1002,26 @@
             </script>
 
 
-          <footer id="gm-content">
+<footer id="gm-content">
               <div class="gm-footer-top">        <div class="container">
                       <div class="row">
-
+          
                           <div class="col-xs-6 col-sm-6">
                               <div class="row">
                                   <div class="col-md-6 gm-footer-members">
                                       <h3>Member area</h3>
                                       <p>If you don’t have an account, sign up for free.</p>
                                       <ul class="gm-footer-ml">
-                                          <li class="gm-footer-ml-singup"><a class="btn btn-sm btn-warning" href="sign-up.html"
+                                          <li class="gm-footer-ml-singup"><a class="btn btn-sm btn-warning" href="/register"
                                                                              title="Sign Up">Sign Up</a>
                                           </li>
                                           <li class="gm-footer-ml-login"><a class="btn btn-sm btn-primary"
-                                                                            href="login.html"
+                                                                            href="/login"
                                                                             title="Login">Login</a>
                                           </li>
                                       </ul>
                                   </div>
-
+          
                                   <div class="col-md-6 gm-footer-social">
                                       <h3>Follow us</h3>
                                       <p>Stay up to date with CryptoBitNet activities.</p>
@@ -1033,7 +1033,7 @@
                                                   </svg>
                                               </a>
                                           </li> -->
-                                          <li class="facebook-fs"><a href="https://www.facebook.com/CryptoBitNet" target="_blank"
+                                          <li class="facebook-fs"><a href="https://Facebook.com/cryptobitnet1" target="_blank"
                                                                      title="Facebook" rel="noreferrer">
                                                   <svg class="gm-icon gm-icon-facebook">
                                                       <title>Facebook</title>
@@ -1087,74 +1087,74 @@
                                   </div>
                               </div>
                           </div>
-
+          
                                           <div class="col-xs-5 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-6 col-md-offset-0 gm-footer-menu">
                               <h3>&nbsp;</h3>
                               <ul class="footer-nav-b1">
-                                  <li><a class=" active" href="#"
+                                  <li><a class=" active" href="/"
                                          title="Home">Home</a></li>
-
-                                  <li><a class="" href="#mining"
+                                        
+                                  <li><a class="" href="/#mining"
                                          title="Why mining">Why mining</a></li>
-                                         <li><a class="" href="privacy.html"
+                                         <li><a class="" href="/privacy"
                                           title="Privacy">Privacy</a></li>
-                                   <li><a class="" href="contact.html"
+                                   <li><a class="" href="/contact"
                                           title="Contact">Contact</a></li>
                               </ul>
                               <ul class="footer-nav-b3">
-
+                                                             
                                                                                   <li><a class=""
-                                         href="customer-service.html"
+                                         href="/customer-service"
                                          title="Customer Service">Customer Service</a>
                                   </li>
-
+                                  
                               </ul>
                               <ul class="footer-nav-b2">
-                                  <li><a class="" href="#about"
+                                  <li><a class="" href="/#about"
                                          title="About us">About us</a></li>
-                                  <li><a class="" href="datacenters.html"
+                                  <li><a class="" href="/datacenters"
                                          title="Datacenters">Datacenters</a></li>
                                   <!-- <li><a class="" href="#"
                                          title="Press">Press</a></li> -->
                               </ul>
-
+          
                               <!-- <ul class="footer-nav-b4">
-
-
+                                  
+                                  
                               </ul> -->
                           </div>
                       </div>
                   </div>
               </div>
-
+          
               <div class="gm-footer-bottom">        <div class="container">
                       <div class="row">
-
-
-
+          
+          
+                                          
                               <div class="gmww">
-                                  <div class="col-xs-12 col-md-6 col-md-push-6 gm-footer-secure">
+                                  <div class="col-xs-12 col-md-6 col-md-push-4 gm-footer-secure">
                                       <div class="row">
-                                          <div class="col-xs-6 col-sm-4">
+                                          <div class="col-xs-6 col-sm-2">
                                                                               </div>
                                           <div class="col-xs-6 col-sm-4">
                                               <address>
-                                                                                          CryptoBitNet Ltd.<br/>
+                                                                                          CryptoBitNet Ltd.
                                                   N/A
-                                                  210 Midhraun 80<br/>
+                                                  210 Midhraun 80
                                                   Garðabær<br/>
                                                   Iceland
                                               </address>
                                           </div>
-                                          <div class="col-xs-12 col-sm-3 col-sm-offset-1 gm-ssl">
+                                          <div class="col-xs-12 col-sm-3 col-sm-offset-3 gm-ssl">
                                               <svg class="gm-icon gm-icon-ssl">
                                                   <use xlink:href="img/sprite.svg#gm-icon-ssl"></use>
                                               </svg>
                                           </div>
                                       </div>
                                   </div>
-
-
+          
+          
                                   <!-- <div class="col-xs-6 col-md-3 col-md-pull-3 gm-footer-cc">
                                       <ul>
                                                                               <li class="mastercard">
@@ -1171,25 +1171,25 @@
                                                                       </ul>
                                                                     <span>We accept credit card payment</span>
                                                               </div> -->
-
-
-                                  <div class="col-xs-6 col-md-3 col-md-pull-3 gm-footer-copyright">
-                                      <a href="index.html" title="Home" class="footer-home">
+          
+          
+                                  <div class="col-xs-6 col-md-3 col-md-pull-6 gm-footer-copyright">
+                                      <a href="/" title="Home" class="footer-home">
                                         <img src="img/logo-black.png" alt="" class="img-responsive" style="width: 70px;">
                                       </a>
                                   </div>
                               </div>
-
-
+                          
+          
                           <div class="clearfix"></div>
                           <div class="col-sm-12 gm-footer-disclaimer">
-                              <p>The information on this website does not convey an offer of any type and is not intended to be, and should not be construed as, an offer to sell, or the solicitation of an offer to buy, any securities, commodities, or other financial products. In addition, the information on this website does not constitute the provision of investment advice.No assurances can be made that any aims, assumptions, expectations, strategies, and/or goals expressed or implied herein were or will be realized or that the activities or any performance described did or will continue at all or in the same manner as is described on this website.</p>
+                              <!-- <p>The information on this website does not convey an offer of any type and is not intended to be, and should not be construed as, an offer to sell, or the solicitation of an offer to buy, any securities, commodities, or other financial products. In addition, the information on this website does not constitute the provision of investment advice.No assurances can be made that any aims, assumptions, expectations, strategies, and/or goals expressed or implied herein were or will be realized or that the activities or any performance described did or will continue at all or in the same manner as is described on this website.</p> -->
                               <br>
                               <h5 class="text-center">Copyright &copy; 2017 Cryptobitnet</h5>
                           </div>
-
-
-
+                          
+                          
+                          
                       </div>
                   </div>
               </div></footer>
