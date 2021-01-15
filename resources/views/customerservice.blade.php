@@ -1,8 +1,11 @@
 @extends('layouts.app')
 
-@section('pageTitle', 'virtual tour')
+
 
     @section('content')
+ <link rel="stylesheet" href="https://david-orizu31.github.io/Cryptobitnet/css/front-1680.min.css">
+ <link rel="stylesheet" href="https://david-orizu31.github.io/Cryptobitnet/css/bootstrap-select-form.min.css">
+<script src="https://david-orizu31.github.io/Cryptobitnet/css/bootstrap-date-time-picker.min.js"></script>
 
     <div class="container-fluid">
         <div id="gm-customer-service-1" style="background:url(img/banner-pages.jpg) no-repeat 50% 0;">
@@ -24,10 +27,10 @@
                   <div class="col-sm-12">
                     <h2>Top questions</h2>
                   </div>
-          
+
                   <div class="col-sm-6">
                     <div class="panel-group accordion" id="accordion1">
-          
+
                       <div class="panel panel-default">
                         <div class="panel-heading">
                           <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#accordion1"
@@ -40,11 +43,11 @@
                         <div id="what-is-genesis-mining" class="panel-collapse collapse">
                           <div class="panel-body">
                             <p> CryptoBitnet is a Cryptocurrency CLOUD MINING service that offer an easy and safe way to mine without having to deal with complex hardwares and softwares, setup. We offer hosted Cryptocurrency services related solutions to large and small scale Customers. The Combination of our Algorithimic Trading Framework, Mining infrastructure, and proprietary mining farm-management, Software Cryptobitnet Hive, Quick made us an Industrial leader. Our Team of mining Experts with extended knowledge of the Digital sector specializes in Building the most efficient and reliable mining facilities. Genesis Mining targets Investors looking to gain access to Bitcoin and various Digital assets Potentials.</p>
-          
+
                           </div>
                         </div>
                       </div>
-          
+
                       <div class="panel panel-default">
                         <div class="panel-heading">
                           <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#accordion1"
@@ -57,13 +60,13 @@
                         <div id="how-does-bitcoin-mining-work" class="panel-collapse collapse">
                           <div class="panel-body">
                             <p>It quick and easy! As soon as you’ve funded your Account, Your contract will be added to your profile, and you can immediately start mining. The first mining output is released in 24hrs and then the daily mining output will follow remark. Everyday of mining will be processed and sent into your Account in the follows 24hrs until mining is over. Please refer to the section. " WHEN DO I GET MY MINING OUTPUT " For more details.</p>
-                            
+
                           </div>
                         </div>
                       </div>
-          
-                      
-          
+
+
+
                       <div class="panel panel-default">
                         <div class="panel-heading">
                           <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#accordion1"
@@ -80,7 +83,7 @@
                           </div>
                         </div>
                       </div>
-          
+
                       <div class="panel panel-default">
                         <div class="panel-heading">
                           <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#accordion1"
@@ -98,7 +101,7 @@
                           </div>
                         </div>
                       </div>
-          
+
                       <!-- <div class="panel panel-default">
                         <div class="panel-heading">
                           <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#accordion1"
@@ -115,7 +118,7 @@
                           </div>
                         </div>
                       </div> -->
-          
+
                       <div class="panel panel-default">
                         <div class="panel-heading">
                           <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#accordion1"
@@ -142,7 +145,7 @@
                                 <strong>Setting up the system up:</strong>When the device finally arrived, You have to assemble and configure  it. Beginners often underestimate the amount of work and technical knowledge that is needed to bring the device up and optimize its settings. People that used the First ASIC spend days and weeks on it.</li>
                               <li>
                                 <strong>Electricity and Maintenance:</strong> Having the machines at home not only bring heat and noise, But also an increase of your electricity bills.                     </li>
-                              
+
                             </ul>
                             <p>
                               Please do not get us wrong: we do not want to discourage anyone from mining at home. We are often asked about prices and realized that many users do not know about all the hidden costs. </p>
@@ -164,7 +167,7 @@
                             <p>
                               In mining there are some key aspects attached:
                   </p>
-                           
+
                             <p>
                               Successful cryptocurrency mining builds in various underlying factors. The factors that affect potential coin production can be spilt into two  categories. </p>
                               <p>While Cryptobitnet has control over the facility specific factors and operating expenses, we also have the best mining hardwares and facilities, which makes mining efficient and profitable.</p>
@@ -186,25 +189,25 @@
                             <p>
                               We do not publish a list of pools we are using. Our main criteria for a good pool are: Reliability, fee structure and reject rate. Going forward we will solo-mine a few coins ( and pass the fee savings to our users).
                   </p>
-                           
+
                             <p>
                               Our internal policy is " Be a good crypto citizen”. This means, that we will at least use two difficult pools (in some cases we use up to four for different coin). This is to preserve the decentralized nature of the crypto networks: if we become aware that a pool is getting close to 50% share, we will switch away from it and use a backup instead. </p>
-                              
+
                           </div>
                         </div>
                       </div>
-          
-                      
-          
-          
+
+
+
+
                     </div>        </div>
-          
-          
-          
+
+
+
                   <div class="col-sm-6">
 
                      <div class="panel-group accordion" id="accordion2" aria-multiselectable="true">
-          
+
 
                       <div class="panel panel-default">
                         <div class="panel-heading">
@@ -234,7 +237,7 @@
                           </div>
                         </div>
                       </div>
-          
+
                       <div class="panel panel-default">
                         <div class="panel-heading">
                           <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#accordion1"
@@ -248,11 +251,11 @@
                           <div class="panel-body">
                             <p>
                               That strictly depends on the selected package and length of the package</p>
-                            
+
                           </div>
                         </div>
                       </div>
-          
+
                       <div class="panel panel-default">
                         <div class="panel-heading">
                           <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#accordion1"
@@ -265,14 +268,14 @@
                         </div>
                         <div id="which-mining-algorithms-are-used-for-mining" class="panel-collapse collapse">
                           <div class="panel-body">
-          
+
                             <p>
                               Mining output are generated Daily, but You can withdraw at the end of your Contract, All depends on the Contract package length.</p>
-                            
+
                           </div>
                         </div>
                       </div>
-          
+
 
                       <div class="panel panel-default">
                         <div class="panel-heading">
@@ -286,15 +289,15 @@
                         <div id="what-are-the-expected-returns" class="panel-collapse collapse">
                           <div class="panel-body">
                                               <p> Customer service is our highest priority! Making decisions is not only about having a good feeling but also about understanding the business  concept in detail. Therefore, if you need help, Our agent are available to assist you Via-Chat.  We are looking forward to hearing from you. </p>
-                            
+
                           </div>
                         </div>
                       </div>
-          
-                      
-          
-                      
-          
+
+
+
+
+
                       <div class="panel panel-default">
                         <div class="panel-heading">
                           <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#accordion2"
@@ -334,7 +337,7 @@
                         <div id="what-cloud-mining" class="panel-collapse collapse">
                           <div class="panel-body">
                             <p>CLOUD MINING is the process of cryptocurrency mining utilizing a remote datacenter with shared processing power. This type of cloud mining enables users to mine bitcoins or alternative cryptocurrencies without managing the hardware.</p>
-                            
+
                           </div>
                         </div>
                       </div>
@@ -355,7 +358,7 @@
                           </div>
                         </div>
                       </div>
-          
+
                       <div class="panel panel-default">
                         <div class="panel-heading">
                           <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#accordion2"
@@ -377,34 +380,34 @@
                           </div>
                         </div>
                       </div>
-          
-               
-          
-          
-          
-          
-                  
-          
+
+
+
+
+
+
+
+
             </div></div><div class="clearfix"></div>
-          
-          
+
+
           </div>
           </div>
           </div>
-          
-          
-          
-          
-          <div id="gm-customer-service-4">
+
+
+
+
+          <div id="gm-customer-service-41">
             <div class="container">
               <div class="row">
                 <div class="col-sm-12">
                   <h2>Frequently asked questions</h2>
                 </div>
-          
+
                 <div class="col-sm-12">
-          
-          
+
+
                   <div class="row">
                     <ul class="nav nav-tabs nav-tabs-main" role="tablist">
                       <li role="presentation" class="col-xs-2 active"><a href="#my-account" aria-controls="my-account" role="tab"
@@ -428,17 +431,17 @@
                     </ul>
                     <div class="clearfix tabs-clearfix"></div>
                   </div>
-          
+
                   <!-- Tab navigation -->
-          
-          
+
+
                   <div class="tab-content">
-          
+
                     <div role="tabpanel" class="tab-pane fade in active" id="my-account">
                       <!-- start MY ACCOUNT -->
                       <div class="row">
                         <div class="col-sm-10 col-md-8">
-          
+
                           <div class="panel-group accordion" id="faq-accordion1">
                             <div class="panel panel-default">
                               <div class="panel-heading">
@@ -456,7 +459,7 @@
                                 </div>
                               </div>
                             </div>
-          
+
                             <div class="panel panel-default">
                               <div class="panel-heading">
                                 <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#faq-accordion1"
@@ -470,29 +473,29 @@
                                 <div class="panel-body">
                                   <p>
                                     Click on Deposit, select one of the our highly recommended platform to purchase <a href="http://buy.coingate.com/" title="buy.coingate.com">buy.coingate.com</a> <a href="http://bitcoin.com/" title="bitcoin.com">bitcoin.com</a> Or CASHAPP(USA only). Make payment with your Card details </p>
-                                 
+
                                 </div>
                               </div>
                             </div>
-          
-                           
+
+
                           </div>
-          
+
                         </div>
-          
-          
+
+
                       </div>
                     </div><!-- end csp-faq-1 - MY ACCOUNT -->
-          
-          
+
+
                     <div role="tabpanel" class="tab-pane fade" id="mining-outputs">
                       <!-- start MINING OUTPUTS -->
                       <div class="row">
                         <div class="col-sm-10 col-md-8">
-          
+
                           <div class="panel-group accordion" id="faq-accordion2">
-          
-          
+
+
                             <div class="panel panel-default">
                               <div class="panel-heading">
                                 <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#faq-accordion2"
@@ -507,25 +510,25 @@
                                   <p>
                                     This strictly depends on the selected package. So each customer  must make an independent decision about which package would be more convenient and profitable.</p>
                                 </div>
-          
+
                                 <!-- subcategory 1 -->
-                                
-          
-          
+
+
+
           </div><!-- end #faq-accordion2 -->
-          
+
           </div><!-- end col-sm-10 col-md-8 -->
           </div><!-- end row -->
           </div><!-- end csp-faq-2 - MINING OUTPUTS -->
           </div>
                     </div>
-          
-          
+
+
           <div role="tabpanel" class="tab-pane fade" id="allocation">
             <!-- start ALLOCATION -->
             <div class="row">
               <div class="col-sm-10 col-md-8">
-          
+
                 <div class="panel-group accordion" id="faq-accordion3">
                   <div class="panel panel-default">
                     <div class="panel-heading">
@@ -554,7 +557,7 @@
                       </div>
                     </div>
                   </div>
-          
+
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#faq-accordion3"
@@ -571,7 +574,7 @@
                       </div>
                     </div>
                   </div>
-          
+
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#faq-accordion3"
@@ -601,18 +604,18 @@
               </div>
             </div>
           </div><!-- end csp-faq-3 - ALLOCATION -->
-          
-          
+
+
           <div role="tabpanel" class="tab-pane fade" id="contracts">
             <!-- start CONTRACTS -->
             <div class="row">
               <div class="col-sm-10 col-md-8">
-          
+
                 <div class="tab-content">
                   <div role="tabpanel" class="tab-pane active" id="fa4-1">
                     <div class="panel-group accordion" id="faq-accordion4-1">
-          
-          
+
+
                       <div class="panel panel-default">
                         <div class="panel-heading">
                           <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#faq-accordion4-1"
@@ -625,14 +628,14 @@
                         </div>
                         <div id="csp-fp4-15" class="panel-collapse collapse">
                           <div class="panel-body">
-          
+
                             <p>
                               Once you’ve signed up and selected your desired package, You’ll have to fund  your Account.</p>
-                            
+
                           </div>
                         </div>
                       </div>
-          
+
                       <div class="panel panel-default">
                         <div class="panel-heading">
                           <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#faq-accordion4-1"
@@ -645,11 +648,11 @@
                         <div id="csp-fp4-14" class="panel-collapse collapse">
                           <div class="panel-body">
                             <p>Your mining output will be sent automatically to your wallet once the minimum amount for transfer is reached/ mining is completed. It is not possible to delay the mining output for security reasons.</p>
-                            
+
                           </div>
                         </div>
                       </div>
-          
+
                       <!-- <div class="panel panel-default">
                         <div class="panel-heading">
                           <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#faq-accordion4-1"
@@ -665,15 +668,15 @@
                           </div>
                         </div>
                       </div> -->
-          
-                      
+
+
                       </div>
-          
+
                     </div>        </div>
                   <!-- <div role="tabpanel" class="tab-pane" id="fa4-2">
                     <div class="panel-group accordion" id="faq-accordion4-2">
-          
-          
+
+
                       <div class="panel panel-default">
                         <div class="panel-heading">
                           <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#faq-accordion4-2"
@@ -690,7 +693,7 @@
                           </div>
                         </div>
                       </div>
-          
+
                       <div class="panel panel-default">
                         <div class="panel-heading">
                           <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#faq-accordion4-2"
@@ -707,7 +710,7 @@
                           </div>
                         </div>
                       </div>
-          
+
                       <div class="panel panel-default">
                         <div class="panel-heading">
                           <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#faq-accordion4-2"
@@ -724,7 +727,7 @@
                           </div>
                         </div>
                       </div>
-          
+
                       <div class="panel panel-default">
                         <div class="panel-heading">
                           <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#faq-accordion4-2"
@@ -741,7 +744,7 @@
                           </div>
                         </div>
                       </div>
-          
+
                       <div class="panel panel-default">
                         <div class="panel-heading">
                           <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#faq-accordion4-2"
@@ -763,7 +766,7 @@
                       </div>
                     </div>        </div>      </div> -->
               </div>
-          
+
               <!-- <div class="col-sm-12">
                 <nav aria-label="Page navigation" class="paginator">
                   <ul class="pagination" role="tablist">
@@ -784,16 +787,16 @@
                   </ul>
                 </nav>
               </div> -->
-          
+
             </div>
           </div><!-- end csp-faq-4 - CONTRACTS -->
-          
-          
+
+
           <div role="tabpanel" class="tab-pane fade" id="affiliate-program">
             <!-- start AFFILIATE PROGRAM -->
             <div class="row">
               <div class="col-sm-10 col-md-8">
-          
+
                 <div class="panel-group accordion" id="faq-accordion5">
                   <div class="panel panel-default">
                     <div class="panel-heading">
@@ -811,7 +814,7 @@
                       </div>
                     </div>
                   </div>
-          
+
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#faq-accordion5"
@@ -829,7 +832,7 @@
                       </div>
                     </div>
                   </div>
-          
+
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#faq-accordion5"
@@ -845,7 +848,7 @@
                       </div>
                     </div>
                   </div>
-          
+
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#faq-accordion5"
@@ -862,7 +865,7 @@
                       </div>
                     </div>
                   </div>
-          
+
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#faq-accordion5"
@@ -883,7 +886,7 @@
                       </div>
                     </div>
                   </div>
-          
+
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#faq-accordion5"
@@ -904,7 +907,7 @@
                       </div>
                     </div>
                   </div>
-          
+
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#faq-accordion5"
@@ -920,7 +923,7 @@
                       </div>
                     </div>
                   </div>
-          
+
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title panel-inactive"><a data-toggle="collapse" data-parent="#faq-accordion5"
@@ -938,17 +941,17 @@
                     </div>
                   </div>
                 </div>
-          
+
               </div>
             </div>
           </div><!-- end #csp-faq-5 - AFFILIATE PROGRAM -->
-          
-          
+
+
           <div role="tabpanel" class="tab-pane fade" id="general">
             <!-- start GENERAL -->
             <div class="row">
               <div class="col-sm-10 col-md-8">
-          
+
                 <div class="panel-group accordion" id="faq-accordion6">
                   <div class="panel panel-default">
                     <div class="panel-heading">
@@ -962,41 +965,41 @@
                     </div>
                     <div id="csp-fp6-1" class="panel-collapse collapse">
                       <div class="panel-body">
-                        <p>We are one  the most reliable companies, and we are very serious about the business we are in. You can find out about our staff and management here:  <a href="/#about" target="_blank" rel="noreferrer">ABOUT US</a><br />To get inside views of our datacenters, check here: <a href="datacenters.html" target="_blank" rel="noreferrer">DATACENTER</a></p>
+                        <p>We are one  the most reliable companies, and we are very serious about the business we are in. You can find out about our staff and management here:  <a href="index.html#about" target="_blank" rel="noreferrer">ABOUT US</a><br />To get inside views of our datacenters, check here: <a href="datacenters.html" target="_blank" rel="noreferrer">DATACENTER</a></p>
                       </div>
                     </div>
                   </div>
-          
-                 
-          
+
+
+
                 </div><!-- end faq-accordion6 - GENERAL -->
-          
+
               </div><!-- end col-sm-10 col-md-8 - GENERAL -->
             </div><!-- end row - GENERAL -->
           </div><!-- end csp-faq-6 - GENERAL -->
-          
-          
+
+
           </div><!-- Tab content container -->
-          
+
           </div>
           </div>
-          
+
           <!--<div class="cus-sup-btn-holder cus-sup-btn-2">-->
           <!--<button title="Need more help"-->
           <!--class="btn btn-warning">Need more help</button>-->
           <!--</div>-->
           </div>
           </div>
-          
-          
+
+
           <div id="gm-customer-service-5">
             <div class="container">
               <div class="row">
                 <div class="col-sm-12">
                   <h2>Contact Customer Service</h2>
                 </div>
-          
-          
+
+
                 <div class="col-sm-6 col-md-5">
                   <div class="alert alert-info2" style="margin-top:-50px;">
                     <p>
@@ -1005,9 +1008,9 @@
                   </div>
                 </div>
                 <div class="clearfix"></div>
-          
-                
-          
+
+
+
                 <div class="col-sm-6 col-md-5">
                   <div class="customer-service-form-box">
                     <form action="/contact" class="" enctype="multipart/form-data" id="PageDisplayForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/><input type="hidden" name="data[_Token][key]" value="92f8cb019ac2ac8014318d9157b36d007701996e" id="Token2137707148"/></div>
@@ -1017,7 +1020,7 @@
                       <input name="data[Page][email]" class="form-control" placeholder="Your account email" id="EmailAddress" type="email" required="required"/>          </div>
                     <div class="form-group">            <input name="data[Page][phone]" class="form-control
                                       form-tel" placeholder="Your phone number" id="PhoneNumber" type="tel"/>          </div>
-          
+
                     <div class="form-group">            <select name="data[Page][support_topic][1]" class="form-control selectpicker
                                       cs-selection" data-style="" data-size="10" data-dropup-auto="false" title="Select your service topic 1" data-header="Select your service topic 1" data-order="1" id="SupportTopic1" required="required">
           <option value="my_account">My account</option>
@@ -1027,46 +1030,46 @@
           <option value="affiliate">Affiliate program</option> -->
           <option value="general">General</option>
           </select>          </div>
-          
+
                     <div class="form-group" style="display:none">            <select name="data[Page][support_topic][2]" class="form-control selectpicker
                                       cs-selection" data-style="" data-size="10" data-dropup-auto="false" title="Select your service topic 2" data-header="Select your service topic 2" data-order="2" id="SupportTopic2">
           </select>          </div>
-          
+
                     <div class="form-group">            <input name="data[Page][datepicker]" class="form-control" placeholder="Select missing date" id="datetimepickerCSC" type="text"/>          </div>
-          
+
                     <div class="form-group" style="display:none">            <select name="data[Page][support_topic][3]" class="form-control selectpicker
                                       cs-selection" data-style="" data-size="10" data-dropup-auto="false" title="Select your service topic 3" data-header="Select your service topic 3" data-order="3" id="SupportTopic3">
           </select>          </div>
-          
+
                     <div class="form-group" style="display:none">            <select name="data[Page][support_topic][4]" class="form-control selectpicker
                                       cs-selection" data-style="" data-size="10" data-dropup-auto="false" title="Select your service topic 4" data-header="Select your service topic 4" data-order="4" id="SupportTopic4">
           </select>          </div>
-          
+
                     <div class="form-group" style="display:none">            <select name="data[Page][support_topic][5]" class="form-control selectpicker
                                       cs-selection" data-style="" data-size="10" data-dropup-auto="false" title="Select your service topic 5" data-header="Select your service topic 5" data-order="5" id="SupportTopic5">
           </select>          </div>
-          
-                    
+
+
                   <div class="form-group form-group-textarea">
                     <label for="PageMessage">Enter your message here</label><textarea name="data[Page][message]" class="form-control" placeholder="Start typing here..." onkeyup="countChar(this)" cols="30" rows="6" id="PageMessage" required="required"></textarea>          <p class="letter-counter"><span id="charNum">0</span> / 240</p>
                   </div>
-          
+
                   <!-- <div class="form-group">
                     <input type="file" name="data[Page][attachments][]"  class="form-control" multiple="multiple" id="attachment"/>          <h5><small
                         style="margin-bottom: 0px">Maximum upload size is 8MB.Maximum size per file is 2MB.</small>
                     </h5>
                   </div> -->
-          
+
                   <div class="form-group form-group-captcha">
                     <input name="data[Page][verification]" class="form-control" placeholder="10 - 9 = ?" id="verification" required="required" autocomplete="off" maxlength="2" onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57" type="text"/>        </div>
-          
-                  
+
+
                   <div class="form-group">
                     <button type="submit" class="btn btn-warning" id="btn-submit"
                       style="margin-bottom: 50px;">Submit ticket</button>
                   </div>
                   <div class="clearfix"></div>
-          
+
                   <input type="hidden" name="data[Page][check]" value="c112c572743e5e5c89fc4ae0dc81228bc4d72b09" id="PageCheck"/>
                   <div style="display:none;"><input type="hidden" name="data[_Token][fields]" value="ae5ae1c251c79baeaa2c9b7f53307674a883220c%3A" id="TokenFields981945300"/><input type="hidden" name="data[_Token][unlocked]" value="Page.check" id="TokenUnlocked2070158681"/></div></form>
                   <!-- <div class="row">
@@ -1076,27 +1079,27 @@
                   </div> -->
                 </div>
               </div>
-          
+
               <div class="col-sm-6 col-md-6 col-md-offset-1">
-          
-                
-              
-          
-              
-          
+
+
+
+
+
+
           </div>
           <div class="clearfix"></div>
           </div>
           </div>
           </div>
-          
-          
-          
+
+
+
           </div>
-          
-          
-          
-          
+
+
+
+
           <div class="modal fade modal-csc" id="CSCModal" tabindex="-1" role="dialog" aria-labelledby="CSCModalLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -1116,7 +1119,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="modal fade modal-csc" id="CSCModalOneTicket" tabindex="-1" role="dialog"
             aria-labelledby="CSCModalOneTicketLabel">
             <div class="modal-dialog" role="document">
@@ -1134,7 +1137,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="modal fade modal-csc" id="CSCModalMessage" tabindex="-1" role="dialog"
             aria-labelledby="CSCModalMessageLabel">
             <div class="modal-dialog" role="document">
@@ -1151,7 +1154,7 @@
 
           </div>
 
-          <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />          
+          <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
           <link type="text/css" rel="stylesheet" href="css/bootstrap-select-form.min.css" />
           <link type="text/css" rel="stylesheet" href="css/slick.min.css" />
           <link type="text/css" rel="stylesheet" href="css/bootstrap-date-time-picker.min.css" />
@@ -1164,8 +1167,8 @@
 
           <script type="text/javascript">
             $(document).ready(function() {
-            
-            
+
+
               /* input:focus */
               $('.form-control').on('focusin', function() {
                 $(this).parent().addClass('focus');
@@ -1173,14 +1176,14 @@
               $('.form-control').on('focusout', function() {
                 $(this).parent().removeClass('focus');
               });
-            
+
               $('.form-control').on('mouseover', function() {
                 $(this).parent().addClass('hover');
               });
               $('.form-control').on('mouseout', function() {
                 $(this).parent().removeClass('hover');
               });
-            
+
               /* input:active */
               /*$('.form-control').mousedown(function() {
                $(this).parent().addClass('active');
@@ -1188,13 +1191,13 @@
                $('.form-control').mouseup(function() {
                $(this).parent().removeClass('active');
                });*/
-            
+
               /*$('.form-control').click(function () {
                $inputs.parent().filter('.red').removeClass('red');
                $(this).parent().addClass('red');
                });*/
-            
-            
+
+
               /* Slider */
               $('.video-slide').slick({
                 infinite: true,
@@ -1242,37 +1245,37 @@
                   }
                 ]
               });
-            
+
               //    KK testing
               /*var btnPrev = document.querySelector(".prev");
                     var btnNext = document.querySelector(".next");
                     var btnNext2 = document.querySelector(".next-2");
                     var btnHolder = document.querySelector(".button-holder-faq");
-            
+
                     var section_1 = document.querySelector("#gm-customer-service-2");
                     var section_2 = document.querySelector("#gm-customer-service-4");
                     var section_3 = document.querySelector("#gm-customer-service-5");
-            
+
                     var allSections = [section_1, section_2, section_3];
-            
+
                     var sectionSelected = 1
                     initSections(sectionSelected);
-            
+
                     btnPrev.addEventListener("click", function () {
                         sectionSelected--;
                         showSections(sectionSelected);
                     });
-            
+
                     btnNext.addEventListener("click", function () {
                         sectionSelected++;
                         showSections(sectionSelected);
                     });
-            
+
                     btnNext2.addEventListener("click", function () {
                         sectionSelected++;
                         showSections(sectionSelected);
                     });*/
-            
+
               /* Functions */
               /*function initSections(sectionSelected) {
                   if (sectionSelected === 1) {
@@ -1280,7 +1283,7 @@
                       $(btnNext2).addClass("btn-hide");
                       $(btnHolder).removeClass("button-holder-faq--bgc");
                       $(section_1).addClass("active-faq");
-            
+
                   } else if (sectionSelected === 3) {
                       $(btnPrev).removeClass("btn-hide");
                       $(btnHolder).removeClass("button-holder-faq--bgc");
@@ -1292,14 +1295,14 @@
                       $(section_2).addClass("active-faq");
                   }
               }
-            
+
               function showSections(sectionId) {
                   allSections.forEach(function (element) {
                       if ($(element).hasClass("active-faq")) {
                           $(element).removeClass("active-faq");
                       }
                   });
-            
+
                   if (sectionId === 1) {
                       $(btnPrev).addClass("btn-hide");
                       $(btnNext).removeClass("btn-hide");
@@ -1323,19 +1326,19 @@
                   }
               }*/
               //  END KK testing
-            
-            
+
+
               /* Accordion */
               $('.accordion').on('hidden.bs.collapse', function() {});
-            
+
               /*var q = parseInt("");
-            
+
                    if(q != 0){
                    var checkFaq = $('#csp-top-' + q);
                    if(checkFaq.length > 0)
                    checkFaq.collapse('show');
                    }*/
-            
+
               function toggleChevron(e) {
                 $(e.target).parent('.panel-default').toggleClass('active');
                 $(e.target)
@@ -1343,17 +1346,17 @@
                   .find('.panel-title')
                   .toggleClass('panel-inactive panel-active');
               }
-            
+
               $('.accordion').on('hidden.bs.collapse', toggleChevron);
               $('.accordion').on('shown.bs.collapse', toggleChevron);
-            
+
             });
             </script>
-            
-            
+
+
             <script>
             $(function() {
-            
+
               $('.form-tel').keyup(function(e) {
                   if (this.value != '-')
                     while (isNaN(this.value))
@@ -1363,11 +1366,11 @@
                 .on("", function(e) {
                   e.preventDefault();
                 });
-            
+
             });
             </script>
-            
-            
+
+
             <script type="text/javascript">
             function countChar(val) {
               var len = val.value.length;
@@ -1378,7 +1381,7 @@
               }
             }
             </script>
-            
+
             <script type="text/javascript">
             $(document).ready(function() {
               if (location.hash != null && location.hash != "") {
@@ -1387,8 +1390,8 @@
               }
             });
             </script>
-            
-            
+
+
             <div id="rawTopics" data-topics='{"CSG":{"my_account":"My account","order_purchase":"Order purchase","output":"Mining output","allocation":"Mining allocation","affiliate":"Affiliate program","general":"General"},"CSG|my_account":{"general":"General","wallet":"Cryptocurrency wallet"},"CSG|my_account|general":{"unlock":"Unlock my account","setup_2fa":"How to set up 2FA","lost_device_access":"Lost access to my device (I forgot 2FA code)","change_password":"Change password","forgot_password":"Forgot my password","password_length":"Password length","lost_email_access":"Lost access to my email","terminate":"Terminate my account","change_email":"Change my login email address","signup":"How to sign up","fake_scam_site":"Fake\/Scam site","other":"Nothing listed above"},"CSG|my_account|wallet":{"wallet_setup":"How to setup my wallet","wallet_change":"How to change my wallet","wallet_issues":"Wallet issues","other":"Nothing listed above"},"CSG|order_purchase":{"general":"General","credit_card":"I\u2019ve made credit card purchase","crypto":"I\u2019ve made cryptocurrency purchase"},"CSG|order_purchase|general":{"place_order":"How to place an order","payment_methods":"Payment methods","other":"Nothing listed above"},"CSG|order_purchase|credit_card":{"no_confirmation":"I didn\u2019t receive payment confirmation","order_status":"What is my order status?","order_pending":"My order status is pending","order_approved":"My order status is approved","order_canceled":"My order status is canceled","order_declined":"My order status is declined","order_missing":"I don\u2019t see my order listed","other":"Nothing listed above"},"CSG|order_purchase|crypto":{"no_confirmation":"I didn\u2019t receive payment confirmation","order_status":"What is my order status?","order_pending":"My order status is pending","order_approved":"My order status is approved","order_canceled":"My order status is canceled","order_expired":"My order status is expired","order_overpaid":"I\u2019ve overpaid my order","order_underpaid":"I\u2019ve underpaid my order","order_missing":"I don\u2019t see my order listed","other":"Nothing listed above"},"CSG|output":{"first":"First mining output","missing":"Missing mining output","blockchain_error":"Blockchain transaction error"},"CSG|output|first":{"credit_card":"I\u2019ve made credit card purchase","crypto":"I\u2019ve made cryptocurrency purchase"},"CSG|output|first|crypto":{"btc":"Bitcoin","dash":"Dash","ltc":"Litecoin","doge":"Dogecoin","bch":"Bitcoin Cash","zec":"Zcash"},"CSG|output|missing":{"date":"Missing date"},"CSG|output|missing|date":{"sha256":"Bitcoin Mining","equihash":"Zcash Mining","ethash":"Ether Mining","x11":"Dash Mining","cryptonight":"Monero Mining","cryptonightv0":"Monero Classic Mining","scrypt":"Litecoin Mining"},"CSG|output|missing|date|sha256":{"btc":"BTC","bch":"BCH","btg":"BTG","zet":"ZET","uno":"UNO","btcd":"BTCD","doge":"DOGE","ltc":"LTC","dash":"DASH","zec":"ZEC"},"CSG|output|missing|date|equihash":{"eth":"ETH","btc":"BTC","btg":"BTG","zec":"ZEC"},"CSG|output|missing|date|ethash":{"btc":"BTC","btg":"BTG","eth":"ETH","zec":"ZEC","rep":"REP","etc":"ETC","steem":"STEEM","ltc":"LTC","doge":"DOGE","bch":"BCH"},"CSG|output|missing|date|x11":{"dash":"DASH","btc":"BTC","btg":"BTG","start":"START","ltc":"LTC","doge":"DOGE","btcd":"BTCD","ppc":"PPC","nmc":"NMC","cure":"CURE","xmr":"XMR","zec":"ZEC"},"CSG|output|missing|date|cryptonight":{"xmr":"XMR","xmc":"XMC","etn":"ETN","btc":"BTC","btg":"BTG","ltc":"LTC","dash":"DASH","zec":"ZEC"},"CSG|output|missing|date|cryptonightv0":{"xmc":"XMC","xmr":"XMR","etn":"ETN","btc":"BTC","btg":"BTG","ltc":"LTC","dash":"DASH","zec":"ZEC"},"CSG|output|missing|date|scrypt":{"dash":"DASH","zec":"ZEC","ltc":"LTC","doge":"DOGE","btc":"BTC","btg":"BTG"},"CSG|output|blockchain_error":{"date":"Missing date"},"CSG|output|blockchain_error|date":{"sha256":"Bitcoin Mining","equihash":"Zcash Mining","ethash":"Ether Mining","x11":"Dash Mining","cryptonight":"Monero Mining","cryptonightv0":"Monero Classic Mining","scrypt":"Litecoin Mining"},"CSG|output|blockchain_error|date|sha256":{"btc":"BTC","bch":"BCH","btg":"BTG","zet":"ZET","uno":"UNO","btcd":"BTCD","doge":"DOGE","ltc":"LTC","dash":"DASH","zec":"ZEC"},"CSG|output|blockchain_error|date|equihash":{"eth":"ETH","btc":"BTC","btg":"BTG","zec":"ZEC"},"CSG|output|blockchain_error|date|ethash":{"btc":"BTC","btg":"BTG","eth":"ETH","zec":"ZEC","rep":"REP","etc":"ETC","steem":"STEEM","ltc":"LTC","doge":"DOGE","bch":"BCH"},"CSG|output|blockchain_error|date|x11":{"dash":"DASH","btc":"BTC","btg":"BTG","start":"START","ltc":"LTC","doge":"DOGE","btcd":"BTCD","ppc":"PPC","nmc":"NMC","cure":"CURE","xmr":"XMR","zec":"ZEC"},"CSG|output|blockchain_error|date|cryptonight":{"xmr":"XMR","xmc":"XMC","etn":"ETN","btc":"BTC","btg":"BTG","ltc":"LTC","dash":"DASH","zec":"ZEC"},"CSG|output|blockchain_error|date|cryptonightv0":{"xmc":"XMC","xmr":"XMR","etn":"ETN","btc":"BTC","btg":"BTG","ltc":"LTC","dash":"DASH","zec":"ZEC"},"CSG|output|blockchain_error|date|scrypt":{"dash":"DASH","zec":"ZEC","ltc":"LTC","doge":"DOGE","btc":"BTC","btg":"BTG"},"CSG|allocation":{"general":"More information about mining allocation","change_allocation":"Change mining allocation"},"CSG|allocation|general":{"how_it_works":"How it works in general","sha256;bitcoin_mining":"Bitcoin Mining","equihash;zcash_mining":"Zcash Mining","ethash;ether_mining":"Ether Mining","x11;dash_mining":"Dash Mining","cryptonight;monero_mining":"Monero Mining","scrypt;litecoin_mining":"Litecoin Mining"},"CSG|allocation|change_allocation":{"how_it_works":"How it works in general","sha256;bitcoin_mining":"Bitcoin Mining","equihash;zcash_mining":"Zcash Mining","ethash;ether_mining":"Ether Mining","x11;dash_mining":"Dash Mining","cryptonight;monero_mining":"Monero Mining","scrypt;litecoin_mining":"Litecoin Mining"},"CSG|affiliate":{"how_it_works":"How it works in general","reward":"Referral rewards","free_hashpower":"Free hashpower","promo_code":"Promo code\/discounts","ranks":"Affiliate ranks","more_info":"More about affiliate program"},"CSG|general":{"how_to_start":"How to start mining","know_more":"I want to know more about","pricing":"Pricing","returns":"Expected returns","maintenance_fee":"Maintenance fee"},"CSG|general|know_more":{"sha256;bitcoin_mining":"Bitcoin Mining","equihash;zcash_mining":"Zcash Mining","ethash;ether_mining":"Ether Mining","x11;dash_mining":"Dash Mining","cryptonight;monero_mining":"Monero Mining","scrypt;litecoin_mining":"Litecoin Mining","partner_sites":"Partner Sites"}}'></div>
             <script type="text/javascript">
             $(document).ready(function() {
@@ -1401,10 +1404,10 @@
                 }
                 return topics;
               }
-            
+
               function compileTopicKey(currentSelectboxTopic, currentSelectboxOrder) {
                 var compileTopics = ['CSG'];
-            
+
                 var allTopicsVals = [
                   $('#SupportTopic1').val(),
                   $('#SupportTopic2').val(),
@@ -1412,47 +1415,47 @@
                   $('#SupportTopic4').val(),
                   $('#SupportTopic5').val()
                 ];
-            
+
                 console.dir(allTopicsVals);
-            
+
                 for (var i = 0; i < currentSelectboxOrder; i += 1) {
                   console.log(allTopicsVals[i]);
                   if (allTopicsVals[i] !== '') {
                     compileTopics.push(allTopicsVals[i]);
                   }
                 }
-            
+
                 return compileTopics.join('|');
               }
-            
+
               var allTopics = getAllTopics();
-            
+
               $('#datetimepickerCSC').hide();
-            
+
               var datePicker = function() {
                 if ($('#SupportTopic2').val() == 'missing' || $('#SupportTopic2').val() == 'blockchain_error') {
-            
+
                   $('#datetimepickerCSC').hide();
                   $('#datetimepickerCSC').prop('required', false);
                   if ($('#datetimepickerCSC').data("date")) {
                     $('#datetimepickerCSC').data("DateTimePicker").clear();
                   }
-            
+
                   // Hide third dropdown
                   $('#SupportTopic3').parent().parent().hide();
                   // Show datepicker
                   $('#datetimepickerCSC').show();
-            
+
                   $('#datetimepickerCSC').prop('required', true);
                   $('#datetimepickerCSC').datetimepicker({
                     viewMode: 'days',
                     format: 'DD/MM/YYYY'
                   });
-            
+
                   $('#datetimepickerCSC').on('dp.change', function(event) {
                     $('#SupportTopic3').selectpicker('val', 'date').change();
                   });
-            
+
                 } else {
                   if ($('#SupportTopic2').val() !== 'first') {
                     return
@@ -1464,13 +1467,13 @@
                   }
                 }
               };
-            
+
               $('.cs-selection').on('change', function(e) {
                 var currentElement = $(this);
                 var nextElementOrder = parseInt(currentElement.attr('data-order'), 10);
                 var nextElement = $("#SupportTopic" + ++nextElementOrder);
                 var topicKey = compileTopicKey(currentElement.val(), currentElement.attr('data-order'));
-            
+
                 var nextElementOptionsHtml = '';
                 if (typeof allTopics[topicKey] !== 'undefined') {
                   Object.keys(allTopics[topicKey]).forEach(function(key) {
@@ -1485,16 +1488,16 @@
                     elementNA.append(elementNAHtml).selectpicker('refresh');
                   }
                 }
-            
+
                 nextElement.find('option').remove();
                 nextElement.append(nextElementOptionsHtml).selectpicker('refresh');
-            
+
                 for (var zy = nextElementOrder; zy <= 5; zy += 1) {
                   var hideElement = $('#SupportTopic' + zy);
                   hideElement.prop('required', false).selectpicker('refresh');
                   hideElement.parent().parent().hide();
                 }
-            
+
                 if (nextElement.selector !== '#SupportTopic6') {
                   if (nextElement.children()[0].innerHTML !== 'N/A') {
                     nextElement.prop('required', true);
@@ -1523,7 +1526,7 @@
               });
             });
             </script>
-            
+
             <script type="text/javascript">
             /* MODAL*/
             // Give modal backdrop an extra class to make it customizable
@@ -1534,9 +1537,9 @@
             });
             /* END MODAL*/
             </script>
-            
-            
-            
+
+
+
             <script>
             $(document).ready(function() {
               $("#PageDisplayForm").submit(function(e) {
@@ -1545,6 +1548,7 @@
               });
             });
             </script>
+
 
 
 

@@ -18,7 +18,7 @@
     <link rel="alternate" href="/" hreflang="zh"/>
     <link rel="alternate" href="/" hreflang="ko-kr"/>
     <link rel="alternate" href="/" hreflang="x-default"/>
- 
+
     <style type="text/css">
         .gm-black-friday {
             position: fixed;
@@ -501,18 +501,18 @@
                                     <a class="navbar-link nav-login {{  request()->is('register*') ? 'active' : '' }}"  href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
-                            
+
                                     @if (Route::has('register'))
                                     <li itemprop="name" class="nls"><a class="navbar-link nav-signup {{  request()->is('register*') ? 'active' : '' }}"   href="{{ route('register') }}" >Sign Up</a>
                                     </li>
                                     @endif
                                     @else
-                                  
+
                                     <li  class="nll"><a class="navbar-link nav-login"
                                                                        href="/dashboard/overview"
                                                                         >Dashboard</a>
                                     </li>
-                                    <li   class="nls"><a class="navbar-link nav-signup"  
+                                    <li   class="nls"><a class="navbar-link nav-signup"
                                                                        href="{{ route('logout') }}"
                                                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();"                        >Logout</a>
@@ -522,12 +522,12 @@
                                     <br>
                                     <small  class="nls"  >Welcome   {{ Auth::user()->name }}</small>
                                     </li>
-                                 
+
                                     @endguest
                                 </ul>
 
 
-                                
+
 
                               <div id="google_translate_desktop" style="margin-left: 220px; margin-top: 20px;"></div>
 
@@ -576,7 +576,7 @@
         </header>
 
         <div class="container-fluid">
-      
+
         @yield('content')
 
                         <script type="text/javascript">
@@ -1005,23 +1005,40 @@
 <footer id="gm-content">
               <div class="gm-footer-top">        <div class="container">
                       <div class="row">
-          
+
                           <div class="col-xs-6 col-sm-6">
                               <div class="row">
                                   <div class="col-md-6 gm-footer-members">
                                       <h3>Member area</h3>
                                       <p>If you don’t have an account, sign up for free.</p>
                                       <ul class="gm-footer-ml">
-                                          <li class="gm-footer-ml-singup"><a class="btn btn-sm btn-warning" href="/register"
-                                                                             title="Sign Up">Sign Up</a>
-                                          </li>
-                                          <li class="gm-footer-ml-login"><a class="btn btn-sm btn-primary"
+                                      @guest
+                                   @if (Route::has('login'))
+
+                                   <li class="gm-footer-ml-login"><a class="btn btn-sm btn-primary"
                                                                             href="/login"
                                                                             title="Login">Login</a>
                                           </li>
+                            @endif
+
+                                    @if (Route::has('register'))
+                                    <li class="gm-footer-ml-singup"><a class="btn btn-sm btn-warning" href="/register"
+                                                                             title="Sign Up">Sign Up</a>
+                                          </li>
+                                    @endif
+                                    @else
+                                    <li class="gm-footer-ml-singup"><a class="btn btn-sm btn-warning" href="/dashboard/overview"
+                                                                             title="Sign Up">Dashboard</a>
+                                          </li>
+
+                                
+
+                                    @endguest
+
+
                                       </ul>
                                   </div>
-          
+
                                   <div class="col-md-6 gm-footer-social">
                                       <h3>Follow us</h3>
                                       <p>Stay up to date with CryptoBitNet activities.</p>
@@ -1041,22 +1058,7 @@
                                                   </svg>
                                               </a>
                                           </li>
-                                          <!-- <li class="youtube-fs"><a href="#"
-                                                                    target="_blank" title="Youtube" rel="noreferrer">
-                                                  <svg class="gm-icon gm-icon-youtube"><title>Youtube</title>
-                                                      <use xlink:href="img/sprite.svg#gm-icon-youtube"></use>
-                                                  </svg>
-                                              </a>
-                                          </li> -->
-                                          <!-- <li class="vkontakte-fs">
-                                              <a href="#" target="_blank" title="VKontakte"
-                                                 rel="noreferrer">
-                                                  <svg class="gm-icon gm-icon-vkontakte">
-                                                      <title>VKontakte</title>
-                                                      <use xlink:href="img/sprite.svg#gm-icon-vkontakte"></use>
-                                                  </svg>
-                                              </a>
-                                          </li> -->
+
                                           <li class="instagram-fs">
                                               <a href="https://www.instagram.com/CryptoBitNet_official" target="_blank"
                                                  title="Instagram" rel="noreferrer">
@@ -1066,34 +1068,18 @@
                                                   </svg>
                                               </a>
                                           </li>
-                                          <!-- <li class="linkedin-fs">
-                                              <a href="#" target="_blank"
-                                                 title="Linkedin" rel="noreferrer">
-                                                  <svg class="gm-icon gm-icon-linkedin">
-                                                      <title>Linkedin</title>
-                                                      <use xlink:href="img/sprite.svg#gm-icon-linkedin"></use>
-                                                  </svg>
-                                              </a>
-                                          </li> -->
-                                          <!-- <li class="medium-fs">
-                                              <a href="#" target="_blank" title="Medium"
-                                                 rel="noreferrer">
-                                                  <svg class="gm-icon gm-icon-medium"><title>Medium</title>
-                                                      <use xlink:href="img/sprite.svg#gm-icon-medium"></use>
-                                                  </svg>
-                                              </a>
-                                          </li> -->
+
                                       </ul>
                                   </div>
                               </div>
                           </div>
-          
+
                                           <div class="col-xs-5 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-6 col-md-offset-0 gm-footer-menu">
                               <h3>&nbsp;</h3>
                               <ul class="footer-nav-b1">
                                   <li><a class=" active" href="/"
                                          title="Home">Home</a></li>
-                                        
+
                                   <li><a class="" href="/#mining"
                                          title="Why mining">Why mining</a></li>
                                          <li><a class="" href="/privacy"
@@ -1102,12 +1088,12 @@
                                           title="Contact">Contact</a></li>
                               </ul>
                               <ul class="footer-nav-b3">
-                                                             
+
                                                                                   <li><a class=""
                                          href="/customer-service"
                                          title="Customer Service">Customer Service</a>
                                   </li>
-                                  
+
                               </ul>
                               <ul class="footer-nav-b2">
                                   <li><a class="" href="/#about"
@@ -1117,21 +1103,21 @@
                                   <!-- <li><a class="" href="#"
                                          title="Press">Press</a></li> -->
                               </ul>
-          
+
                               <!-- <ul class="footer-nav-b4">
-                                  
-                                  
+
+
                               </ul> -->
                           </div>
                       </div>
                   </div>
               </div>
-          
+
               <div class="gm-footer-bottom">        <div class="container">
                       <div class="row">
-          
-          
-                                          
+
+
+
                               <div class="gmww">
                                   <div class="col-xs-12 col-md-6 col-md-push-4 gm-footer-secure">
                                       <div class="row">
@@ -1153,8 +1139,8 @@
                                           </div>
                                       </div>
                                   </div>
-          
-          
+
+
                                   <!-- <div class="col-xs-6 col-md-3 col-md-pull-3 gm-footer-cc">
                                       <ul>
                                                                               <li class="mastercard">
@@ -1171,25 +1157,25 @@
                                                                       </ul>
                                                                     <span>We accept credit card payment</span>
                                                               </div> -->
-          
-          
+
+
                                   <div class="col-xs-6 col-md-3 col-md-pull-6 gm-footer-copyright">
                                       <a href="/" title="Home" class="footer-home">
                                         <img src="img/logo-black.png" alt="" class="img-responsive" style="width: 70px;">
                                       </a>
                                   </div>
                               </div>
-                          
-          
+
+
                           <div class="clearfix"></div>
                           <div class="col-sm-12 gm-footer-disclaimer">
                               <!-- <p>The information on this website does not convey an offer of any type and is not intended to be, and should not be construed as, an offer to sell, or the solicitation of an offer to buy, any securities, commodities, or other financial products. In addition, the information on this website does not constitute the provision of investment advice.No assurances can be made that any aims, assumptions, expectations, strategies, and/or goals expressed or implied herein were or will be realized or that the activities or any performance described did or will continue at all or in the same manner as is described on this website.</p> -->
                               <br>
                               <h5 class="text-center">Copyright &copy; 2017 Cryptobitnet</h5>
                           </div>
-                          
-                          
-                          
+
+
+
                       </div>
                   </div>
               </div></footer>

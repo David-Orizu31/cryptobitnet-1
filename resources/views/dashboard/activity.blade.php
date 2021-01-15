@@ -1,5 +1,5 @@
 @extends('dashboard.navbar')
- 
+
 @section('content')
 
 
@@ -30,7 +30,7 @@
            }
         }
     </style>
-    
+
     <script src="js/vue-2.5.16.min.js"></script>
     <script src="js/axios-0.18.0.min.js"></script>
     <script src="js/moment.min.js"></script>
@@ -46,33 +46,33 @@
         e.preventDefault();
       });
     });
-    </script></header>   
+    </script></header>
 
 <div class="container-fluid">
 <div id="main-container">
     <div class="container">
                     <div id="mma-flash" class="mma">
                 <div class="row">
-                    
+
                                             <div class="col-sm-12">
 
-                                                        
-                                                                                                                        
+
+
                                 <p></p>
                                                                                                                 </div>
-                    
-                                        
 
 
-                                        
+
+
+
                                             <div class="col-sm-12"></div>
                                     </div>
             </div>
-                
+
 <div id="pending-output">
     <div class="row">
         <div class="col-sm-12">
-            <h2 class="h2-new">My pending balance of mining outputs (paid with credit card)</h2>
+            <h2 class="h2-new">MINING OUTPUT BALANCE</h2>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 cm12-1">
@@ -82,7 +82,7 @@
                     <tr>
                         <th>Crypto Currency Name</th>
                         <th>Currency Code</th>
-                       
+
                         <th>Status</th>
                         <th>Package</th>
                         <th>Action</th>
@@ -90,18 +90,18 @@
                     </tr>
                     </thead>
                     <tbody>
-                             @forelse($histories as $history)                                                                      
+                             @forelse($histories as $history)
                            <tr>
                                 <td data-label="Crypto Currency"><b>{{$history->currency_name}}</b></td>
                                 <td data-label="Currency Code">@if($history->currency_name == 'Bitcoin') BTC   @elseif($history->currency_name == 'Ethereum')  Eth @else ---  @endif</td>
-                              
+
                                 <td data-label="Status">{{$history->trans_status}}</td>
                                 <td data-label="Status">{{$history->package}}</td>
                                 <td data-label="Package">{{$history->trans_action}}</td>
                                 <td data-label="Balance">{{$history->transaction_balance}}</td>
                             </tr>
                               @empty
-                              
+
                               <tr>
                                 <td data-label="Crypto Currency"><b>----------</b></td>
                                 <td data-label="Currency Code">----------</td>
@@ -143,7 +143,7 @@
                                 <td data-label="Package">----------</td>
                                 <td data-label="Duration">----------</td>
                             </tr> -->
-                                                                                                                           
+
                                                                                                                                                                                                                                                                                                                                                                                     </tbody>
                     <tfoot>
                     <tr>
@@ -219,8 +219,8 @@
 
 <!-- <div id="output-info" class="mma mma-bc1">
     <div class="row">
-        
-        
+
+
 
         <div class="col-sm-6 pi2">
           <p><b>Quick Information:</b></p>
@@ -294,7 +294,7 @@
           </ul>
 
 
-          
+
         </div>
     </div>
 </div> -->

@@ -33,7 +33,7 @@ Route::get('/message/{id}', [App\Http\Controllers\DashboardController::class, 'u
 
 Route::get('/support', [App\Http\Controllers\DashboardController::class, 'support'])->name('support');
 Route::post('/supportsent', [App\Http\Controllers\DashboardController::class, 'supportsent'])->name('support');
-
+Route::post('/paypalrequest', [App\Http\Controllers\DashboardController::class, 'paypalrequest'])->name('paypalrequest');
 
 Route::get('/customer-service', [App\Http\Controllers\HomeController::class, 'customerservice'])->name('customerservice');
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
@@ -45,7 +45,7 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
- 
+
 
 // Route::domain(config('app.short_url').'.{subdomain}')->group(function () {
 

@@ -24,8 +24,20 @@
                   <h1 itemprop="produces">Start Bitcoin mining today!</h1>
                   </div>
                   <p><span>It’s super simple - Your mining rigs are already set up and running.<br /> As soon as you’ve set up your account, you can start to mine your first coins using our Bitcoin cloud mining service!</span></p>
-                  <a href="/register" title="Start Mining Now!"
+
+
+
+                     @guest
+                            @if (Route::has('register'))
+                            <a href="/register" title="Start Mining Now!"
                      class="btn btn-warning">Start Mining Now!</a>
+                     @endif
+                     @else
+
+                     <a href="/dashboard/overview" title="Start Mining Now!"
+                     class="btn btn-warning">Start Mining Now!</a>
+
+                            @endguest
                   <!-- <a href="#gm-home-3" title="Learn more"
                      class="btn btn-success btn-learn-more">Learn more</a> -->
               </div>
@@ -1897,14 +1909,18 @@ Cryptocurrencies don’t have a central government or other so called 'middlemen
 
 
 
-
-                      <div id="gm-home-4" class="gh4">
+@guest
+                            @if (Route::has('register'))
+                            <div id="gm-home-4" class="gh4">
                           <div class="container">
                             <h2>Try CryptoBitNet today!</h2>
                             <a href="/register" title="Sign up now" class="btn btn-default">Sign up now</a>
                           </div>
                           <img loading="lazy" src="img/cry.jpg" style="max-height: 250px;" data-speed="0.8" class="img-parallax" alt="Try CryptoBitNet today image" title="Try CryptoBitNet today image" />
                         </div>
+                                    @endif
+                                    @endguest
+
 
         </div>
 

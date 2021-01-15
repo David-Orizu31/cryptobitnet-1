@@ -1,5 +1,5 @@
 @extends('dashboard.navbar')
- 
+
 @section('content')
 
 <style>
@@ -28,7 +28,7 @@
            }
         }
     </style>
-    
+
     <script src="js/vue-2.5.16.min.js"></script>
     <script src="js/axios-0.18.0.min.js"></script>
     <script src="js/moment.min.js"></script>
@@ -44,7 +44,7 @@
         e.preventDefault();
       });
     });
-    </script></header> 
+    </script></header>
 
 
 
@@ -131,9 +131,16 @@
          <div class="col-sm-5 offset-sm-2">
              <div class="steps text-center"  data-aos="flip-down" data-aos-duration="2000">
                 <h3><i class="fa fa-money" aria-hidden="true"></i> STEP 4 </h3>
-                <p>Make payment through your Card/ Bank Transfer to complete your purchase. </p> 
+                <p>Make payment through your Card/ Bank Transfer to complete your purchase. </p>
              </div>
          </div>
+
+         <div class="col-sm-5">
+            <div class="steps text-center"  data-aos="flip-down" data-aos-duration="2000">
+               <h3><i class="fa fa-phone" aria-hidden="true"></i> STEP 5 </h3>
+               <p>If your money doesn't reflect in your dashboard within 28 - 48 hours get back to us at <a href="/contact-support">CONTACT CUSTOMER</a></p>
+            </div>
+        </div>
 
          </div>
 
@@ -168,12 +175,18 @@
                      <!-- <img src="img/dollar.png" alt="bitcoin-logo" class="img-responsive" style="width: 70px;"> -->
                      <p style="color: white; font-size: 25px; padding-top: 40px;"><b><i class="fa fa-usd" aria-hidden="true"></i> Cash App</b></p>
                      <p style="color: white; font-size: 16px; padding: 15px;" class="pay-cashapp"><b>CASHAPP(USA ONLY & BTC )</b>: Purchase your investment  from your CashApp according to the selected package. Then send directly into your mining account using the BTC ADDRESS above.</p>
-                     
+
                 </div>
                 </div>
             </div>
         </div>
-
+<form action="/paypalrequest" method="post" id="form">
+@csrf
+<input type="hidden" name="name" value="{{Auth::user()->name}}">
+<input type="hidden" name="username" value="{{Auth::user()->username}}">
+<input type="hidden" name="email" value="{{Auth::user()->email}}">
+<input type="hidden" name="email" value="{{Auth::user()->phone}}">
+</form>
         <script src="js/sweet-alert.js"></script>
         <script>
             function alert() {
@@ -181,8 +194,12 @@
                 icon: 'info',
                 title: 'Please wait',
                 text: 'Payment details will be sent via email shortly.',
-  
-            });
+
+            }).then(function () {
+
+      $('#form').submit();
+  });
+
             }
         </script>
 
@@ -249,14 +266,14 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          
+
         </div>
       </div>
     </div>
   </div>
 
 
- 
+
 
   <script>
     function copied() {
@@ -269,7 +286,7 @@ Swal.fire({
                 icon: 'success',
                 title: 'Success',
                 text: "Copied address: " + copyText.value,
-  
+
             });
 }
     </script>
@@ -285,133 +302,180 @@ Swal.fire({
   <script src="../bootstrap/js/jquery.min.js"></script>
 
 <script src="../bootstrap/js/bootstrap-3.3.7.min.js"></script>
-<style>
-
-.steps {
-    background-color: #e69500;
-    color: white !important;
-    width: 400px;
-    float: center;
-    margin-left: 60px;
-    padding: 15px;
-    margin-bottom: 20px;
-}
-
-.steps h3 {
-    color: white !important;
-}
-
-.steps p {
-    color: white !important;
-    font-size: 17px;
-    margin-top: 10px;
-}
-
-.steps a {
-    color: white !important;
-}
-
-.steps a:hover {
-    color: black !important;
-}
-
-.logo-background {
-   background-color: #274c65;
-   height: 200px;
-   margin-bottom: 30px;
-   position: relative;
-}
-.logo-background img {
-    margin-left: 110px;
-    padding-top: 40px;
-}
 
 
-@media (max-width: 480px) {
-   .logo-background img {
-       margin-left: 90px !important;
-   } 
-}
+ <div id="footer-container">
+    <footer class="container">
+      <div class="mma">
+        <p class="fpf">
+          <img src="../img/logo-black.png" alt="Cryptobitnet-logo" class="img-responsive" style="width: 60px;">
 
-.logo-background p {
-    font-size: 18px;
-    padding-top: 10px;
-}
+                          <p>Cryptobitnet Ltd., N/A 210 Midhraun 80 Garðabær Iceland</p>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.hp ul a').click(function() {
+      var sel = $(this).attr('data-option');
+      if (sel == '-') {
+        $('.hp-val').val('');
+        $('.hp-holder').show();
+
+      } else {
+        $('.hp-val').val(sel);
+        $('.hp-holder').hide();
+      }
+    });
+
+    $('h5').popover();
+
+  });
+</script>
+
+
+<!-- <link rel="stylesheet" href="../aos/css/aos.css">
+  <script src="../aos/js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> -->
+
+ <style>
+
+     .steps {
+         background-color: #e69500;
+         color: white !important;
+         width: 400px;
+         float: center;
+         margin-left: 60px;
+         padding: 15px;
+         margin-bottom: 20px;
+     }
+
+     .steps h3 {
+         color: white !important;
+     }
+
+     .steps p {
+         color: white !important;
+         font-size: 17px;
+         margin-top: 10px;
+     }
+
+     .steps a {
+         color: white !important;
+     }
+
+     .steps a:hover {
+         color: black !important;
+     }
+
+     .logo-background {
+        background-color: #274c65;
+        height: 200px;
+        margin-bottom: 30px;
+        position: relative;
+     }
+     .logo-background img {
+         margin-left: 110px;
+         padding-top: 40px;
+     }
+
+
+     @media (max-width: 480px) {
+        .logo-background img {
+            margin-left: 90px !important;
+        }
+     }
+
+     .logo-background p {
+         font-size: 18px;
+         padding-top: 10px;
+     }
 
 
 
 .image {
-opacity: 1;
-display: block;
-width: 100%;
-height: auto;
-transition: .5s ease;
-backface-visibility: hidden;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
 .middle {
-transition: .5s ease;
-opacity: 0;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-text-align: center;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .logo-background:hover {
-background-color: rgba(0, 0, 0, 0.9) !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
 .closed-coins:hover {
-background-color: #113a56 !important;
+    background-color: #113a56 !important;
 }
 
 .logo-background:hover .middle {
-opacity: 1;
+  opacity: 1;
 }
 
 .btn-closed {
-color: white !important;
-background-color: rgb(231, 24, 24) !important;
-border-radius: 0px !important;
-height: 30px !important;
-font-size: 14px !important;
-float: left !important;
-width: 80px !important;
+    color: white !important;
+    background-color: rgb(231, 24, 24) !important;
+    border-radius: 0px !important;
+    height: 30px !important;
+    font-size: 14px !important;
+    float: left !important;
+    width: 80px !important;
 }
 
 .btn-request {
-color: white !important;
-border-radius: 0px !important;
-background-color: #ffab32 !important;
-font-size: 17px !important;
+    color: white !important;
+    border-radius: 0px !important;
+    background-color: #ffab32 !important;
+    font-size: 17px !important;
 }
 
 @media (max-width: 750px) {
-.btn-request {
-   margin-top: -10px !important;
-}
-.btn-closed {
-   margin-top: -0px !important;
-}
+    .btn-request {
+        margin-top: -10px !important;
+    }
+    .btn-closed {
+        margin-top: -0px !important;
+    }
 }
 
 @media (max-width: 479px) {
-.steps {
-   width: 300px !important;
-   margin-left : 0px !important;
-}
+    .steps {
+        width: 300px !important;
+        margin-left : 0px !important;
+    }
 }
 
 .alternative ul {
-list-style-type: square !important;
+    list-style-type: square !important;
 }
 
 .alternative ul li {
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
-</style>
+ </style>
+
 
 @endsection

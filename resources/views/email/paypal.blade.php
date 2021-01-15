@@ -1,16 +1,16 @@
-# Support Mail
+# Paypal Request form
 <br>
 Name: {{$name}}
 
 <br>
 
-Phone Number: {{$phone}}
+Phonenumber: {{$phone}}
 <br>
-Email: {{$email}}
+Email Address: {{$email}}
 <br>
-Option Chosen: {{$supportoption}}
+
 <br>
-Message: {{$usermessage}}
+Username: {{$username}}
 <br>
 
 
