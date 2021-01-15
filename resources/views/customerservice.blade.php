@@ -11,6 +11,7 @@
         <div id="gm-customer-service-1" style="background:url(img/banner-pages.jpg) no-repeat 50% 0;">
             <div class="container">
             <div class="row">
+            @include('flash::message')
               <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                 <h1>Customer Service Center</h1>
                 <p>What coin can I mine ?          <span>Browse our Customer service Browse our customer services Directory and receive answers to the most common questions.</span>
@@ -1014,14 +1015,15 @@
                 <div class="col-sm-6 col-md-5">
                   <div class="customer-service-form-box">
                     <form action="/contact" class="" enctype="multipart/form-data" id="PageDisplayForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/><input type="hidden" name="data[_Token][key]" value="92f8cb019ac2ac8014318d9157b36d007701996e" id="Token2137707148"/></div>
+                    @csrf
                     <div class="form-group">
-                      <input name="data[Page][name]" class="form-control" placeholder="Your name" id="YourName" type="text" required="required"/>          </div>
+                      <input name="name" class="form-control" placeholder="Your name" id="YourName" type="text" required="required"/>          </div>
                     <div class="form-group">
-                      <input name="data[Page][email]" class="form-control" placeholder="Your account email" id="EmailAddress" type="email" required="required"/>          </div>
-                    <div class="form-group">            <input name="data[Page][phone]" class="form-control
+                      <input name="email" class="form-control" placeholder="Your account email" id="EmailAddress" type="email" required="required"/>          </div>
+                    <div class="form-group">            <input name="phone" class="form-control
                                       form-tel" placeholder="Your phone number" id="PhoneNumber" type="tel"/>          </div>
 
-                    <div class="form-group">            <select name="data[Page][support_topic][1]" class="form-control selectpicker
+                    <div class="form-group">            <select name="topic" class="form-control selectpicker
                                       cs-selection" data-style="" data-size="10" data-dropup-auto="false" title="Select your service topic 1" data-header="Select your service topic 1" data-order="1" id="SupportTopic1" required="required">
           <option value="my_account">My account</option>
           <!-- <option value="order_purchase">Order purchase</option> -->
@@ -1031,27 +1033,11 @@
           <option value="general">General</option>
           </select>          </div>
 
-                    <div class="form-group" style="display:none">            <select name="data[Page][support_topic][2]" class="form-control selectpicker
-                                      cs-selection" data-style="" data-size="10" data-dropup-auto="false" title="Select your service topic 2" data-header="Select your service topic 2" data-order="2" id="SupportTopic2">
-          </select>          </div>
 
-                    <div class="form-group">            <input name="data[Page][datepicker]" class="form-control" placeholder="Select missing date" id="datetimepickerCSC" type="text"/>          </div>
-
-                    <div class="form-group" style="display:none">            <select name="data[Page][support_topic][3]" class="form-control selectpicker
-                                      cs-selection" data-style="" data-size="10" data-dropup-auto="false" title="Select your service topic 3" data-header="Select your service topic 3" data-order="3" id="SupportTopic3">
-          </select>          </div>
-
-                    <div class="form-group" style="display:none">            <select name="data[Page][support_topic][4]" class="form-control selectpicker
-                                      cs-selection" data-style="" data-size="10" data-dropup-auto="false" title="Select your service topic 4" data-header="Select your service topic 4" data-order="4" id="SupportTopic4">
-          </select>          </div>
-
-                    <div class="form-group" style="display:none">            <select name="data[Page][support_topic][5]" class="form-control selectpicker
-                                      cs-selection" data-style="" data-size="10" data-dropup-auto="false" title="Select your service topic 5" data-header="Select your service topic 5" data-order="5" id="SupportTopic5">
-          </select>          </div>
 
 
                   <div class="form-group form-group-textarea">
-                    <label for="PageMessage">Enter your message here</label><textarea name="data[Page][message]" class="form-control" placeholder="Start typing here..." onkeyup="countChar(this)" cols="30" rows="6" id="PageMessage" required="required"></textarea>          <p class="letter-counter"><span id="charNum">0</span> / 240</p>
+                    <label for="PageMessage">Enter your message here</label><textarea name="yourmessage" class="form-control" placeholder="Start typing here..." onkeyup="countChar(this)" cols="30" rows="6" id="PageMessage" required="required"></textarea>          <p class="letter-counter"><span id="charNum">0</span> / 240</p>
                   </div>
 
                   <!-- <div class="form-group">
@@ -1061,7 +1047,6 @@
                   </div> -->
 
                   <div class="form-group form-group-captcha">
-                    <input name="data[Page][verification]" class="form-control" placeholder="10 - 9 = ?" id="verification" required="required" autocomplete="off" maxlength="2" onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57" type="text"/>        </div>
 
 
                   <div class="form-group">
