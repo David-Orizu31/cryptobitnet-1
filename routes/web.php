@@ -42,6 +42,10 @@ Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])-
 Route::get('/datacenters', [App\Http\Controllers\HomeController::class, 'datacenter'])->name('datacenter');
 Route::get('/privacy', [App\Http\Controllers\HomeController::class, 'policy'])->name('policy');
 
+// Route::get('password/reset/{token?}', 'Auth\PasswordController@showResetForm');
+// Route::post('password/email', 'Auth\PasswordController@sendResetLinkEmail');
+// Route::post('password/reset', 'Auth\PasswordController@reset');
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
