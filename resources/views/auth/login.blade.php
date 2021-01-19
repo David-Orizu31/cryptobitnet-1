@@ -450,7 +450,7 @@
                                 </li>
                                 <li itemprop="name"><a itemprop="url"
                                   class="navbar-link"
-                                  href="privacy.html"
+                                  href="/privacy"
                                   title="Privacy Policy">
                                     <!-- <i class="fa fa-key" aria-hidden="true" style="padding: 12px; border-radius: 50%; color: white !important; background-color: #113a56 !important; font-size: 18px !important; margin-top: -10px; margin-left: 50px;"></i> -->Privacy
                                   </a>
@@ -694,7 +694,7 @@
 
                                 <li><a class="" href="/#mining"
                                        title="Why mining">Why mining</a></li>
-                                       <li><a class="" href="privacy.html"
+                                       <li><a class="" href="/privacy"
                                           title="Privacy">Privacy</a></li>
                                  <li><a class="" href="/contact"
                                         title="Contact">Contact</a></li>
@@ -710,7 +710,7 @@
                             <ul class="footer-nav-b2">
                                 <li><a class="" href="/#about"
                                        title="About us">About us</a></li>
-                                <li><a class="" href="datacenters.html"
+                                <li><a class="" href="datacenters"
                                        title="Datacenters">Datacenters</a></li>
                                 <!-- <li><a class="" href="#"
                                        title="Press">Press</a></li> -->

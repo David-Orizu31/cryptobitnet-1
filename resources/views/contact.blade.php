@@ -40,7 +40,7 @@
                 <address>Email: support@cryptobitnet.com<br>
                                         Average response time: within 1 business day.<br>
                     However, depending on the volume of requests, the response time may occasionally be longer.<br>
-                    Check out our <a href="customer-service.html" title="Customer service center | CryptoBitNet">Customer Service</a> section<br><br>
+                    Check out our <a href="/customer-service" title="Customer service center | CryptoBitNet">Customer Service</a> section<br><br>
                       <!--                    --><!--                    --><!--                      --><!--                    -->                    <br>
                                     </address>
             </div>

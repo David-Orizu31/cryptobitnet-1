@@ -98,7 +98,7 @@
                           <div class="panel-body">
                             <p>
                               For security reasons, we do not disclose the exact location of our mining farms. As of April 2020, we are operating several mining farms that are located in Europe, America and Asia
-                              Electricity Cost and Availability oh cooling are important, But not the only criteria. See our " <a href="datacenters.html">DATACENTER</a> SECTION "</p>
+                              Electricity Cost and Availability oh cooling are important, But not the only criteria. See our " <a href="datacenters">DATACENTER</a> SECTION "</p>
                           </div>
                         </div>
                       </div>
@@ -966,7 +966,11 @@
                     </div>
                     <div id="csp-fp6-1" class="panel-collapse collapse">
                       <div class="panel-body">
+<<<<<<< Updated upstream
                         <p>We are one  the most reliable companies, and we are very serious about the business we are in. You can find out about our staff and management here:  <a href="index.html#about" target="_blank" rel="noreferrer">ABOUT US</a><br />To get inside views of our datacenters, check here: <a href="datacenters.html" target="_blank" rel="noreferrer">DATACENTER</a></p>
+=======
+                        <p>We are one  the most reliable companies, and we are very serious about the business we are in. You can find out about our staff and management here:  <a href="/#about" target="_blank" rel="noreferrer">ABOUT US</a><br />To get inside views of our datacenters, check here: <a href="datacenters" target="_blank" rel="noreferrer">DATACENTER</a></p>
+>>>>>>> Stashed changes
                       </div>
                     </div>
                   </div>

@@ -49,11 +49,8 @@
                    #gm-home-1 .btn {
                      font-size: 15px !important;
                    }
-
                 }
-
                 }
-
               </style>
               <!-- <div class="gm-home-1-dc">
                 <svg class="gm-icon gm-icon-location"><use xlink:href="/img/Version3/sprite.svg#gm-icon-location"></use></svg>
@@ -74,7 +71,7 @@
                             Your hardware is already running            </h3>
                           <p>Don’t wrestle with rig assembly and hot, noisy miners at home. We have the fastest bitcoin mining hardware running for you already!</p>
                           <div class="clearfix"></div>
-                          <a href="datacenters.html" class="btn btn-enigma-a" title="Our Datacenters">Our Datacenters</a>
+                          <a href="datacenters" class="btn btn-enigma-a" title="Our Datacenters">Our Datacenters</a>
                         </div>
                         <div class="col-sm-4">
                           <h3>
@@ -358,7 +355,6 @@
                                           <strong class="reveal">Offering 10+ minable cryptocurrencies through 6 major mining algorithms</strong>
                                         </div>
                                       </div>
-
                                       <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0">
                                         <div>
                                           <span class="reveal"><svg id="gm-icon-transactions" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 254.1 157.6"><style>.gm-icon-transactions-st1{fill:#0f4470}.gm-icon-transactions-st2{fill:#9fd3f2;stroke:#faa934;stroke-width:2;stroke-miterlimit:10}.gm-icon-transactions-st3{fill:#8bc9ed}.gm-icon-transactions-st4{fill:#fbb147}.gm-icon-transactions-st5{fill:#faa934}.gm-icon-transactions-st6{fill:#104470}.gm-icon-transactions-st7{fill:none;stroke:#8bc9ed;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10}.gm-icon-transactions-st8{fill:#094b7c}.gm-icon-transactions-st9{fill:none;stroke:#8bc9ed;stroke-width:2;stroke-miterlimit:10}.gm-icon-transactions-st10{fill:#e8eef1}.gm-icon-transactions-st11{fill:#fff}.gm-icon-transactions-st14{fill:#fcba63}.gm-icon-transactions-st16{fill:#fff;stroke:#0f4470;stroke-width:3}</style><symbol id="Arrow_26" viewBox="-33.4 -13.1 66.7 26.3"><path fill="none" d="M-33.4-13.1h66.7v26.3h-66.7z"/><path class="gm-icon-transactions-st1" d="M-27.8 6.1h38.3v5.1l13.2-9.9-13.2-9.9v5.1h-38.3z"/></symbol><g id="Layer_22"><circle class="gm-icon-transactions-st2" cx="11.1" cy="50.2" r="2.6"/><path class="gm-icon-transactions-st3" d="M74 145l-1.2-4.1-4.2-1.3 4.2-1.3 1.2-4.1 1.3 4.1 4.2 1.3-4.2 1.3z"/><path class="gm-icon-transactions-st4" d="M133.1 10.9l-1.3-4.2-4.2-1.3 4.2-1.2 1.3-4.2 1.2 4.2 4.2 1.2-4.2 1.3z"/><path class="gm-icon-transactions-st5" d="M53.9 89.1l-1.3-4.2-4.1-1.2 4.1-1.3 1.3-4.2 1.3 4.2 4.2 1.3-4.2 1.2z"/><path class="gm-icon-transactions-st6" d="M62.6 47.4c.6 0 1 .4 1 1v4.3c.1.6-.4 1.1-1 1.2-.6.1-1.1-.4-1.2-1v-4.4c.1-.6.6-1.1 1.2-1.1zM62.6 34.8c.6 0 1.1.5 1.1 1V40c-.1.6-.6 1-1.2 1-.5 0-.9-.4-1-1v-4.2c0-.6.5-1 1.1-1zM54.1 43.2h4.2c.6-.1 1.1.4 1.2 1 .1.6-.4 1.1-1 1.2h-4.4c-.6-.1-1-.6-1-1.2.1-.5.5-.9 1-1zM66.8 43.2H71c.6.1 1 .6 1 1.2 0 .5-.4.9-1 1h-4.2c-.6.1-1.1-.4-1.2-1s.4-1.1 1-1.2h.2z"/><circle class="gm-icon-transactions-st6" cx="62.6" cy="44.3" r="1.1"/><path class="gm-icon-transactions-st7" d="M174.6 136.6v-4.2M174.6 123.9v-4.2M166.2 128.2h4.2M178.8 128.2h4.3"/><circle class="gm-icon-transactions-st3" cx="174.6" cy="128.2" r="1.1"/><path class="gm-icon-transactions-st8" d="M88.4 19.1c.7 0 1.2-.5 1.2-1.2s-.5-1.2-1.2-1.2-1.2.5-1.2 1.2.6 1.2 1.2 1.2zM47.8 69.9v.1c0 .3.3.6.6.6s.6-.3.6-.6v-.2c0-.3-.3-.6-.6-.6-.4.1-.6.3-.6.7zM43.2 65.7c.2.1.3.1.4 0h.1c.2-.1.3-.4.2-.6s-.4-.3-.6-.2c-.3.1-.4.4-.3.6l.2.2z"/><path class="gm-icon-transactions-st5" d="M223.6 59.3c.9-.1 1.5-.8 1.5-1.7-.1-.8-.7-1.4-1.5-1.5-.9.1-1.5.8-1.5 1.7.1.8.8 1.5 1.5 1.5z"/><path class="gm-icon-transactions-st8" d="M195.4 87.5l.1.1c.8.4 1.7.1 2.1-.6.3-.5.3-1 0-1.5l-.1-.1c-.4-.8-1.4-1-2.2-.6s-1 1.4-.6 2.2c.3.1.5.3.7.5z"/><path class="gm-icon-transactions-st3" d="M192.6 110.3c.2-.8.7-1.5 1.3-2 1.6-1.2 3.9-.9 5.2.7.6.8.8 1.7.7 2.7-.3 2-2.2 3.4-4.2 3.1-1.9-.3-3.3-2.1-3.1-4.1.1-.1.1-.2.1-.4zm5.1 1.3v-.2c.1-.4-.1-.8-.3-1.2-.5-.7-1.5-.8-2.2-.3-.3.3-.5.6-.6 1-.1.9.5 1.7 1.4 1.7.8.3 1.5-.2 1.7-1z"/><circle class="gm-icon-transactions-st9" cx="49.8" cy="112.4" r="2.6"/><path class="gm-icon-transactions-st7" d="M205.1 52.6v-4.3M205.1 39.9v-4.2M196.7 44.1h4.2M209.4 44.1h4.2"/><circle class="gm-icon-transactions-st4" cx="205.1" cy="44.1" r="1.1"/><path class="gm-icon-transactions-st6" d="M205.1 53.6c.6 0 1.1-.5 1.1-1v-2h-2.1v2c0 .6.4 1 .9 1.1l.1-.1z"/><circle class="gm-icon-transactions-st10" cx="128.6" cy="85.3" r="70.3"/><path class="gm-icon-transactions-st10" d="M78.4 133.6H35.1c-4.7 0-8.5-3.8-8.5-8.5V118c0-4.7 3.8-8.5 8.5-8.5h43.3c4.7 0 8.5 3.8 8.5 8.5v7.1c0 4.7-3.8 8.5-8.5 8.5zM85.9 85.3H44.2c-4.7 0-8.5-3.8-8.5-8.5v-7.1c0-4.7 3.8-8.5 8.5-8.5H86c4.7 0 8.5 3.8 8.5 8.5v7.1c-.1 4.7-3.9 8.5-8.6 8.5z"/><path class="gm-icon-transactions-st11" d="M93.4 109.5H45.2c-4.7 0-8.5-3.8-8.5-8.5v-7.1c0-4.7 3.8-8.5 8.5-8.5h48.3c4.7 0 8.5 3.8 8.5 8.5v7.1c-.1 4.6-3.9 8.5-8.6 8.5zM69.4 61.2H21.1c-4.7 0-8.5-3.8-8.5-8.5v-7.1c0-4.7 3.8-8.5 8.5-8.5h48.3c4.7 0 8.5 3.8 8.5 8.5v7.1c-.1 4.7-3.9 8.5-8.5 8.5z"/><path class="gm-icon-transactions-st10" d="M169.2 37.1h47.3c4.7 0 8.5 3.8 8.5 8.5v7.1c0 4.7-3.8 8.5-8.5 8.5h-47.3c-4.7 0-8.5-3.8-8.5-8.5v-7.1c0-4.7 3.8-8.5 8.5-8.5zM160.2 85.3h43.3c4.7 0 8.5 3.8 8.5 8.5v7.1c0 4.7-3.8 8.5-8.5 8.5h-43.3c-4.7 0-8.5-3.8-8.5-8.5v-7.1c0-4.6 3.8-8.5 8.5-8.5z"/><path class="gm-icon-transactions-st11" d="M185.3 61.2H225c4.7 0 8.5 3.8 8.5 8.5v7.1c0 4.7-3.8 8.5-8.5 8.5h-39.8c-4.7 0-8.5-3.8-8.5-8.5v-7.1c.1-4.7 3.9-8.5 8.6-8.5z"/><path class="gm-icon-transactions-st10" d="M245.6 109.5h-15.1c-4.7 0-8.5-3.8-8.5-8.5v-7.1c0-4.7 3.8-8.5 8.5-8.5h15.1c4.7 0 8.5 3.8 8.5 8.5v7.1c0 4.6-3.8 8.5-8.5 8.5zM12.1 61.2h4c6.7 0 12.1 5.4 12.1 12 0 6.7-5.4 12.1-12.1 12.1h-4C5.4 85.4 0 80 0 73.3s5.4-12.1 12.1-12.1z"/><path class="gm-icon-transactions-st11" d="M150.6 37.1h19.2c4.7 0 8.5 3.8 8.5 8.5v7.1c0 4.7-3.8 8.5-8.5 8.5h-19.2c-4.7 0-8.5-3.8-8.5-8.5v-7.1c0-4.7 3.8-8.5 8.5-8.5zM117 61.2h19.2c4.7 0 8.5 3.8 8.5 8.5v7.1c0 4.7-3.8 8.5-8.5 8.5H117c-4.7 0-8.5-3.8-8.5-8.5v-7.1c0-4.7 3.8-8.5 8.5-8.5zM159.2 109.4H200c4.7 0 8.5 3.8 8.5 8.5v7.1c0 4.7-3.8 8.5-8.5 8.5h-40.8c-4.7 0-8.5-3.8-8.5-8.5v-7.1c0-4.6 3.8-8.5 8.5-8.5z"/><circle class="gm-icon-transactions-st2" cx="238.6" cy="109.9" r="2.5"/><path class="gm-icon-transactions-st3" d="M178.9 19.7l1.2 3.9 3.9 1.3-3.9 1.2-1.2 3.9-1.3-3.9-3.9-1.2 3.9-1.3z"/><path class="gm-icon-transactions-st4" d="M122.6 147.2l1.2 4 4 1.2-4 1.2-1.2 4-1.2-4-4-1.2 4-1.2z"/><path class="gm-icon-transactions-st5" d="M197.9 72.9l1.3 4 3.9 1.2-3.9 1.2-1.3 3.9-1.2-3.9-3.9-1.2 3.9-1.2z"/><path class="gm-icon-transactions-st6" d="M189.7 112.5c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1s1 .4 1 1v4c0 .6-.5 1-1 1zM189.7 124.6c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1s1 .4 1 1v4c0 .5-.5 1-1 1zM197.7 116.5h-4c-.6 0-1-.4-1-1s.4-1 1-1h4c.6 0 1 .4 1 1s-.5 1-1 1zM185.6 116.5h-4c-.6 0-1-.4-1-1s.4-1 1-1h4c.6 0 1 .4 1 1s-.4 1-1 1z"/><circle class="gm-icon-transactions-st6" cx="189.7" cy="115.5" r="1"/><path class="gm-icon-transactions-st7" d="M87.2 13.1v4M87.2 25.1v4.1M95.2 21.1h-4M83.2 21.1h-4"/><circle class="gm-icon-transactions-st3" cx="87.2" cy="21.1" r="1"/><path class="gm-icon-transactions-st8" d="M165.1 141.8c.7 0 1.2-.5 1.2-1.2s-.5-1.2-1.2-1.2-1.2.5-1.2 1.2.5 1.2 1.2 1.2zM203.8 91.2V91c0-.3-.3-.6-.6-.6s-.6.3-.6.6v.2c0 .3.3.6.6.6.3-.1.6-.3.6-.6zM208.1 95.2c-.2-.1-.3-.1-.4 0h-.1c-.2.1-.3.4-.2.6s.4.3.6.2.3-.4.2-.6c.1-.2 0-.2-.1-.2z"/><path class="gm-icon-transactions-st5" d="M36.5 104.2c.9-.1 1.5-.8 1.5-1.7-.1-.8-.7-1.4-1.5-1.5-.9.1-1.5.8-1.5 1.7.1.8.7 1.4 1.5 1.5z"/><path class="gm-icon-transactions-st8" d="M63.4 74.3c-.9-.5-1.8-.2-2.2.6-.3.5-.3 1 0 1.5v.1c.4.8 1.4 1 2.2.6.8-.4 1-1.4.6-2.2-.2-.3-.4-.5-.6-.6z"/><path class="gm-icon-transactions-st3" d="M66 52.6c-.2.8-.6 1.4-1.3 1.9-1.5 1.2-3.7.9-4.9-.6-.6-.7-.8-1.7-.7-2.6.3-1.9 2-3.3 4-3 1.9.3 3.3 2 3 4 0 0-.1.2-.1.3zm-4.9-1.3v.2c-.1.8.4 1.6 1.2 1.7.4.1.8 0 1.1-.3.7-.5.8-1.4.3-2.1-.5-.7-1.4-.8-2.1-.3-.1.2-.3.5-.5.8z"/><circle class="gm-icon-transactions-st9" cx="201.9" cy="50.7" r="2.5"/><path class="gm-icon-transactions-st7" d="M54.1 107.5v4M54.1 119.6v4M62.1 115.5h-4M50 115.5h-4"/><circle class="gm-icon-transactions-st4" cx="54.1" cy="115.5" r="1"/><path class="gm-icon-transactions-st6" d="M54.1 106.5c-.6 0-1 .4-1 1v1.9h2v-1.9c0-.5-.5-1-1-1z"/><path d="M136.7 55.9l.5.1c6.7 1.3 12.7 5.2 16.5 10.9 7.9 11.5 4.9 27.2-6.6 35.1-.2.1-.3.2-.5.3-11.9 7.8-27.9 4.6-35.9-7.2-5.4-7.9-5.9-18.3-1.2-26.6l2.8 1.5c-4.1 7.3-3.7 16.4 1 23.3 3.4 5 8.6 8.4 14.5 9.6 5.9 1.2 12 0 17-3.3 10.2-6.7 13.1-20.4 6.4-30.6-.1-.1-.2-.2-.2-.4-6-8.7-17.1-12.2-27-8.6l-1.2-3c4.5-1.5 9.3-1.9 13.9-1.1z" opacity=".6" fill="#9bbfd0"/><use xlink:href="#Arrow_26" width="66.7" height="26.3" x="-33.4" y="-13.1" transform="matrix(.68 0 0 .67 146.325 59.014)" overflow="visible"/><use xlink:href="#Arrow_26" width="66.7" height="26.3" x="-33.4" y="-13.1" transform="matrix(-.67 0 0 .67 113.309 102.524)" overflow="visible"/><linearGradient id="gm-icon-transactions-SVGID_1_" gradientUnits="userSpaceOnUse" x1="104.875" y1="79.145" x2="153.495" y2="79.145" gradientTransform="matrix(1 0 0 -1 0 160)"><stop offset=".67" stop-color="#fff"/><stop offset=".68" stop-color="#f2f2f3"/></linearGradient><path d="M128.7 105.2c-13.4-.3-24.1-11.4-23.8-24.8s11.4-24.1 24.8-23.8 24.1 11.4 23.8 24.8c-.3 13.4-11.4 24-24.8 23.8z" fill="url(#gm-icon-transactions-SVGID_1_)" stroke="#0f4470" stroke-width="3"/><path class="gm-icon-transactions-st1" d="M142.7 58.8l.4.3c12 7.7 15.5 23.8 7.7 35.8s-23.8 15.5-35.8 7.7-15.5-23.8-7.7-35.8c1.5-2.3 3.2-4.3 5.3-6l2 2.5c-1.8 1.5-3.4 3.3-4.7 5.3-6.8 10.5-3.7 24.6 6.9 31.3s24.6 3.7 31.3-6.9 3.7-24.6-6.9-31.3c-3.6-2.3-7.7-3.5-12-3.6v-3.2c4.9.1 9.5 1.4 13.5 3.9z"/><path class="gm-icon-transactions-st1" d="M122.6 55.8l.8 3.1c-1.7.5-3.4 1.1-5 2l-1.5-2.9c1.8-1 3.7-1.7 5.7-2.2z"/><path class="gm-icon-transactions-st14" d="M129.2 65.6h2.9v5.1h-2.9zM124.5 65.6h2.9v5.1h-2.9zM126.1 80.1h5.7c3.9-.1 7.2 2.9 7.4 6.9.1 3.9-2.9 7.2-6.9 7.4h-11.4v-3.7h10.9c1.9.1 3.5-1.4 3.6-3.3.1-1.9-1.4-3.5-3.3-3.6H126"/><path class="gm-icon-transactions-st14" d="M121.5 69.2h3.2V94H121V69.2l.2-.1h10.4c4.1.1 7.2 3.6 7.1 7.6-.1 3.9-3.2 6.9-7.1 7.1h-8.1V80h8.1c2-.1 3.5-1.8 3.4-3.7-.1-1.8-1.5-3.3-3.4-3.4h-10.5M129.2 92.8h2.9v5.1h-2.9z"/><path class="gm-icon-transactions-st14" d="M124.5 92.8h2.9v5.1h-2.9z"/><path d="M88.2 52.7c-18.3 21.8-15.5 54.2 6.3 72.5s54.2 15.5 72.5-6.3c16.1-19.1 16.1-47 .1-66.1" fill="none" stroke="#0f4470" stroke-width="3"/><path class="gm-icon-transactions-st16" d="M166.5 52.9s-11.9-1.4-5.4-17.3c0 0 15.9 8.3 5.4 17.3zM144.1 132.9s-8.7-7.8 5.7-14.7c0 0 7.9 14.8-5.7 14.7zM176.3 75.7s-9.7 6.5-12.8-9.2c-.1 0 16.2-4 12.8 9.2zM163.7 120.8s-11.7-.6-4.7-15c0-.1 15.4 6.5 4.7 15zM175.2 102.3s-10.6 5-11.3-11c0 0 16.7-1.5 11.3 11zM173.3 62.5s-6.3-9.8 9.4-12.6c.1-.1 3.7 16.3-9.4 12.6zM179.2 95.6s-5.6-10.3 10.3-11.9c0-.1 2.5 16.5-10.3 11.9z"/><path class="gm-icon-transactions-st16" d="M167.6 118.9s2.4-11.5 15.6-2.4c0-.1-8.8 14.2-15.6 2.4zM143.9 136.2s5.6-10.3 15.6 2.2c0 0-12.5 11-15.6-2.2zM88.2 52.9s11.9-1.4 5.5-17.3c0 0-16 8.4-5.5 17.3zM110.4 133s8.8-7.8-5.7-14.7c0 0-7.9 14.8 5.7 14.7zM78.4 75.7s9.7 6.5 12.8-9.2c0 .1-16.2-3.9-12.8 9.2zM90.8 120.8s11.7-.6 4.8-15c0 0-15.4 6.5-4.8 15zM79.4 102.3s10.6 5 11.3-11c0 .1-16.6-1.5-11.3 11zM81.3 62.5s6.3-9.8-9.4-12.6c0-.1-3.7 16.3 9.4 12.6zM75.4 95.6s5.6-10.3-10.3-12c0 0-2.5 16.6 10.3 12z"/><path class="gm-icon-transactions-st16" d="M86.9 118.9s-2.3-11.5-15.6-2.4c.1-.1 8.9 14.2 15.6 2.4zM110.6 136.3s-5.5-10.3-15.6 2.1c0 0 12.5 11.1 15.6-2.1z"/></g></svg></span>
@@ -642,7 +638,7 @@ Cryptocurrencies don’t have a central government or other so called 'middlemen
                             <h3>We make mining competitive.</h3>
                             <p>
                               To mine competitively today, You need to invest significant resources, A little bit of your time and effort into your setup. Our team has built  the most efficient mining system to do the job for you. This way you can fully focus on keeping track of your investment and remain competitive with your mining rewards.</p>
-                            <a href="datacenters.html" title="See our Radiant Tech"
+                            <a href="datacenters" title="See our Radiant Tech"
                               class="btn btn-why-a">See our Radiant Tech</a>
                           </div>
                         </div>
@@ -690,66 +686,52 @@ Cryptocurrencies don’t have a central government or other so called 'middlemen
                                     .gm-icon-output-cls-1 {
                                       fill: #e8eef1
                                     }
-
                                     .gm-icon-output-cls-2 {
                                       fill: #fff
                                     }
-
                                     .gm-icon-output-cls-3 {
                                       fill: #9fd3f2;
                                       stroke: #faa934
                                     }
-
                                     .gm-icon-output-cls-10,
                                     .gm-icon-output-cls-3,
                                     .gm-icon-output-cls-8 {
                                       stroke-miterlimit: 10
                                     }
-
                                     .gm-icon-output-cls-3,
                                     .gm-icon-output-cls-8 {
                                       stroke-width: 2px
                                     }
-
                                     .gm-icon-output-cls-4 {
                                       fill: #8bc9ed
                                     }
-
                                     .gm-icon-output-cls-5 {
                                       fill: #fbb147
                                     }
-
                                     .gm-icon-output-cls-6 {
                                       fill: #faa934
                                     }
-
                                     .gm-icon-output-cls-7 {
                                       fill: #104470
                                     }
-
                                     .gm-icon-output-cls-10,
                                     .gm-icon-output-cls-8 {
                                       fill: none;
                                       stroke: #8bc9ed
                                     }
-
                                     .gm-icon-output-cls-8 {
                                       stroke-linecap: round
                                     }
-
                                     .gm-icon-output-cls-9 {
                                       fill: #094b7c
                                     }
-
                                     .gm-icon-output-cls-10 {
                                       stroke-width: 2px
                                     }
-
                                     .gm-icon-output-cls-11 {
                                       fill: #9bbfd0;
                                       opacity: .6
                                     }
-
                                     .gm-icon-output-cls-14 {
                                       fill: #0f4470
                                     }
@@ -859,74 +841,58 @@ Cryptocurrencies don’t have a central government or other so called 'middlemen
                                               .gm-icon-mining-cls-1 {
                                                 fill: #e8eef1
                                               }
-
                                               .gm-icon-mining-cls-2 {
                                                 fill: #fff
                                               }
-
                                               .gm-icon-mining-cls-3 {
                                                 fill: #9fd3f2;
                                                 stroke: #faa934
                                               }
-
                                               .gm-icon-mining-cls-10,
                                               .gm-icon-mining-cls-3,
                                               .gm-icon-mining-cls-8 {
                                                 stroke-miterlimit: 10
                                               }
-
                                               .gm-icon-mining-cls-3,
                                               .gm-icon-mining-cls-8 {
                                                 stroke-width: 2px
                                               }
-
                                               .gm-icon-mining-cls-4 {
                                                 fill: #8bc9ed
                                               }
-
                                               .gm-icon-mining-cls-5 {
                                                 fill: #fbb147
                                               }
-
                                               .gm-icon-mining-cls-6 {
                                                 fill: #faa934
                                               }
-
                                               .gm-icon-mining-cls-7 {
                                                 fill: #104470
                                               }
-
                                               .gm-icon-mining-cls-10,
                                               .gm-icon-mining-cls-8 {
                                                 fill: none;
                                                 stroke: #8bc9ed
                                               }
-
                                               .gm-icon-mining-cls-8 {
                                                 stroke-linecap: round
                                               }
-
                                               .gm-icon-mining-cls-9 {
                                                 fill: #094b7c
                                               }
-
                                               .gm-icon-mining-cls-10 {
                                                 stroke-width: 2px
                                               }
-
                                               .gm-icon-mining-cls-11 {
                                                 fill: #9bbfd0;
                                                 opacity: .6
                                               }
-
                                               .gm-icon-mining-cls-12 {
                                                 fill: #f2f2f3
                                               }
-
                                               .gm-icon-mining-cls-13 {
                                                 fill: #dbdcde
                                               }
-
                                               .gm-icon-mining-cls-14 {
                                                 fill: #fcba63
                                               }
@@ -1040,70 +1006,55 @@ Cryptocurrencies don’t have a central government or other so called 'middlemen
                                               .gm-icon-portfolio-cls-1 {
                                                 fill: #e8eef1
                                               }
-
                                               .gm-icon-portfolio-cls-2 {
                                                 fill: #fff
                                               }
-
                                               .gm-icon-portfolio-cls-3 {
                                                 fill: #9fd3f2;
                                                 stroke: #faa934
                                               }
-
                                               .gm-icon-portfolio-cls-10,
                                               .gm-icon-portfolio-cls-3,
                                               .gm-icon-portfolio-cls-8 {
                                                 stroke-miterlimit: 10
                                               }
-
                                               .gm-icon-portfolio-cls-3,
                                               .gm-icon-portfolio-cls-8 {
                                                 stroke-width: 2px
                                               }
-
                                               .gm-icon-portfolio-cls-4 {
                                                 fill: #8bc9ed
                                               }
-
                                               .gm-icon-portfolio-cls-5 {
                                                 fill: #fbb147
                                               }
-
                                               .gm-icon-portfolio-cls-6 {
                                                 fill: #faa934
                                               }
-
                                               .gm-icon-portfolio-cls-7 {
                                                 fill: #104470
                                               }
-
                                               .gm-icon-portfolio-cls-10,
                                               .gm-icon-portfolio-cls-8 {
                                                 fill: none;
                                                 stroke: #8bc9ed
                                               }
-
                                               .gm-icon-portfolio-cls-8 {
                                                 stroke-linecap: round
                                               }
-
                                               .gm-icon-portfolio-cls-9 {
                                                 fill: #094b7c
                                               }
-
                                               .gm-icon-portfolio-cls-10 {
                                                 stroke-width: 2px
                                               }
-
                                               .gm-icon-portfolio-cls-11 {
                                                 fill: #9bbfd0;
                                                 opacity: .6
                                               }
-
                                               .gm-icon-portfolio-cls-13 {
                                                 fill: #0f4470
                                               }
-
                                               .gm-icon-portfolio-cls-14 {
                                                 fill: #fcba63
                                               }
@@ -1244,70 +1195,55 @@ Cryptocurrencies don’t have a central government or other so called 'middlemen
                                               .gm-icon-allocation-1 {
                                                 fill: #e8eef1
                                               }
-
                                               .gm-icon-allocation-2 {
                                                 fill: #fff
                                               }
-
                                               .gm-icon-allocation-17,
                                               .gm-icon-allocation-18,
                                               .gm-icon-allocation-8 {
                                                 stroke-miterlimit: 10
                                               }
-
                                               .gm-icon-allocation-18,
                                               .gm-icon-allocation-8 {
                                                 stroke-width: 2px
                                               }
-
                                               .gm-icon-allocation-4 {
                                                 fill: #8bc9ed
                                               }
-
                                               .gm-icon-allocation-5 {
                                                 fill: #fbb147
                                               }
-
                                               .gm-icon-allocation-6 {
                                                 fill: #faa934
                                               }
-
                                               .gm-icon-allocation-7 {
                                                 fill: #104470
                                               }
-
                                               .gm-icon-allocation-8 {
                                                 fill: none;
                                                 stroke: #8bc9ed
                                               }
-
                                               .gm-icon-allocation-18,
                                               .gm-icon-allocation-8 {
                                                 stroke-linecap: round
                                               }
-
                                               .gm-icon-allocation-9 {
                                                 fill: #094b7c
                                               }
-
                                               .gm-icon-allocation-13 {
                                                 fill: #0f4470
                                               }
-
                                               .gm-icon-allocation-14 {
                                                 fill: #e3e4e5
                                               }
-
                                               .gm-icon-allocation-15 {
                                                 fill: #fcba63
                                               }
-
                                               .gm-icon-allocation-17,
                                               .gm-icon-allocation-18,
                                               .gm-icon-allocation-19 {
                                                 fill: #e2e3e4
                                               }
-
                                               .gm-icon-allocation-17,
                                               .gm-icon-allocation-18 {
                                                 stroke: #e3e4e5
@@ -1416,74 +1352,58 @@ Cryptocurrencies don’t have a central government or other so called 'middlemen
                                               .gm-icon-dashboard-cls-1 {
                                                 fill: #e8eef1
                                               }
-
                                               .gm-icon-dashboard-cls-2 {
                                                 fill: #fff
                                               }
-
                                               .gm-icon-dashboard-cls-3 {
                                                 fill: #9fd3f2;
                                                 stroke: #faa934
                                               }
-
                                               .gm-icon-dashboard-cls-10,
                                               .gm-icon-dashboard-cls-3,
                                               .gm-icon-dashboard-cls-8 {
                                                 stroke-miterlimit: 10
                                               }
-
                                               .gm-icon-dashboard-cls-3,
                                               .gm-icon-dashboard-cls-8 {
                                                 stroke-width: 2px
                                               }
-
                                               .gm-icon-dashboard-cls-4 {
                                                 fill: #8bc9ed
                                               }
-
                                               .gm-icon-dashboard-cls-5 {
                                                 fill: #fbb147
                                               }
-
                                               .gm-icon-dashboard-cls-6 {
                                                 fill: #faa934
                                               }
-
                                               .gm-icon-dashboard-cls-7 {
                                                 fill: #104470
                                               }
-
                                               .gm-icon-dashboard-cls-10,
                                               .gm-icon-dashboard-cls-8 {
                                                 fill: none;
                                                 stroke: #8bc9ed
                                               }
-
                                               .gm-icon-dashboard-cls-8 {
                                                 stroke-linecap: round
                                               }
-
                                               .gm-icon-dashboard-cls-9 {
                                                 fill: #094b7c
                                               }
-
                                               .gm-icon-dashboard-cls-10 {
                                                 stroke-width: 2px
                                               }
-
                                               .gm-icon-dashboard-cls-11 {
                                                 fill: #9bbfd0;
                                                 opacity: .6
                                               }
-
                                               .gm-icon-dashboard-cls-12 {
                                                 fill: #fcba63
                                               }
-
                                               .gm-icon-dashboard-cls-14 {
                                                 fill: #f2f2f3
                                               }
-
                                               .gm-icon-dashboard-cls-15 {
                                                 fill: #dbdcde
                                               }
@@ -1619,12 +1539,10 @@ Cryptocurrencies don’t have a central government or other so called 'middlemen
                                               .gm-icon-secure-cls-4 {
                                                 fill: #e2e3e4
                                               }
-
                                               .gm-icon-secure-cls-2,
                                               .gm-icon-secure-cls-3 {
                                                 stroke: #e3e4e5
                                               }
-
                                               .gm-icon-secure-cls-11,
                                               .gm-icon-secure-cls-18,
                                               .gm-icon-secure-cls-2,
@@ -1633,80 +1551,63 @@ Cryptocurrencies don’t have a central government or other so called 'middlemen
                                               .gm-icon-secure-cls-3 {
                                                 stroke-miterlimit: 10
                                               }
-
                                               .gm-icon-secure-cls-11,
                                               .gm-icon-secure-cls-18,
                                               .gm-icon-secure-cls-3 {
                                                 stroke-width: 2px
                                               }
-
                                               .gm-icon-secure-cls-18,
                                               .gm-icon-secure-cls-24,
                                               .gm-icon-secure-cls-26,
                                               .gm-icon-secure-cls-3 {
                                                 stroke-linecap: round
                                               }
-
                                               .gm-icon-secure-cls-5 {
                                                 fill: #e3e4e5
                                               }
-
                                               .gm-icon-secure-cls-7 {
                                                 fill: #e8eef1
                                               }
-
                                               .gm-icon-secure-cls-8 {
                                                 fill: #fff
                                               }
-
                                               .gm-icon-secure-cls-24 {
                                                 fill-rule: evenodd
                                               }
-
                                               .gm-icon-secure-cls-11,
                                               .gm-icon-secure-cls-18,
                                               .gm-icon-secure-cls-24,
                                               .gm-icon-secure-cls-26 {
                                                 fill: none
                                               }
-
                                               .gm-icon-secure-cls-11 {
                                                 stroke: #faa934
                                               }
-
                                               .gm-icon-secure-cls-13 {
                                                 fill: #faa934
                                               }
-
                                               .gm-icon-secure-cls-14 {
                                                 fill: #8bc9ed
                                               }
-
                                               .gm-icon-secure-cls-15 {
                                                 fill: #fbb147
                                               }
-
                                               .gm-icon-secure-cls-16 {
                                                 fill: #95cef0
                                               }
-
                                               .gm-icon-secure-cls-17 {
                                                 fill: #104470
                                               }
-
                                               .gm-icon-secure-cls-18 {
                                                 stroke: #8bc9ed
                                               }
-
                                               .gm-icon-secure-cls-19 {
                                                 fill: #094b7c
                                               }
-
                                               .gm-icon-secure-cls-24 {
                                                 stroke: #103a56;
                                                 stroke-width: 3.42px
                                               }
-
                                               .gm-icon-secure-cls-26 {
                                                 stroke: #fcba63;
                                                 stroke-width: 4px
@@ -1859,36 +1760,41 @@ Cryptocurrencies don’t have a central government or other so called 'middlemen
 
                                   <div class="col-sm-7 col-md-5 col-lg-4">
                                     <div class="link-block">
+                                    @guest
+                            @if (Route::has('register'))
                                       <div>
                                         <a href="/register" title="Create an account.">
                                           <strong>Create an account.</strong>
                                           <span>Join our growing mining family!</span>
                                         </a>
                                       </div>
-
+@endif
+@endguest
                                       <div>
                                         <a href="/#about" title="Get to know us better.">
                                           <strong>Get to know us better.</strong>
                                           <span>Read about our vision!</span>
                                         </a>
                                       </div>
-
+                                      @guest
+                            @if (Route::has('register'))
                                       <div>
                                         <a href="/register" title="See our packages.">
                                           <strong>See our packages.</strong>
                                           <span>Each algorithm and coin has its own beauty!</span>
                                         </a>
                                       </div>
-
+                                      @endif
+@endguest
                                       <div>
-                                        <a href="datacenters.html" title="Learn more about our tech.">
+                                        <a href="/datacenters" title="Learn more about our tech.">
                                           <strong>Learn more about our tech.</strong>
                                           <span>The Enigma Datacenter and Radiant Tech.</span>
                                         </a>
                                       </div>
 
                                       <div>
-                                        <a href="customer-sevice.html" title="See what we can do for you!">
+                                        <a href="/customer-sevice" title="See what we can do for you!">
                                           <strong>See what we can do for you!</strong>
                                           <span>Any questions left?                Get in touch with our customer service.</span>
                                         </a>

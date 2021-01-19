@@ -64,7 +64,7 @@
            <div class="row">
                <div class="col-sm-3">
                    <div class="logo-background text-center" data-aos="fade-up" data-aos-duration="1400">
-                        <img src="img/bitcoin-logo (1).png" alt="bitcoin-logo" class="img-responsive image" style="width: 70px;">
+                        <img src="{{asset('Dashboard/img/bitcoin-logo (1).png')}}" alt="bitcoin-logo" class="img-responsive image" style="width: 70px;">
                         <p style="color: white;">BITCOIN</p>
                         <div class="middle">
                             <button type="button" class="btn btn-request" data-toggle="modal" data-target="#exampleModal">Request</button>
@@ -73,7 +73,7 @@
                </div>
                <div class="col-sm-3">
                 <div class="logo-background text-center" data-aos="fade-up-left" data-aos-duration="1600">
-                    <img src="img/ethereum-trans.jpg" alt="bitcoin-logo" class="img-responsive" style="width: 70px;">
+                    <img src="{{asset('Dashboard/img/ethereum-trans.jpg')}}" alt="bitcoin-logo" class="img-responsive" style="width: 70px;">
                     <p style="color: white;">ETHEREUM</p>
                     <div class="middle">
                         <button type="button" class="btn btn-request" data-toggle="modal" data-target="#exampleModal">Request</button>
@@ -83,7 +83,7 @@
                <div class="col-sm-3">
                 <div class="logo-background text-center closed-coins" data-aos="fade-down-right" data-aos-duration="1800">
                     <label class="btn btn-closed">Closed !</label>
-                    <img src="img/stellar-logo.png" alt="bitcoin-logo" class="img-responsive" style="width: 70px;">
+                    <img src="{{asset('Dashboard/img/stellar-logo.png')}}" alt="bitcoin-logo" class="img-responsive" style="width: 70px;">
                     <p style="color: white;">STELLAR</p>
                     <!-- <div class="middle">
                         <button type="button" class="btn btn-request" data-toggle="modal" data-target="#exampleModal-2">Request</button>
@@ -93,7 +93,7 @@
                <div class="col-sm-3">
                 <div class="logo-background text-center closed-coins" data-aos="zoom-out-down" data-aos-duration="2000">
                     <label class="btn btn-closed">Closed !</label>
-                    <img src="img/dogecoin-2.png" alt="bitcoin-logo" class="img-responsive" style="width: 70px;">
+                    <img src="{{asset('Dashboard/img/dogecoin-2.png')}}" alt="bitcoin-logo" class="img-responsive" style="width: 70px;">
                     <p style="color: white;">DOGECOIN</p>
                     <!-- <div class="middle">
                         <button type="button" class="btn btn-request" data-toggle="modal" data-target="#exampleModal-2">Request</button>
@@ -103,7 +103,7 @@
                <div class="col-sm-3">
                 <div class="logo-background text-center closed-coins" data-aos="zoom-in-right" data-aos-duration="2200">
                     <label class="btn btn-closed">Closed !</label>
-                    <img src="img/litecoin.png" alt="bitcoin-logo" class="img-responsive" style="width: 70px;">
+                    <img src="{{asset('Dashboard/img/litecoin.png')}}" alt="bitcoin-logo" class="img-responsive" style="width: 70px;">
                     <p style="color: white;">LITECOIN</p>
                     <!-- <div class="middle">
                         <button type="button" class="btn btn-request" data-toggle="modal" data-target="#exampleModal-2">Request</button>
@@ -138,7 +138,11 @@
          <div class="col-sm-5">
             <div class="steps text-center"  data-aos="flip-down" data-aos-duration="2000">
                <h3><i class="fa fa-phone" aria-hidden="true"></i> STEP 5 </h3>
+<<<<<<< Updated upstream
                <p>If your money doesn't reflect in your dashboard within 28 - 48 hours get back to us at <a href="/contact-support">CONTACT CUSTOMER</a></p>
+=======
+               <p>If your money doesn't reflect in your dashboard within 28 - 48 hours get back to us at <a href="/support">CONTACT CUSTOMER</a></p>
+>>>>>>> Stashed changes
             </div>
         </div>
 
@@ -163,7 +167,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="logo-background text-center" data-aos="fade-down" data-aos-duration="1800">
-                         <img src="img/paypal-logo.png" alt="bitcoin-logo" class="img-responsive image" id="paypal" style="width: 150px;">
+                         <img src="{{asset('Dashboard/img/paypal-logo.png')}}" alt="bitcoin-logo" class="img-responsive image" id="paypal" style="width: 150px;">
                          <p style="color: white; margin-top: -20px !important; font-size: 17px; padding: 20px;" class="pay-cashapp">Tap to request payment details. Payment details would be sent via Email.</p>
                          <div class="middle">
                              <button type="button" class="btn btn-request" onclick="alert()">Request</button>
@@ -194,12 +198,18 @@
                 icon: 'info',
                 title: 'Please wait',
                 text: 'Payment details will be sent via email shortly.',
+<<<<<<< Updated upstream
 
             }).then(function () {
 
       $('#form').submit();
   });
 
+=======
+            }).then(function () {
+      $('#form').submit();
+  });
+>>>>>>> Stashed changes
             }
         </script>
 
@@ -209,11 +219,9 @@
                     font-size: 14px !important;
                     padding-bottom: 30px !important;
                 }
-
                 #back-pay {
                     height: 300px !important;
                 }
-
                 #paypal {
                     margin-left: 0px !important;
                 }
@@ -253,7 +261,6 @@
                     .butid {
                         border: 1px solid black !important;
                     }
-
                     @media (max-width: 800px) {
                         .copy-id {
                             padding-top: 20px;
@@ -273,7 +280,12 @@
   </div>
 
 
+<<<<<<< Updated upstream
 
+=======
+ 
+ 
+>>>>>>> Stashed changes
 
   <script>
     function copied() {

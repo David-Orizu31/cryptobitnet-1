@@ -83,7 +83,7 @@
                     <span class="cpwr"><svg class="icon gm-icon-dashboard-power"><use xlink:href="#gm-icon-dashboard-power"></use></svg></span>
 
                     <div class="cmc">
-                                            <b>{{Auth::user()->bitcoin}}  TH/s</b>
+                                            <b>({{Auth::user()->bitcoin}}) {{Auth::user()->btc}}  TH/s</b>
 
                         <p>Bitcoin                        <small>Hashrate</small>
                         </p>
@@ -105,38 +105,14 @@
                 </div>
             </div>
 
-            <!-- <div class="col-sm-3">
-                <div class="cmg cmg-3">
-                    <span class="cpwr"><svg class="icon gm-icon-dashboard-power"><use xlink:href="#gm-icon-dashboard-power"></use></svg></span>
-
-                    <div class="cmc">
-                                            <b>0.0000 MH/s</b>
-
-                        <p>Dash (X11)                        <small>Hashrate</small>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-3">
-                <div class="cmg cmg-4">
-                    <span class="cpwr"><svg class="icon gm-icon-dashboard-power"><use xlink:href="#gm-icon-dashboard-power"></use></svg></span>
-
-                    <div class="cmc">
-                                            <b>0.0000 MH/s</b>
-
-                        <p>Litecoin                        <small>Hashrate</small>
-                        </p>
-                    </div>
-                </div>
-            </div> -->
+          
 
                     <div class="col-sm-3" data-aos="zoom-in-up"data-aos-duration="2400">
                 <div class="cmg cmg-5">
                     <span class="cpwr"><svg class="icon gm-icon-dashboard-power"><use xlink:href="#gm-icon-dashboard-power"></use></svg></span>
 
                     <div class="cmc">
-                                            <b>{{Auth::user()->eth}} MH/s</b>
+                                            <b>({{Auth::user()->eth}}) {{Auth::user()->eth}} MH/s</b>
 
                         <p>Ether                        <small>Hashrate</small>
                         </p>
