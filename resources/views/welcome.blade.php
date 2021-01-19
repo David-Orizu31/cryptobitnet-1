@@ -27,17 +27,10 @@
 
 
 
-                     @guest
-                            @if (Route::has('register'))
-                            <a href="/register" title="Start Mining Now!"
-                     class="btn btn-warning">Start Mining Now!</a>
-                     @endif
-                     @else
-
+                
                      <a href="/dashboard/overview" title="Start Mining Now!"
                      class="btn btn-warning">Start Mining Now!</a>
-
-                            @endguest
+ 
                   <!-- <a href="#gm-home-3" title="Learn more"
                      class="btn btn-success btn-learn-more">Learn more</a> -->
               </div>
