@@ -72,7 +72,7 @@
 <div id="pending-output">
     <div class="row">
         <div class="col-sm-12">
-            <h2 class="h2-new">MINING OUTPUT BALANCE</h2>
+            <h2 class="h2-new">MINING HISTORY BALANCE</h2>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 cm12-1">

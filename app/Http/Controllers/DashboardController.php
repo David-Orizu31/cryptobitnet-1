@@ -6,6 +6,7 @@ use App\Models\Dashboard;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\History;
+use App\Wallet;
 use App\UserNotification;
 use Carbon\Carbon;
 use Mail;
@@ -99,7 +100,9 @@ use Illuminate\Support\Facades\Hash;
         $user = \Auth::user()->id;
         $nots =  UserNotification::where('user_id', $user)->orderBy('id','desc')->get();
         $unread =  UserNotification::where('user_id', $user)->where('seen','2')->count();
-        return view('dashboard.deposit',compact('nots','unread'));
+          $wallet =          Wallet::first();
+         
+        return view('dashboard.deposit',compact('nots','unread','wallet'));
     }
 
 
@@ -117,53 +120,61 @@ use Illuminate\Support\Facades\Hash;
 
 
 
-    public function withdrawdone(Request $request)
-    {
+public function withdrawdone(Request $request)
+{
 
+   
+    $user = \Auth::user()->id;
 
-        $user = \Auth::user()->id;
-
-        $package = \Auth::user()->package;
-        if($request->choice == 'btc'){
-            $balance = \Auth::user()->bitcoin;
-
-            $total =  $balance - $request->withdrawn;
-             $history =  new History;
-
-             $history->currency_name = 'Bitcoin';
-             $history->transaction_balance = $request->withdrawn;
-             $history->trans_status = 'Pending';
-             $history->trans_package = $request->package;
-             $history->trans_action = 'Credit';
-             $history->trans_wallet_address = $request->walletaddress;
-             $history->user_id = $user;
-             $history->save();
-
-             User::where('id', $user)->update(['bitcoin' => $total]);
-        }elseif($request->choice == 'eth'){
-            $balance = \Auth::user()->eth;
-
-           $total =  $balance - $request->withdrawn;
-            $history =  new History;
-
-            $history->currency_name = 'Ethereum';
-            $history->transaction_balance = $request->withdrawn;
-            $history->trans_status = 'Pending';
-            $history->trans_package = $package;
-            $history->trans_action = 'Credit';
-            $history->trans_wallet_address = $request->walletaddress;
-            $history->user_id = $user;
-            $history->save();
-
-            User::where('id', $user)->update(['eth' => $total]);
+    $package = \Auth::user()->package;
+    if($request->choice == 'btc'){
+        $balance = \Auth::user()->bitcoin;
+        if($request->withdrawn > $balance ){
+            flash('Sorry! your widthrawal is above your balance')->error();
+            return redirect()->back();
         }
+        
+        $total =  $balance - $request->withdrawn;
+         $history =  new History;
+   
+         $history->currency_name = 'Bitcoin';
+         $history->transaction_balance = $request->withdrawn;
+         $history->trans_status = 'Pending';
+         $history->trans_package = $request->package;
+         $history->trans_action = 'Credit';
+         $history->trans_wallet_address = $request->walletaddress;
+         $history->user_id = $user;
+         $history->save();
 
+         User::where('id', $user)->update(['bitcoin' => $total]);
+    }elseif($request->choice == 'eth'){
+        $balance = \Auth::user()->eth;
+        if($request->withdrawn > $balance ){
+            flash('Sorry! your widthrawal is above your balance')->error();
+            return redirect()->back();
+        }
+       $total =  $balance - $request->withdrawn;
+        $history =  new History;
+  
+        $history->currency_name = 'Ethereum';
+        $history->transaction_balance = $request->withdrawn;
+        $history->trans_status = 'Pending';
+        $history->trans_package = $package;
+        $history->trans_action = 'Credit';
+        $history->trans_wallet_address = $request->walletaddress;
+        $history->user_id = $user;
+        $history->save();
 
-    //    dd($histories);
-
-    flash('Widthrawal Pending. Please check your status to verify successful payment')->success();
-    return redirect()->back();
+        User::where('id', $user)->update(['eth' => $total]);
     }
+   
+ 
+//    dd($histories);
+
+flash('Widthrawal Pending. Please check your status to verify successful payment')->success();
+return redirect()->back();
+}
+
 
     /**
      * Store a newly created resource in storage.
@@ -233,6 +244,35 @@ use Illuminate\Support\Facades\Hash;
     flash('Message Sent Successfully')->success();
     return redirect()->back();
     }
+
+
+
+    public function contacted(Request $request)
+    {
+        // not in use...check in home controller
+        // dd($request);//
+           $dataemail = array(
+            'email' => $request->email,
+            'name' =>  $request->name,
+            'supportoption' =>  $request->supportoption,
+            'phone' =>  $request->phone,
+            'usermessage' =>  $request->usermessage,
+
+        );
+
+        Mail::send('email.support', $dataemail, function($message) use ($dataemail){
+
+        $message->to('support@cryptobitnet.com');
+        $message->subject('You Have Been Contacted');
+
+
+    });
+    flash('Message Sent Successfully')->success();
+    return redirect()->back();
+    }
+ 
+
+
 
     public function paypalrequest(Request $request)
     {
