@@ -4,13 +4,16 @@
 
 
 <div id="gm-home-1">
-            <div class="vidvid">
+<div class="vidvid" style="background-image: url(img/landing/gm-home-sec-1-1920px.jpg) !important;">
+              
+              </div>
+            <!-- <div class="vidvid">
               <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" poster="img/landing/gm-home-sec-1-1920px.jpg">
                 <source src="img/video-1.mp4" type="video/mp4">
                 <source src="img/video-2.webm" type="video/webm">
                 <source src="img/gm-home-sec-1.ogv" type="video/ogg">
               </video>
-            </div>
+            </div> -->
             <div class="container">
                 <p class="first-p">
                 <span>Join over 10,000+ people with the world’s leading hashpower provider</span>
@@ -234,7 +237,7 @@
                                                             </div>
                                         </div>
 
-                                                        <b class="btn btn-blue-1 btn-yotpo">★&nbsp;Reviews from our users</b>
+                                                        <!-- <b class="btn btn-blue-1 btn-yotpo">★&nbsp;Reviews from our users</b> -->
 
                                       </div>
                                     </div>
@@ -1895,7 +1898,11 @@ Cryptocurrencies don’t have a central government or other so called 'middlemen
                                       </div>
 
                                       <div>
+<<<<<<< Updated upstream
                                         <a href="customer-sevice.html" title="See what we can do for you!">
+=======
+                                        <a href="/customer-service" title="See what we can do for you!">
+>>>>>>> Stashed changes
                                           <strong>See what we can do for you!</strong>
                                           <span>Any questions left?                Get in touch with our customer service.</span>
                                         </a>
