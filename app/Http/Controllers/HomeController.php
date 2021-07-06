@@ -69,22 +69,18 @@ class HomeController extends Controller
     public function contacted(Request $request)
     {
         // dd($request);//
-           $dataemail = array(
+        $dataemail = array(
             'email' => $request->email,
             'name' =>  $request->name,
-            'supportoption' =>  $request->category,
-            'phone' =>  $request->phone,
-            'usermessage' =>  $request->yourmessage,
-
+            'topic' =>  $request->topic,
+            'phone' =>  $request->phone ?? null,
+            'messagenow' =>  $request->yourmessage ?? null,
         );
-
+        // dd($dataemail);
         Mail::send('email.contacted', $dataemail, function($message) use ($dataemail){
-
         $message->to('support@cryptobitnet.com');
-        $message->subject('Contact Via Contact us without sign up');
-
-
-    });
+        $message->subject('Contact us non-signedup user');
+        });
     flash('Message Sent Successfully')->success();
     return redirect()->back();
     }

@@ -34,13 +34,17 @@ Route::get('/message/{id}', [App\Http\Controllers\DashboardController::class, 'u
 Route::get('/support', [App\Http\Controllers\DashboardController::class, 'support'])->name('support');
 Route::post('/supportsent', [App\Http\Controllers\DashboardController::class, 'supportsent'])->name('support');
 Route::post('/paypalrequest', [App\Http\Controllers\DashboardController::class, 'paypalrequest'])->name('paypalrequest');
+Route::post('/contact', [App\Http\Controllers\HomeController::class, 'contacted'])->name('contacted');
 
-Route::post('/contacted', [App\Http\Controllers\HomeController::class, 'contacted'])->name('contacted');
+
 Route::get('/customer-service', [App\Http\Controllers\HomeController::class, 'customerservice'])->name('customerservice');
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
-
 Route::get('/datacenters', [App\Http\Controllers\HomeController::class, 'datacenter'])->name('datacenter');
 Route::get('/privacy', [App\Http\Controllers\HomeController::class, 'policy'])->name('policy');
+
+// Route::get('password/reset/{token?}', 'Auth\PasswordController@showResetForm');
+// Route::post('password/email', 'Auth\PasswordController@sendResetLinkEmail');
+// Route::post('password/reset', 'Auth\PasswordController@reset');
 
 
 Route::group(['prefix' => 'admin'], function () {

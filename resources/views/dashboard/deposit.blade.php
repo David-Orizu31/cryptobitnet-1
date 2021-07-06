@@ -76,7 +76,7 @@
                     <img src="img/ethereum-trans.jpg" alt="bitcoin-logo" class="img-responsive" style="width: 70px;">
                     <p style="color: white;">ETHEREUM</p>
                     <div class="middle">
-                        <button type="button" class="btn btn-request" data-toggle="modal" data-target="#exampleModaleth">Request</button>
+                        <button type="button" class="btn btn-request" data-toggle="modal" data-target="#exampleModal">Request</button>
                     </div>
                </div>
                </div>
@@ -187,7 +187,7 @@
 <input type="hidden" name="email" value="{{Auth::user()->email}}">
 <input type="hidden" name="email" value="{{Auth::user()->phone}}">
 </form>
-<script src="{{asset('Dashboard/js/sweet-alert.js')}}"></script>
+        <script src="js/sweet-alert.js"></script>
         <script>
             function alert() {
                 Swal.fire({
@@ -226,7 +226,7 @@
 
 
 
-<!-- Modal btc-->
+<!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -242,7 +242,7 @@
                     <label for="myInput">Your Wallet Address (Please Copy)</label>
                     <div class="row">
                      <div class="col-md-8" style="padding-left: 30px !important;">
-                    <input type="text" class="form-control" id="myInput" name="id" value="{{$wallet->bitcoin}}">
+                    <input type="text" class="form-control" id="myInput" name="id" value="39">
                 </div>
                 <div class="col-md-3 text-center copy-id">
                     <button type="button" class="btn btn-success butid" onclick="copied()">
@@ -271,13 +271,10 @@
       </div>
     </div>
   </div>
-<<<<<<< Updated upstream
 
 
 
 
-=======
->>>>>>> Stashed changes
   <script>
     function copied() {
   var copyText = document.getElementById("myInput");
@@ -293,70 +290,9 @@ Swal.fire({
             });
 }
     </script>
-<!-- modal btc end -->
-<!-- modal eth  -->
-<div class="modal fade" id="exampleModaleth" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="exampleModalLabel">Wallet Address</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form action="">
-                 <div class="form-group">
-                    <label for="myInput">Your Wallet Address (Please Copy)</label>
-                    <div class="row">
-                     <div class="col-md-8" style="padding-left: 30px !important;">
-                    <input type="text" class="form-control" id="ethinput" name="id" value="{{$wallet->ethereum}}">
-                </div>
-                <div class="col-md-3 text-center copy-id">
-                    <button type="button" class="btn btn-success butid" onclick="eth()">
-                         Copy Address</button>
-                </div>
-
-                <style>
-                    .butid {
-                        border: 1px solid black !important;
-                    }
-                    @media (max-width: 800px) {
-                        .copy-id {
-                            padding-top: 20px;
-                        }
-                    }
-                </style>
-                </div>
-                 </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- modal eth end  -->
 
 
 
-<script>
-    function eth() {
-  var copyText = document.getElementById("ethinput");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-//   alert("Copied id: " + copyText.value);
-Swal.fire({
-                icon: 'success',
-                title: 'Success',
-                text: "Copied address: " + copyText.value,
-
-            });
-}
-    </script>
   <!-- <script>
       $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')

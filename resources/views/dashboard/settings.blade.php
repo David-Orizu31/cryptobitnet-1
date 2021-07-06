@@ -114,7 +114,7 @@
                
                 <div class="col-sm-6"><div class="form-group"><label for="UserMobile">Mobile Phone</label><input name="mobile" class="form-control" value="{{Auth::user()->mobilenumber ?? 'Enter Phone Number'}}" type="text" id="UserMobile"/></div></div>
 
-                <div class="col-sm-6"><div class="form-group"><label for="wallet_address">Wallet Address</label><input name="wallet_address" class="form-control" value="{{Auth::user()->wallet_address ?? 'Enter Wallet Address'}}" type="text" id="wallet_address"/></div></div>
+                <!-- <div class="col-sm-6"><div class="form-group"><label for="wallet_address">Wallet Address</label><input name="wallet_address" class="form-control" value="{{Auth::user()->wallet_address ?? 'Enter Wallet Address'}}" type="text" id="wallet_address"/></div></div> -->
 
                 <div class="col-sm-6">
                     <div class="checkbox">

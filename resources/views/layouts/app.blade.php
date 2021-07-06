@@ -245,19 +245,7 @@
 
         }
     </style>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6006822ac31c9117cb700464/1escmou1c';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+
   </head>
   <body id="gm-home">
         <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1"
@@ -1055,13 +1043,13 @@ s0.parentNode.insertBefore(s1,s0);
                                       <h3>Follow us</h3>
                                       <p>Stay up to date with CryptoBitNet activities.</p>
                                       <ul class="footer-social">
-                                          <!-- <li class="twitter-fs"><a href="#" target="_blank"
+                                         <li class="twitter-fs"><a href="#" target="_blank"
                                                                     title="Twitter" rel="noreferrer">
                                                   <svg class="gm-icon gm-icon-twitter"><title>Twitter</title>
                                                       <use xlink:href="img/sprite.svg#gm-icon-twitter"></use>
                                                   </svg>
                                               </a>
-                                          </li> -->
+                                          </li>
                                           <li class="facebook-fs"><a href="https://Facebook.com/cryptobitnet1" target="_blank"
                                                                      title="Facebook" rel="noreferrer">
                                                   <svg class="gm-icon gm-icon-facebook">
@@ -1152,14 +1140,30 @@ s0.parentNode.insertBefore(s1,s0);
                                       </div>
                                   </div>
 
-                         
+
+                                  <!-- <div class="col-xs-6 col-md-3 col-md-pull-3 gm-footer-cc">
+                                      <ul>
+                                                                              <li class="mastercard">
+                                                  <svg class="gm-icon gm-logo-mastercard-mono">
+                                                      <title>Mastercard</title>
+                                                      <use xlink:href="#gm-logo-mastercard-mono"></use>
+                                                  </svg>
+                                              </li>
+                                              <li class="visa">
+                                                  <svg class="gm-icon gm-logo-visa-mono"><title>Visa</title>
+                                                      <use xlink:href="#gm-logo-visa-mono"></use>
+                                                  </svg>
+                                              </li>
+                                                                      </ul>
+                                                                    <span>We accept credit card payment</span>
+                                                              </div> -->
 
 
-                                  <!-- <div class="col-xs-6 col-md-3 col-md-pull-6 gm-footer-copyright">
+                                  <div class="col-xs-6 col-md-3 col-md-pull-6 gm-footer-copyright">
                                       <a href="/" title="Home" class="footer-home">
                                         <img src="img/logo-black.png" alt="" class="img-responsive" style="width: 70px;">
                                       </a>
-                                  </div> -->
+                                  </div>
                               </div>
 
 

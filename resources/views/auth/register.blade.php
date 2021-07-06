@@ -578,8 +578,8 @@
                             <select class="form-control" name="package" id="package" required>
                                 <option value="" selected disabled>Package</option>
                                 <option value="BEGINNERS PACKAGE">BEGINNERS PACKAGE: $400 -15% = 3days </option>
-                                <option value="PREMIUM PACKAGE">PREMIUM PACKAGE: $400-$3599-40% = 7days.</option>
-                                <option value="INVESTOR PACKAGE">INVESTOR PACKAGE: $3600-$7999-65% =14days</option>
+                                <option value="PREMIUM PACKAGES">PREMIUM PACKAGES: $400-$3599-40% = 7days.</option>
+                                <option value="INVESTOR PACKAGES">INVESTOR PACKAGES: $3600-$7999-65% =14days</option>
                                 <option value="VIP PACKAGE">VIP PACKAGE: $8000-unlimited = 30days.</option>
                               </select>
                         </div>

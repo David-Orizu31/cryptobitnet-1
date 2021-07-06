@@ -8,9 +8,9 @@ Phonenumber: {{$phone}}
 <br>
 Email Address: {{$email}}
 <br>
-Topic: {{$supportoption}}
+Topic: {{$topic}}
 <br>
-Message: {{$usermessage}}
+Message: {{$messagenow}}
 <br>
 
 
